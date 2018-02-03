@@ -54,9 +54,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 1200 4200 0    60   Input ~ 0
+Text HLabel 4050 3900 0    60   Input ~ 0
 PIR_HIGH
-Text HLabel 1200 4500 0    60   Input ~ 0
+Text HLabel 4500 4900 0    60   Input ~ 0
 PIR_LOW
 $Comp
 L CC2541F128RHAT IC5
@@ -106,12 +106,12 @@ $EndComp
 $Comp
 L VCC #PWR22
 U 1 1 5A76E05D
-P 3850 3950
-F 0 "#PWR22" H 3850 3800 50  0001 C CNN
-F 1 "VCC" H 3850 4100 50  0000 C CNN
-F 2 "" H 3850 3950 50  0001 C CNN
-F 3 "" H 3850 3950 50  0001 C CNN
-	1    3850 3950
+P 3850 4250
+F 0 "#PWR22" H 3850 4100 50  0001 C CNN
+F 1 "VCC" H 3850 4400 50  0000 C CNN
+F 2 "" H 3850 4250 50  0001 C CNN
+F 3 "" H 3850 4250 50  0001 C CNN
+	1    3850 4250
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -367,9 +367,13 @@ Wire Wire Line
 	5950 4000 5850 4000
 Connection ~ 5950 3700
 Wire Wire Line
-	4250 4000 3850 4000
+	4250 4000 4100 4000
 Wire Wire Line
-	3850 4000 3850 3950
+	4100 4000 4100 4300
+Wire Wire Line
+	4100 4300 3850 4300
+Wire Wire Line
+	3850 4300 3850 4250
 Wire Wire Line
 	5550 1900 5550 1750
 Wire Wire Line
@@ -673,7 +677,7 @@ $EndComp
 Wire Wire Line
 	1050 2550 1050 2400
 Wire Wire Line
-	1050 2000 1050 1850
+	1050 1850 1050 2000
 Wire Wire Line
 	1050 1550 1050 1400
 Wire Wire Line
@@ -705,4 +709,65 @@ Text Notes 1850 1450 2    60   ~ 0
 User button
 Text Notes 2700 6300 2    60   ~ 0
 Debugger interface
+NoConn ~ 5350 4800
+NoConn ~ 5250 4800
+NoConn ~ 5150 4800
+NoConn ~ 5050 4800
+NoConn ~ 4950 4800
+NoConn ~ 4850 4800
+NoConn ~ 4750 4800
+NoConn ~ 4650 4800
+$Comp
+L Earth #PWR?
+U 1 1 5A76FB36
+P 4250 1900
+F 0 "#PWR?" H 4250 1650 50  0001 C CNN
+F 1 "Earth" H 4250 1750 50  0001 C CNN
+F 2 "" H 4250 1900 50  0001 C CNN
+F 3 "" H 4250 1900 50  0001 C CNN
+	1    4250 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 1900 4550 1800
+Wire Wire Line
+	4550 1800 4250 1800
+Wire Wire Line
+	4250 1800 4250 1900
+$Comp
+L C_Small C?
+U 1 1 5A770125
+P 4000 1650
+F 0 "C?" H 4010 1720 50  0000 L CNN
+F 1 "1μF" H 4010 1570 50  0000 L CNN
+F 2 "" H 4000 1650 50  0001 C CNN
+F 3 "" H 4000 1650 50  0001 C CNN
+	1    4000 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5A7703A1
+P 4000 1900
+F 0 "#PWR?" H 4000 1650 50  0001 C CNN
+F 1 "Earth" H 4000 1750 50  0001 C CNN
+F 2 "" H 4000 1900 50  0001 C CNN
+F 3 "" H 4000 1900 50  0001 C CNN
+	1    4000 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1900 4650 1450
+Wire Wire Line
+	4000 1450 4000 1550
+Wire Wire Line
+	4000 1750 4000 1900
+Wire Wire Line
+	4650 1450 4000 1450
+Wire Wire Line
+	4250 3900 4050 3900
+Wire Wire Line
+	4500 4900 4550 4900
+Wire Wire Line
+	4550 4900 4550 4800
 $EndSCHEMATC
