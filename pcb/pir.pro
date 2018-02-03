@@ -1,4 +1,4 @@
-update=Sat 03 Feb 2018 21:07:23 CET
+update=Sat 03 Feb 2018 21:12:54 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -61,3 +61,11 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
+LibName33=lib/LPV802DGKT
+LibName34=lib/SI2323DS-T1-E3
+LibName35=lib/1N4148X-TP
+LibName36=lib/TLV3691IDCKR
+LibName37=lib/IRA-S210ST01
+LibName38=lib/CC2540F256RHAT
+LibName39=lib/CC2541F256RHAR
+LibName40=lib/CC2541F128RHAT
