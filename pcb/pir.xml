@@ -18,7 +18,7 @@
       </title_block>
     </sheet>
   </design>
-  <components>
+  <lib>
     <comp ref="BT1">
       <value>Battery_Cell</value>
       <libsource lib="device" part="Battery_Cell"/>
@@ -306,7 +306,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5A7623E0</tstamp>
     </comp>
-  </components>
+  </lib>
   <libparts>
     <libpart lib="1N4148X-TP" part="1N4148X-TP">
       <description>Diodes - General Purpose, Power, Switching 150mA 75V</description>
@@ -464,16 +464,16 @@
       <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
     <library logical="IRA-S210ST01">
-      <uri>components/IRA-S210ST01/KiCad/IRA-S210ST01.lib</uri>
+      <uri>lib/IRA-S210ST01.lib</uri>
     </library>
     <library logical="LPV802DGKT">
-      <uri>components/LPV802DGKT/KiCad/LPV802DGKT.lib</uri>
+      <uri>lib/LPV802DGKT.lib</uri>
     </library>
     <library logical="1N4148X-TP">
-      <uri>components/1N4148X-TP/KiCad/1N4148X-TP.lib</uri>
+      <uri>lib/1N4148X-TP.lib</uri>
     </library>
     <library logical="TLV3691IDCKR">
-      <uri>components/TLV3691IDCKR/KiCad/TLV3691IDCKR.lib</uri>
+      <uri>lib/TLV3691IDCKR.lib</uri>
     </library>
   </libraries>
   <nets>

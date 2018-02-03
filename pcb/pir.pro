@@ -1,4 +1,4 @@
-update=Sat 03 Feb 2018 11:36:48 CET
+update=Sat 03 Feb 2018 21:07:23 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -61,9 +61,3 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=components/IRA-S210ST01/KiCad/IRA-S210ST01
-LibName34=components/LPV802DGKT/KiCad/LPV802DGKT
-LibName35=components/SI2323DS-T1-E3/KiCad/SI2323DS-T1-E3
-LibName36=components/1N4148X-TP/KiCad/1N4148X-TP
-LibName37=components/TLV3691IDCKR/KiCad/TLV3691IDCKR
-LibName38=components/CC2540F256RHAT/KiCad/CC2540F256RHAT
