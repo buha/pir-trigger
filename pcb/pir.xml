@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/dari/Work/pir/pir.sch</source>
+    <source>pir.sch</source>
     <date>Sat 03 Feb 2018 11:06:17 CET</date>
     <tool>Eeschema 4.0.7</tool>
     <sheet number="1" name="/" tstamps="/">
@@ -464,10 +464,10 @@
       <uri>/usr/share/kicad/library/device.lib</uri>
     </library>
     <library logical="IRA-S210ST01">
-      <uri>/home/dari/Work/pir/components/IRA-S210ST01/KiCad/IRA-S210ST01.lib</uri>
+      <uri>components/IRA-S210ST01/KiCad/IRA-S210ST01.lib</uri>
     </library>
     <library logical="LPV802DGKT">
-      <uri>components/LIB_LPV802DGKT/LPV802DGKT/KiCad/LPV802DGKT.lib</uri>
+      <uri>components/LPV802DGKT/KiCad/LPV802DGKT.lib</uri>
     </library>
     <library logical="1N4148X-TP">
       <uri>components/1N4148X-TP/KiCad/1N4148X-TP.lib</uri>
