@@ -31,11 +31,13 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:IRA-S210ST01
 LIBS:LPV802DGKT
 LIBS:SI2323DS-T1-E3
 LIBS:1N4148X-TP
 LIBS:TLV3691IDCKR
+LIBS:IRA-S210ST01
+LIBS:CC2540F256RHAT
+LIBS:CC2541F256RHAR
 LIBS:CC2541F128RHAT
 LIBS:pir-cache
 EELAYER 25 0
@@ -468,4 +470,149 @@ Wire Wire Line
 	5200 4650 5200 4750
 Wire Wire Line
 	5600 4650 5600 4750
+Text GLabel 4200 1350 1    60   Input ~ 0
+DD
+Text GLabel 4300 1550 1    60   Input ~ 0
+DC
+Wire Wire Line
+	4300 1650 4300 1550
+Wire Wire Line
+	4200 1650 4200 1350
+$Comp
+L Conn_02x05_Odd_Even J?
+U 1 1 5A762773
+P 1750 6600
+F 0 "J?" H 1800 6900 50  0000 C CNN
+F 1 "CC Debugger" H 1800 6300 50  0000 C CNN
+F 2 "" H 1750 6600 50  0001 C CNN
+F 3 "" H 1750 6600 50  0001 C CNN
+	1    1750 6600
+	1    0    0    -1  
+$EndComp
+Text GLabel 1400 6500 0    60   Input ~ 0
+DC
+Text GLabel 2200 6500 2    60   Input ~ 0
+DD
+Wire Wire Line
+	2050 6500 2200 6500
+Wire Wire Line
+	1400 6500 1550 6500
+$Comp
+L Earth #PWR?
+U 1 1 5A762D06
+P 1300 6250
+F 0 "#PWR?" H 1300 6000 50  0001 C CNN
+F 1 "Earth" H 1300 6100 50  0001 C CNN
+F 2 "" H 1300 6250 50  0001 C CNN
+F 3 "" H 1300 6250 50  0001 C CNN
+	1    1300 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 6400 1500 6400
+Wire Wire Line
+	1500 6400 1500 6150
+Wire Wire Line
+	1500 6150 1300 6150
+Wire Wire Line
+	1300 6150 1300 6250
+$Comp
+L VCC #PWR?
+U 1 1 5A762F97
+P 2150 6250
+F 0 "#PWR?" H 2150 6100 50  0001 C CNN
+F 1 "VCC" H 2150 6400 50  0000 C CNN
+F 2 "" H 2150 6250 50  0001 C CNN
+F 3 "" H 2150 6250 50  0001 C CNN
+	1    2150 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6400 2150 6400
+Wire Wire Line
+	2150 6400 2150 6250
+Text GLabel 1000 6600 0    60   Input ~ 0
+CSn
+Text GLabel 2450 6600 2    60   Input ~ 0
+SCLK
+Text GLabel 2800 6700 2    60   Input ~ 0
+MOSI
+Text GLabel 2450 6800 2    60   Input ~ 0
+MISO
+Wire Wire Line
+	1000 6600 1550 6600
+Wire Wire Line
+	2050 6600 2450 6600
+Wire Wire Line
+	2050 6700 2800 6700
+Wire Wire Line
+	2050 6800 2450 6800
+Text GLabel 1450 6700 0    60   Input ~ 0
+RESETn
+Wire Wire Line
+	1550 6700 1450 6700
+Text GLabel 1000 6800 0    60   Input ~ 0
+CC3V3
+Wire Wire Line
+	1550 6800 1000 6800
+Text GLabel 3150 3350 0    60   Input ~ 0
+CSn
+Text GLabel 2850 3250 0    60   Input ~ 0
+SCLK
+Wire Wire Line
+	3150 3350 3300 3350
+Wire Wire Line
+	3300 3250 2850 3250
+Text GLabel 3900 1250 1    60   Input ~ 0
+MOSI
+Text GLabel 4000 1550 1    60   Input ~ 0
+MISO
+Wire Wire Line
+	3900 1650 3900 1250
+Wire Wire Line
+	4000 1550 4000 1650
+$Comp
+L R R?
+U 1 1 5A7649A0
+P 4750 5250
+F 0 "R?" V 4830 5250 50  0000 C CNN
+F 1 "2.7K" V 4750 5250 50  0000 C CNN
+F 2 "" V 4680 5250 50  0001 C CNN
+F 3 "" H 4750 5250 50  0001 C CNN
+	1    4750 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4500 4550 4500 5400
+Wire Wire Line
+	4500 5250 4600 5250
+Text GLabel 5050 5250 2    60   Input ~ 0
+RESETn
+Wire Wire Line
+	5050 5250 4900 5250
+$Comp
+L C_Small C?
+U 1 1 5A764EFF
+P 4500 5500
+F 0 "C?" H 4510 5570 50  0000 L CNN
+F 1 "1nF" H 4510 5420 50  0000 L CNN
+F 2 "" H 4500 5500 50  0001 C CNN
+F 3 "" H 4500 5500 50  0001 C CNN
+	1    4500 5500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR?
+U 1 1 5A764F83
+P 4500 5750
+F 0 "#PWR?" H 4500 5500 50  0001 C CNN
+F 1 "Earth" H 4500 5600 50  0001 C CNN
+F 2 "" H 4500 5750 50  0001 C CNN
+F 3 "" H 4500 5750 50  0001 C CNN
+	1    4500 5750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 5250
+Wire Wire Line
+	4500 5600 4500 5750
 $EndSCHEMATC
