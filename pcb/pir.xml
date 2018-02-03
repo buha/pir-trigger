@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/dari/Work/pir/pir.sch</source>
+    <date>Sat 03 Feb 2018 11:06:17 CET</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>pir.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="BT1">
+      <value>Battery_Cell</value>
+      <libsource lib="device" part="Battery_Cell"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74CB00</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>SI2323DS</value>
+      <libsource lib="device" part="Q_PMOS_GSD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74D321</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>Jumper</value>
+      <libsource lib="device" part="Jumper"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74D4CE</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74D817</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74D882</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74D8EE</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>0.1μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74D91A</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>0.01μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74D947</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>Jumper</value>
+      <libsource lib="device" part="Jumper"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74E453</tstamp>
+    </comp>
+    <comp ref="619K1">
+      <value>R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74E6D1</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>100μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74F7D6</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>10μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74F7DC</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>1μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74F7E2</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>0.1μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74F7E8</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>0.01μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74F7EE</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>1000pF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74FABF</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>100pF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74FAC5</tstamp>
+    </comp>
+    <comp ref="IC1">
+      <value>IRA-S210ST01</value>
+      <footprint>IRA-S210ST01</footprint>
+      <datasheet>https://www.murata.com/~/media/webrenewal/products/sensor/infrared/datasheet_pir.ashx?la=en-us</datasheet>
+      <fields>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">1245981</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">IRA-S210ST01</field>
+      </fields>
+      <libsource lib="IRA-S210ST01" part="IRA-S210ST01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74E937</tstamp>
+    </comp>
+    <comp ref="IC2">
+      <value>LPV802DGKT</value>
+      <footprint>SOP65P490X110-8N</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lpv802.pdf</datasheet>
+      <fields>
+        <field name="Description">Operational Amplifiers - Op Amps Dual Channel 320nA Op Amp</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">LPV802DGKT</field>
+        <field name="Height">1.1</field>
+      </fields>
+      <libsource lib="LPV802DGKT" part="LPV802DGKT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74EE7D</tstamp>
+    </comp>
+    <comp ref="1.3M1">
+      <value>R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A74FD88</tstamp>
+    </comp>
+    <comp ref="1.5M1">
+      <value>R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A75816E</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>0.01μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A75830A</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>1N4148X-TP</value>
+      <footprint>SODFL1608X70N</footprint>
+      <datasheet>http://www.mouser.com/ds/2/258/1N4148X(SOD-523)-349105.pdf</datasheet>
+      <fields>
+        <field name="Description">Diodes - General Purpose, Power, Switching 150mA 75V</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="Manufacturer_Name">Micro Commercial Components (MCC)</field>
+        <field name="Manufacturer_Part_Number">1N4148X-TP</field>
+        <field name="Height">0.7</field>
+      </fields>
+      <libsource lib="1N4148X-TP" part="1N4148X-TP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A758478</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>1N4148X-TP</value>
+      <footprint>SODFL1608X70N</footprint>
+      <datasheet>http://www.mouser.com/ds/2/258/1N4148X(SOD-523)-349105.pdf</datasheet>
+      <fields>
+        <field name="Description">Diodes - General Purpose, Power, Switching 150mA 75V</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="Manufacturer_Name">Micro Commercial Components (MCC)</field>
+        <field name="Manufacturer_Part_Number">1N4148X-TP</field>
+        <field name="Height">0.7</field>
+      </fields>
+      <libsource lib="1N4148X-TP" part="1N4148X-TP"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7585B5</tstamp>
+    </comp>
+    <comp ref="6.81K1">
+      <value>R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A758706</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>33μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A759015</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>3.3μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A75C2C5</tstamp>
+    </comp>
+    <comp ref="68.1K1">
+      <value>R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A75C4C6</tstamp>
+    </comp>
+    <comp ref="IC3">
+      <value>TLV3691IDCKR</value>
+      <footprint>SOT65P210X110-5N</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/tlv3691</datasheet>
+      <fields>
+        <field name="Description">0.9V to 6.5V, Nano-Power Comparator</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TLV3691IDCKR</field>
+        <field name="Height">1.1</field>
+      </fields>
+      <libsource lib="TLV3691IDCKR" part="TLV3691IDCKR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A75C81D</tstamp>
+    </comp>
+    <comp ref="IC4">
+      <value>TLV3691IDCKR</value>
+      <footprint>SOT65P210X110-5N</footprint>
+      <datasheet>http://www.ti.com/lit/gpn/tlv3691</datasheet>
+      <fields>
+        <field name="Description">0.9V to 6.5V, Nano-Power Comparator</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TLV3691IDCKR</field>
+        <field name="Height">1.1</field>
+      </fields>
+      <libsource lib="TLV3691IDCKR" part="TLV3691IDCKR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A75C9FD</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>3.3μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A75CE5D</tstamp>
+    </comp>
+    <comp ref="68.1K2">
+      <value>R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A75CF06</tstamp>
+    </comp>
+    <comp ref="15M1">
+      <value>R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A75F02F</tstamp>
+    </comp>
+    <comp ref="15M2">
+      <value>R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A75F0D4</tstamp>
+    </comp>
+    <comp ref="15M3">
+      <value>R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A75F386</tstamp>
+    </comp>
+    <comp ref="15M4">
+      <value>R</value>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A75F4BA</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>0.1μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7618C9</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>0.1μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A761E88</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>0.1μF</value>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A7623E0</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="1N4148X-TP" part="1N4148X-TP">
+      <description>Diodes - General Purpose, Power, Switching 150mA 75V</description>
+      <docs>http://www.mouser.com/ds/2/258/1N4148X(SOD-523)-349105.pdf</docs>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4148X-TP</field>
+        <field name="Footprint">SODFL1608X70N</field>
+        <field name="Datasheet">http://www.mouser.com/ds/2/258/1N4148X(SOD-523)-349105.pdf</field>
+        <field name="Description">Diodes - General Purpose, Power, Switching 150mA 75V</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="Manufacturer_Name">Micro Commercial Components (MCC)</field>
+        <field name="Manufacturer_Part_Number">1N4148X-TP</field>
+        <field name="Height">0.7</field>
+        <field name="Height">0.7</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="input"/>
+        <pin num="2" name="~" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Battery_Cell">
+      <description>single battery cell</description>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">Battery_Cell</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="passive"/>
+        <pin num="2" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="IRA-S210ST01" part="IRA-S210ST01">
+      <description>Air Purge Collar</description>
+      <docs>https://www.murata.com/~/media/webrenewal/products/sensor/infrared/datasheet_pir.ashx?la=en-us</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">IRA-S210ST01</field>
+        <field name="Footprint">IRA-S210ST01</field>
+        <field name="Datasheet">https://www.murata.com/~/media/webrenewal/products/sensor/infrared/datasheet_pir.ashx?la=en-us</field>
+        <field name="Description">Air Purge Collar</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="RS Part Number">1245981</field>
+        <field name="Manufacturer_Name">Murata Electronics</field>
+        <field name="Manufacturer_Part_Number">IRA-S210ST01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D" type="unspc"/>
+        <pin num="2" name="S" type="unspc"/>
+        <pin num="3" name="GND" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Jumper">
+      <description>Jumper, generic, normally closed</description>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="LPV802DGKT" part="LPV802DGKT">
+      <description>Operational Amplifiers - Op Amps Dual Channel 320nA Op Amp</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lpv802.pdf</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">LPV802DGKT</field>
+        <field name="Footprint">SOP65P490X110-8N</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lpv802.pdf</field>
+        <field name="Description">Operational Amplifiers - Op Amps Dual Channel 320nA Op Amp</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">LPV802DGKT</field>
+        <field name="Height">1.1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT_A" type="unspc"/>
+        <pin num="2" name="-IN_A" type="unspc"/>
+        <pin num="3" name="+IN_A" type="unspc"/>
+        <pin num="4" name="V-" type="unspc"/>
+        <pin num="5" name="+IN_B" type="unspc"/>
+        <pin num="6" name="-IN_B" type="unspc"/>
+        <pin num="7" name="OUT_B" type="unspc"/>
+        <pin num="8" name="V+" type="unspc"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Q_PMOS_GSD">
+      <description>Transistor P-MOSFET with substrate diode (general)</description>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">Q_PMOS_GSD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TLV3691IDCKR" part="TLV3691IDCKR">
+      <description>0.9V to 6.5V, Nano-Power Comparator</description>
+      <docs>http://www.ti.com/lit/gpn/tlv3691</docs>
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">TLV3691IDCKR</field>
+        <field name="Footprint">SOT65P210X110-5N</field>
+        <field name="Datasheet">http://www.ti.com/lit/gpn/tlv3691</field>
+        <field name="Description">0.9V to 6.5V, Nano-Power Comparator</field>
+        <field name="Supplier_Name">RS</field>
+        <field name="Manufacturer_Name">Texas Instruments</field>
+        <field name="Manufacturer_Part_Number">TLV3691IDCKR</field>
+        <field name="Height">1.1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN+" type="unspc"/>
+        <pin num="2" name="GND" type="unspc"/>
+        <pin num="3" name="IN-" type="unspc"/>
+        <pin num="4" name="OUT" type="unspc"/>
+        <pin num="5" name="VCC" type="unspc"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="IRA-S210ST01">
+      <uri>/home/dari/Work/pir/components/IRA-S210ST01/KiCad/IRA-S210ST01.lib</uri>
+    </library>
+    <library logical="LPV802DGKT">
+      <uri>components/LIB_LPV802DGKT/LPV802DGKT/KiCad/LPV802DGKT.lib</uri>
+    </library>
+    <library logical="1N4148X-TP">
+      <uri>components/1N4148X-TP/KiCad/1N4148X-TP.lib</uri>
+    </library>
+    <library logical="TLV3691IDCKR">
+      <uri>components/TLV3691IDCKR/KiCad/TLV3691IDCKR.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="VCC">
+      <node ref="JP1" pin="2"/>
+      <node ref="IC2" pin="8"/>
+      <node ref="C2" pin="1"/>
+      <node ref="JP2" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="IC3" pin="5"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="IC4" pin="5"/>
+      <node ref="15M1" pin="2"/>
+    </net>
+    <net code="2" name="Net-(1.3M1-Pad1)">
+      <node ref="IC1" pin="2"/>
+      <node ref="1.3M1" pin="1"/>
+      <node ref="IC2" pin="3"/>
+    </net>
+    <net code="3" name="Net-(6.81K1-Pad2)">
+      <node ref="6.81K1" pin="2"/>
+      <node ref="C13" pin="1"/>
+    </net>
+    <net code="4" name="Net-(1.5M1-Pad2)">
+      <node ref="D1" pin="1"/>
+      <node ref="C14" pin="2"/>
+      <node ref="6.81K1" pin="1"/>
+      <node ref="IC2" pin="2"/>
+      <node ref="1.5M1" pin="2"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="5" name="Net-(619K1-Pad2)">
+      <node ref="619K1" pin="2"/>
+      <node ref="JP2" pin="1"/>
+    </net>
+    <net code="6" name="Net-(1.5M1-Pad1)">
+      <node ref="D2" pin="1"/>
+      <node ref="IC2" pin="1"/>
+      <node ref="1.5M1" pin="1"/>
+      <node ref="D1" pin="2"/>
+      <node ref="C14" pin="1"/>
+      <node ref="C15" pin="2"/>
+    </net>
+    <net code="7" name="Net-(619K1-Pad1)">
+      <node ref="C7" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="619K1" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="C8" pin="1"/>
+    </net>
+    <net code="8" name="Net-(15M3-Pad1)">
+      <node ref="C19" pin="1"/>
+      <node ref="15M4" pin="2"/>
+      <node ref="15M3" pin="1"/>
+      <node ref="IC4" pin="1"/>
+    </net>
+    <net code="9" name="Net-(15M1-Pad1)">
+      <node ref="15M2" pin="2"/>
+      <node ref="C18" pin="1"/>
+      <node ref="IC3" pin="3"/>
+      <node ref="15M1" pin="1"/>
+    </net>
+    <net code="10" name="Net-(15M2-Pad1)">
+      <node ref="IC2" pin="5"/>
+      <node ref="C16" pin="1"/>
+      <node ref="15M2" pin="1"/>
+      <node ref="15M3" pin="2"/>
+    </net>
+    <net code="11" name="Net-(68.1K1-Pad1)">
+      <node ref="68.1K2" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="IC2" pin="6"/>
+      <node ref="68.1K1" pin="1"/>
+    </net>
+    <net code="12" name="Net-(68.1K1-Pad2)">
+      <node ref="C15" pin="1"/>
+      <node ref="68.1K1" pin="2"/>
+    </net>
+    <net code="13" name="Net-(IC1-Pad1)">
+      <node ref="IC1" pin="1"/>
+    </net>
+    <net code="14" name="Earth">
+      <node ref="C7" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="IC3" pin="2"/>
+      <node ref="IC4" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="15M4" pin="1"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="1.3M1" pin="2"/>
+      <node ref="IC2" pin="4"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="Q1" pin="1"/>
+      <node ref="BT1" pin="2"/>
+    </net>
+    <net code="15" name="Net-(68.1K2-Pad1)">
+      <node ref="IC4" pin="3"/>
+      <node ref="68.1K2" pin="1"/>
+      <node ref="C17" pin="1"/>
+      <node ref="IC2" pin="7"/>
+      <node ref="IC3" pin="1"/>
+    </net>
+    <net code="16" name="PIR_HIGH">
+      <node ref="IC3" pin="4"/>
+    </net>
+    <net code="17" name="PIR_LOW">
+      <node ref="IC4" pin="4"/>
+    </net>
+    <net code="18" name="Net-(IC1-Pad3)">
+      <node ref="IC1" pin="3"/>
+    </net>
+    <net code="19" name="Net-(BT1-Pad1)">
+      <node ref="Q1" pin="3"/>
+      <node ref="BT1" pin="1"/>
+    </net>
+    <net code="20" name="Net-(JP1-Pad1)">
+      <node ref="JP1" pin="1"/>
+      <node ref="Q1" pin="2"/>
+    </net>
+  </nets>
+</export>

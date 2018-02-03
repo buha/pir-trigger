@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model TLV3691IDCKR
+#/711533/34661/2.19/5/4/Integrated Circuit
+DEF TLV3691IDCKR IC 0 30 Y Y 1 F N
+F0 "IC" 450 150 50 H V C CNN
+F1 "TLV3691IDCKR" 450 -350 50 H V C CNN
+F2 "SOT65P210X110-5N" 450 -450 50 H I C CNN
+F3 "http://www.ti.com/lit/gpn/tlv3691" 450 -550 50 H I C CNN
+F4 "0.9V to 6.5V, Nano-Power Comparator" 450 -650 50 H I C CNN "Description"
+F5 "RS" 450 -750 50 H I C CNN "Supplier_Name"
+F6 "" 450 -850 50 H I C CNN "RS Part Number"
+F7 "Texas Instruments" 450 -950 50 H I C CNN "Manufacturer_Name"
+F8 "TLV3691IDCKR" 450 -1050 50 H I C CNN "Manufacturer_Part_Number"
+F9 "" 450 -1150 50 H I C CNN "Allied_Number"
+F10 "" 450 -1250 50 H I C CNN "Other Part Number"
+F11 "1.1" 750 -1350 50 H I C CNN "Height"
+DRAW
+S 200 100 700 -300 0 0 10 f
+X IN+ 1 0 0 200 R 50 50 0 0 U
+X GND 2 0 -100 200 R 50 50 0 0 U
+X IN- 3 0 -200 200 R 50 50 0 0 U
+X OUT 4 900 0 200 L 50 50 0 0 U
+X VCC 5 900 -100 200 L 50 50 0 0 U
+ENDDRAW
+ENDDEF
+#
+#End Library

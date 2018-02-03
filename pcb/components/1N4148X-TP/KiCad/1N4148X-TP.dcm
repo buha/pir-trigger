@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 1N4148X-TP
+D Diodes - General Purpose, Power, Switching 150mA 75V
+K
+F http://www.mouser.com/ds/2/258/1N4148X(SOD-523)-349105.pdf
+$ENDCMP
+#
+#End Doc Library

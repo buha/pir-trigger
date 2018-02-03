@@ -1,0 +1,769 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:IRA-S210ST01
+LIBS:LPV802DGKT
+LIBS:SI2323DS-T1-E3
+LIBS:1N4148X-TP
+LIBS:TLV3691IDCKR
+LIBS:CC2540F256RHAT
+LIBS:pir-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L VCC #PWR1
+U 1 1 5A74E3A0
+P 850 4500
+F 0 "#PWR1" H 850 4350 50  0001 C CNN
+F 1 "VCC" H 850 4650 50  0000 C CNN
+F 2 "" H 850 4500 50  0001 C CNN
+F 3 "" H 850 4500 50  0001 C CNN
+	1    850  4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper JP2
+U 1 1 5A74E453
+P 1250 4850
+F 0 "JP2" H 1250 5000 50  0000 C CNN
+F 1 "Jumper" H 1250 4770 50  0000 C CNN
+F 2 "" H 1250 4850 50  0001 C CNN
+F 3 "" H 1250 4850 50  0001 C CNN
+	1    1250 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R 619K1
+U 1 1 5A74E6D1
+P 1900 4850
+F 0 "619K1" V 1980 4850 50  0000 C CNN
+F 1 "R" V 1900 4850 50  0000 C CNN
+F 2 "" V 1830 4850 50  0001 C CNN
+F 3 "" H 1900 4850 50  0001 C CNN
+	1    1900 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L C C6
+U 1 1 5A74F7D6
+P 2300 5200
+F 0 "C6" H 2325 5300 50  0000 L CNN
+F 1 "100μF" H 2325 5100 50  0000 L CNN
+F 2 "" H 2338 5050 50  0001 C CNN
+F 3 "" H 2300 5200 50  0001 C CNN
+	1    2300 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C7
+U 1 1 5A74F7DC
+P 2650 5200
+F 0 "C7" H 2675 5300 50  0000 L CNN
+F 1 "10μF" H 2675 5100 50  0000 L CNN
+F 2 "" H 2688 5050 50  0001 C CNN
+F 3 "" H 2650 5200 50  0001 C CNN
+	1    2650 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C8
+U 1 1 5A74F7E2
+P 3000 5200
+F 0 "C8" H 3025 5300 50  0000 L CNN
+F 1 "1μF" H 3025 5100 50  0000 L CNN
+F 2 "" H 3038 5050 50  0001 C CNN
+F 3 "" H 3000 5200 50  0001 C CNN
+	1    3000 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C9
+U 1 1 5A74F7E8
+P 3300 5200
+F 0 "C9" H 3325 5300 50  0000 L CNN
+F 1 "0.1μF" H 3325 5100 50  0000 L CNN
+F 2 "" H 3338 5050 50  0001 C CNN
+F 3 "" H 3300 5200 50  0001 C CNN
+	1    3300 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C10
+U 1 1 5A74F7EE
+P 3600 5200
+F 0 "C10" H 3625 5300 50  0000 L CNN
+F 1 "0.01μF" H 3625 5100 50  0000 L CNN
+F 2 "" H 3638 5050 50  0001 C CNN
+F 3 "" H 3600 5200 50  0001 C CNN
+	1    3600 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C11
+U 1 1 5A74FABF
+P 3900 5200
+F 0 "C11" H 3925 5300 50  0000 L CNN
+F 1 "1000pF" H 3925 5100 50  0000 L CNN
+F 2 "" H 3938 5050 50  0001 C CNN
+F 3 "" H 3900 5200 50  0001 C CNN
+	1    3900 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C12
+U 1 1 5A74FAC5
+P 4200 5200
+F 0 "C12" H 4225 5300 50  0000 L CNN
+F 1 "100pF" H 4225 5100 50  0000 L CNN
+F 2 "" H 4238 5050 50  0001 C CNN
+F 3 "" H 4200 5200 50  0001 C CNN
+	1    4200 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR2
+U 1 1 5A74FD7A
+P 2300 5600
+F 0 "#PWR2" H 2300 5350 50  0001 C CNN
+F 1 "Earth" H 2300 5450 50  0001 C CNN
+F 2 "" H 2300 5600 50  0001 C CNN
+F 3 "" H 2300 5600 50  0001 C CNN
+	1    2300 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRA-S210ST01 IC1
+U 1 1 5A74E937
+P 5050 4900
+F 0 "IC1" H 5050 5200 50  0000 C CNN
+F 1 "IRA-S210ST01" H 5450 4700 50  0000 C CNN
+F 2 "IRA-S210ST01" H 5650 4550 50  0001 C CNN
+F 3 "https://www.murata.com/~/media/webrenewal/products/sensor/infrared/datasheet_pir.ashx?la=en-us" H 5650 4450 50  0001 C CNN
+F 4 "RS" H 5650 4250 50  0001 C CNN "Supplier_Name"
+F 5 "1245981" H 5650 4150 50  0001 C CNN "RS Part Number"
+F 6 "Murata Electronics" H 5650 4050 50  0001 C CNN "Manufacturer_Name"
+F 7 "IRA-S210ST01" H 5650 3950 50  0001 C CNN "Manufacturer_Part_Number"
+	1    5050 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L LPV802DGKT IC2
+U 1 1 5A74EE7D
+P 6650 4350
+F 0 "IC2" H 7200 4500 50  0000 C CNN
+F 1 "LPV802DGKT" H 7200 3900 50  0000 C CNN
+F 2 "SOP65P490X110-8N" H 7200 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lpv802.pdf" H 7200 3700 50  0001 C CNN
+F 4 "Operational Amplifiers - Op Amps Dual Channel 320nA Op Amp" H 7200 3600 50  0001 C CNN "Description"
+F 5 "RS" H 7200 3500 50  0001 C CNN "Supplier_Name"
+F 6 "Texas Instruments" H 7200 3300 50  0001 C CNN "Manufacturer_Name"
+F 7 "LPV802DGKT" H 7200 3200 50  0001 C CNN "Manufacturer_Part_Number"
+F 8 "1.1" H 7600 2900 50  0001 C CNN "Height"
+	1    6650 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR4
+U 1 1 5A74F424
+P 7850 4250
+F 0 "#PWR4" H 7850 4100 50  0001 C CNN
+F 1 "VCC" H 7850 4400 50  0000 C CNN
+F 2 "" H 7850 4250 50  0001 C CNN
+F 3 "" H 7850 4250 50  0001 C CNN
+	1    7850 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 1.3M1
+U 1 1 5A74FD88
+P 6300 5000
+F 0 "1.3M1" V 6380 5000 50  0000 C CNN
+F 1 "R" V 6300 5000 50  0000 C CNN
+F 2 "" V 6230 5000 50  0001 C CNN
+F 3 "" H 6300 5000 50  0001 C CNN
+	1    6300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 1.5M1
+U 1 1 5A75816E
+P 6200 3900
+F 0 "1.5M1" V 6280 3900 50  0000 C CNN
+F 1 "R" V 6200 3900 50  0000 C CNN
+F 2 "" V 6130 3900 50  0001 C CNN
+F 3 "" H 6200 3900 50  0001 C CNN
+	1    6200 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L C C14
+U 1 1 5A75830A
+P 6200 3500
+F 0 "C14" H 6225 3600 50  0000 L CNN
+F 1 "0.01μF" H 6225 3400 50  0000 L CNN
+F 2 "" H 6238 3350 50  0001 C CNN
+F 3 "" H 6200 3500 50  0001 C CNN
+	1    6200 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L 1N4148X-TP D1
+U 1 1 5A758478
+P 5900 3000
+F 0 "D1" H 6200 3150 50  0000 C CNN
+F 1 "1N4148X-TP" H 6200 2850 50  0000 C CNN
+F 2 "SODFL1608X70N" H 6200 2750 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/258/1N4148X(SOD-523)-349105.pdf" H 6200 2650 50  0001 C CNN
+F 4 "Diodes - General Purpose, Power, Switching 150mA 75V" H 6200 2550 50  0001 C CNN "Description"
+F 5 "RS" H 6200 2450 50  0001 C CNN "Supplier_Name"
+F 6 "" H 6200 2350 50  0001 C CNN "RS Part Number"
+F 7 "Micro Commercial Components (MCC)" H 6200 2250 50  0001 C CNN "Manufacturer_Name"
+F 8 "1N4148X-TP" H 6200 2150 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 6200 2050 50  0001 C CNN "Allied_Number"
+F 10 "0.7" H 6200 1850 50  0001 C CNN "Height"
+F 11 "" H 6200 1950 50  0001 C CNN "Other Part Number"
+	1    5900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1N4148X-TP D2
+U 1 1 5A7585B5
+P 6500 2450
+F 0 "D2" H 6800 2600 50  0000 C CNN
+F 1 "1N4148X-TP" H 6800 2300 50  0000 C CNN
+F 2 "SODFL1608X70N" H 6800 2200 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/258/1N4148X(SOD-523)-349105.pdf" H 6800 2100 50  0001 C CNN
+F 4 "Diodes - General Purpose, Power, Switching 150mA 75V" H 6800 2000 50  0001 C CNN "Description"
+F 5 "RS" H 6800 1900 50  0001 C CNN "Supplier_Name"
+F 6 "" H 6800 1800 50  0001 C CNN "RS Part Number"
+F 7 "Micro Commercial Components (MCC)" H 6800 1700 50  0001 C CNN "Manufacturer_Name"
+F 8 "1N4148X-TP" H 6800 1600 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 6800 1500 50  0001 C CNN "Allied_Number"
+F 10 "0.7" H 6800 1300 50  0001 C CNN "Height"
+F 11 "" H 6800 1400 50  0001 C CNN "Other Part Number"
+	1    6500 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Earth #PWR3
+U 1 1 5A7586B3
+P 5300 3500
+F 0 "#PWR3" H 5300 3250 50  0001 C CNN
+F 1 "Earth" H 5300 3350 50  0001 C CNN
+F 2 "" H 5300 3500 50  0001 C CNN
+F 3 "" H 5300 3500 50  0001 C CNN
+	1    5300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R 6.81K1
+U 1 1 5A758706
+P 5300 2650
+F 0 "6.81K1" V 5380 2650 50  0000 C CNN
+F 1 "R" V 5300 2650 50  0000 C CNN
+F 2 "" V 5230 2650 50  0001 C CNN
+F 3 "" H 5300 2650 50  0001 C CNN
+	1    5300 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C13
+U 1 1 5A759015
+P 5300 3200
+F 0 "C13" H 5325 3300 50  0000 L CNN
+F 1 "33μF" H 5325 3100 50  0000 L CNN
+F 2 "" H 5338 3050 50  0001 C CNN
+F 3 "" H 5300 3200 50  0001 C CNN
+	1    5300 3200
+	1    0    0    -1  
+$EndComp
+Text Notes 4800 4550 0    60   ~ 0
+PIR Sensor
+$Comp
+L C C15
+U 1 1 5A75C2C5
+P 7000 3900
+F 0 "C15" H 7025 4000 50  0000 L CNN
+F 1 "3.3μF" H 7025 3800 50  0000 L CNN
+F 2 "" H 7038 3750 50  0001 C CNN
+F 3 "" H 7000 3900 50  0001 C CNN
+	1    7000 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L R 68.1K1
+U 1 1 5A75C4C6
+P 7550 3900
+F 0 "68.1K1" V 7630 3900 50  0000 C CNN
+F 1 "R" V 7550 3900 50  0000 C CNN
+F 2 "" V 7480 3900 50  0001 C CNN
+F 3 "" H 7550 3900 50  0001 C CNN
+	1    7550 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L TLV3691IDCKR IC3
+U 1 1 5A75C81D
+P 9550 3900
+F 0 "IC3" H 10000 4050 50  0000 C CNN
+F 1 "TLV3691IDCKR" H 10000 3550 50  0000 C CNN
+F 2 "SOT65P210X110-5N" H 10000 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/tlv3691" H 10000 3350 50  0001 C CNN
+F 4 "0.9V to 6.5V, Nano-Power Comparator" H 10000 3250 50  0001 C CNN "Description"
+F 5 "RS" H 10000 3150 50  0001 C CNN "Supplier_Name"
+F 6 "" H 10000 3050 50  0001 C CNN "RS Part Number"
+F 7 "Texas Instruments" H 10000 2950 50  0001 C CNN "Manufacturer_Name"
+F 8 "TLV3691IDCKR" H 10000 2850 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 10000 2750 50  0001 C CNN "Allied_Number"
+F 10 "" H 10000 2650 50  0001 C CNN "Other Part Number"
+F 11 "1.1" H 10300 2550 50  0001 C CNN "Height"
+	1    9550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLV3691IDCKR IC4
+U 1 1 5A75C9FD
+P 9550 5050
+F 0 "IC4" H 10000 5200 50  0000 C CNN
+F 1 "TLV3691IDCKR" H 10000 4700 50  0000 C CNN
+F 2 "SOT65P210X110-5N" H 10000 4600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/tlv3691" H 10000 4500 50  0001 C CNN
+F 4 "0.9V to 6.5V, Nano-Power Comparator" H 10000 4400 50  0001 C CNN "Description"
+F 5 "RS" H 10000 4300 50  0001 C CNN "Supplier_Name"
+F 6 "" H 10000 4200 50  0001 C CNN "RS Part Number"
+F 7 "Texas Instruments" H 10000 4100 50  0001 C CNN "Manufacturer_Name"
+F 8 "TLV3691IDCKR" H 10000 4000 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 10000 3900 50  0001 C CNN "Allied_Number"
+F 10 "" H 10000 3800 50  0001 C CNN "Other Part Number"
+F 11 "1.1" H 10300 3700 50  0001 C CNN "Height"
+	1    9550 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C17
+U 1 1 5A75CE5D
+P 8200 3600
+F 0 "C17" H 8225 3700 50  0000 L CNN
+F 1 "3.3μF" H 8225 3500 50  0000 L CNN
+F 2 "" H 8238 3450 50  0001 C CNN
+F 3 "" H 8200 3600 50  0001 C CNN
+	1    8200 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L R 68.1K2
+U 1 1 5A75CF06
+P 8200 3250
+F 0 "68.1K2" V 8280 3250 50  0000 C CNN
+F 1 "R" V 8200 3250 50  0000 C CNN
+F 2 "" V 8130 3250 50  0001 C CNN
+F 3 "" H 8200 3250 50  0001 C CNN
+	1    8200 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR10
+U 1 1 5A75E6F0
+P 10500 4050
+F 0 "#PWR10" H 10500 3900 50  0001 C CNN
+F 1 "VCC" H 10500 4200 50  0000 C CNN
+F 2 "" H 10500 4050 50  0001 C CNN
+F 3 "" H 10500 4050 50  0001 C CNN
+	1    10500 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR11
+U 1 1 5A75E75B
+P 10500 5200
+F 0 "#PWR11" H 10500 5050 50  0001 C CNN
+F 1 "VCC" H 10500 5350 50  0000 C CNN
+F 2 "" H 10500 5200 50  0001 C CNN
+F 3 "" H 10500 5200 50  0001 C CNN
+	1    10500 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L R 15M1
+U 1 1 5A75F02F
+P 8950 3600
+F 0 "15M1" V 9030 3600 50  0000 C CNN
+F 1 "R" V 8950 3600 50  0000 C CNN
+F 2 "" V 8880 3600 50  0001 C CNN
+F 3 "" H 8950 3600 50  0001 C CNN
+	1    8950 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R 15M2
+U 1 1 5A75F0D4
+P 8950 4300
+F 0 "15M2" V 9030 4300 50  0000 C CNN
+F 1 "R" V 8950 4300 50  0000 C CNN
+F 2 "" V 8880 4300 50  0001 C CNN
+F 3 "" H 8950 4300 50  0001 C CNN
+	1    8950 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L R 15M3
+U 1 1 5A75F386
+P 8950 4850
+F 0 "15M3" V 9030 4850 50  0000 C CNN
+F 1 "R" V 8950 4850 50  0000 C CNN
+F 2 "" V 8880 4850 50  0001 C CNN
+F 3 "" H 8950 4850 50  0001 C CNN
+	1    8950 4850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R 15M4
+U 1 1 5A75F4BA
+P 8950 5400
+F 0 "15M4" V 9030 5400 50  0000 C CNN
+F 1 "R" V 8950 5400 50  0000 C CNN
+F 2 "" V 8880 5400 50  0001 C CNN
+F 3 "" H 8950 5400 50  0001 C CNN
+	1    8950 5400
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR6
+U 1 1 5A75F9AF
+P 8950 3200
+F 0 "#PWR6" H 8950 3050 50  0001 C CNN
+F 1 "VCC" H 8950 3350 50  0000 C CNN
+F 2 "" H 8950 3200 50  0001 C CNN
+F 3 "" H 8950 3200 50  0001 C CNN
+	1    8950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR8
+U 1 1 5A75FB22
+P 9500 4600
+F 0 "#PWR8" H 9500 4350 50  0001 C CNN
+F 1 "Earth" H 9500 4450 50  0001 C CNN
+F 2 "" H 9500 4600 50  0001 C CNN
+F 3 "" H 9500 4600 50  0001 C CNN
+	1    9500 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR9
+U 1 1 5A75FC29
+P 9500 5600
+F 0 "#PWR9" H 9500 5350 50  0001 C CNN
+F 1 "Earth" H 9500 5450 50  0001 C CNN
+F 2 "" H 9500 5600 50  0001 C CNN
+F 3 "" H 9500 5600 50  0001 C CNN
+	1    9500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR7
+U 1 1 5A75FF6B
+P 8950 5600
+F 0 "#PWR7" H 8950 5350 50  0001 C CNN
+F 1 "Earth" H 8950 5450 50  0001 C CNN
+F 2 "" H 8950 5600 50  0001 C CNN
+F 3 "" H 8950 5600 50  0001 C CNN
+	1    8950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C18
+U 1 1 5A7618C9
+P 9300 4300
+F 0 "C18" H 9325 4400 50  0000 L CNN
+F 1 "0.1μF" H 9325 4200 50  0000 L CNN
+F 2 "" H 9338 4150 50  0001 C CNN
+F 3 "" H 9300 4300 50  0001 C CNN
+	1    9300 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C19
+U 1 1 5A761E88
+P 9300 5350
+F 0 "C19" H 9325 5450 50  0000 L CNN
+F 1 "0.1μF" H 9325 5250 50  0000 L CNN
+F 2 "" H 9338 5200 50  0001 C CNN
+F 3 "" H 9300 5350 50  0001 C CNN
+	1    9300 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C16
+U 1 1 5A7623E0
+P 7950 5300
+F 0 "C16" H 7975 5400 50  0000 L CNN
+F 1 "0.1μF" H 7975 5200 50  0000 L CNN
+F 2 "" H 7988 5150 50  0001 C CNN
+F 3 "" H 7950 5300 50  0001 C CNN
+	1    7950 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR5
+U 1 1 5A7624AD
+P 7950 5600
+F 0 "#PWR5" H 7950 5350 50  0001 C CNN
+F 1 "Earth" H 7950 5450 50  0001 C CNN
+F 2 "" H 7950 5600 50  0001 C CNN
+F 3 "" H 7950 5600 50  0001 C CNN
+	1    7950 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  4850 950  4850
+Wire Wire Line
+	1550 4850 1750 4850
+Wire Wire Line
+	2050 4850 4200 4850
+Wire Wire Line
+	2300 4850 2300 5050
+Wire Wire Line
+	2650 4850 2650 5050
+Connection ~ 2300 4850
+Wire Wire Line
+	3000 4850 3000 5050
+Connection ~ 2650 4850
+Wire Wire Line
+	3300 4850 3300 5050
+Connection ~ 3000 4850
+Wire Wire Line
+	3600 4850 3600 5050
+Connection ~ 3300 4850
+Wire Wire Line
+	3900 4850 3900 5050
+Connection ~ 3600 4850
+Wire Wire Line
+	4200 4850 4200 5050
+Connection ~ 3900 4850
+Wire Wire Line
+	2300 5350 2300 5600
+Wire Wire Line
+	2650 5500 2650 5350
+Connection ~ 2300 5500
+Wire Wire Line
+	3000 5500 3000 5350
+Connection ~ 2650 5500
+Wire Wire Line
+	3300 5500 3300 5350
+Connection ~ 3000 5500
+Wire Wire Line
+	3600 5500 3600 5350
+Connection ~ 3300 5500
+Wire Wire Line
+	3900 5500 3900 5350
+Connection ~ 3600 5500
+Wire Wire Line
+	4200 5500 4200 5350
+Connection ~ 3900 5500
+Connection ~ 4200 4850
+Connection ~ 4200 5500
+Wire Wire Line
+	7750 4350 7850 4350
+Wire Wire Line
+	7850 4350 7850 4250
+Wire Wire Line
+	2300 5500 6600 5500
+Wire Wire Line
+	5850 4550 6650 4550
+Wire Wire Line
+	6650 4650 6600 4650
+Wire Wire Line
+	6600 4650 6600 5500
+Wire Wire Line
+	6300 4550 6300 4850
+Wire Wire Line
+	6300 5150 6300 5500
+Connection ~ 6300 5500
+Wire Wire Line
+	5300 3050 5300 2800
+Wire Wire Line
+	5300 2500 5300 2450
+Wire Wire Line
+	5300 2450 5900 2450
+Wire Wire Line
+	6500 2450 6550 2450
+Wire Wire Line
+	6550 2450 6550 4350
+Wire Wire Line
+	6550 3000 6500 3000
+Wire Wire Line
+	5900 3000 5850 3000
+Wire Wire Line
+	5850 2450 5850 4450
+Wire Wire Line
+	5850 3500 6050 3500
+Connection ~ 5850 3000
+Wire Wire Line
+	6550 3500 6350 3500
+Connection ~ 6550 3000
+Wire Wire Line
+	5850 3900 6050 3900
+Connection ~ 5850 3500
+Wire Wire Line
+	6350 3900 6850 3900
+Connection ~ 6550 3500
+Wire Wire Line
+	6550 4350 6650 4350
+Connection ~ 6550 3900
+Wire Wire Line
+	5850 4450 6650 4450
+Connection ~ 5850 3900
+Wire Wire Line
+	5300 3350 5300 3500
+Wire Wire Line
+	5050 5300 5050 5500
+Connection ~ 5050 5500
+Wire Wire Line
+	4645 4850 4205 4850
+Wire Wire Line
+	5455 4850 5850 4850
+Wire Wire Line
+	5850 4850 5850 4550
+Connection ~ 6300 4550
+Wire Wire Line
+	7150 3900 7400 3900
+Wire Wire Line
+	8000 3900 7700 3900
+Wire Wire Line
+	8000 3250 8000 4550
+Wire Wire Line
+	8000 4550 7750 4550
+Wire Wire Line
+	8000 3600 8050 3600
+Connection ~ 8000 3900
+Wire Wire Line
+	8000 3250 8050 3250
+Connection ~ 8000 3600
+Wire Wire Line
+	8350 3250 8400 3250
+Wire Wire Line
+	8400 3250 8400 5250
+Wire Wire Line
+	8400 3600 8350 3600
+Wire Wire Line
+	8400 3900 9550 3900
+Connection ~ 8400 3600
+Connection ~ 8400 3900
+Wire Wire Line
+	10450 5150 10500 5150
+Wire Wire Line
+	10500 5150 10500 5200
+Wire Wire Line
+	10450 4000 10500 4000
+Wire Wire Line
+	10500 4000 10500 4050
+Wire Wire Line
+	10450 3900 10600 3900
+Wire Wire Line
+	10450 5050 10600 5050
+Wire Wire Line
+	8950 3750 8950 4150
+Wire Wire Line
+	8950 5550 8950 5600
+Wire Wire Line
+	8950 3450 8950 3200
+Wire Wire Line
+	8950 4100 9550 4100
+Connection ~ 8950 4100
+Wire Wire Line
+	8950 4450 8950 4700
+Wire Wire Line
+	9550 4000 9500 4000
+Wire Wire Line
+	9550 5150 9500 5150
+Wire Wire Line
+	9500 5150 9500 5600
+Wire Wire Line
+	8400 5250 9550 5250
+Wire Wire Line
+	8950 5000 8950 5250
+Wire Wire Line
+	9500 4000 9500 4600
+Wire Wire Line
+	8950 5050 9550 5050
+Connection ~ 8950 5050
+Wire Wire Line
+	9300 4100 9300 4150
+Connection ~ 9300 4100
+Wire Wire Line
+	9500 4550 9300 4550
+Wire Wire Line
+	9300 4550 9300 4450
+Connection ~ 9500 4550
+Wire Wire Line
+	9300 5050 9300 5200
+Connection ~ 9300 5050
+Wire Wire Line
+	9300 5500 9300 5550
+Wire Wire Line
+	9300 5550 9500 5550
+Connection ~ 9500 5550
+Wire Wire Line
+	7750 4650 8950 4650
+Connection ~ 8950 4650
+Wire Wire Line
+	7950 4650 7950 5150
+Connection ~ 7950 4650
+Wire Wire Line
+	7950 5450 7950 5600
+Wire Wire Line
+	7750 4450 8400 4450
+Connection ~ 8400 4450
+Text Notes 9200 2400 2    60   ~ 0
+Signal Conditioning
+Wire Wire Line
+	850  4850 850  4500
+Connection ~ 5850 2450
+Text HLabel 10600 3900 2    60   Output ~ 0
+PIR_HIGH
+Text HLabel 10600 5050 2    60   Output ~ 0
+PIR_LOW
+$EndSCHEMATC

@@ -1,0 +1,212 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:IRA-S210ST01
+LIBS:LPV802DGKT
+LIBS:SI2323DS-T1-E3
+LIBS:1N4148X-TP
+LIBS:TLV3691IDCKR
+LIBS:CC2540F256RHAT
+LIBS:pir-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Battery_Cell BT1
+U 1 1 5A76A189
+P 3900 4050
+F 0 "BT1" H 4000 4150 50  0000 L CNN
+F 1 "Battery_Cell" H 4000 4050 50  0000 L CNN
+F 2 "" V 3900 4110 50  0001 C CNN
+F 3 "" V 3900 4110 50  0001 C CNN
+	1    3900 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR13
+U 1 1 5A76A190
+P 6900 4550
+F 0 "#PWR13" H 6900 4300 50  0001 C CNN
+F 1 "Earth" H 6900 4400 50  0001 C CNN
+F 2 "" H 6900 4550 50  0001 C CNN
+F 3 "" H 6900 4550 50  0001 C CNN
+	1    6900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PMOS_GSD Q1
+U 1 1 5A76A196
+P 4450 3600
+F 0 "Q1" H 4650 3650 50  0000 L CNN
+F 1 "SI2323DS" H 4650 3550 50  0000 L CNN
+F 2 "" H 4650 3700 50  0001 C CNN
+F 3 "" H 4450 3600 50  0001 C CNN
+	1    4450 3600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Jumper JP1
+U 1 1 5A76A19D
+P 5100 3500
+F 0 "JP1" H 5100 3650 50  0000 C CNN
+F 1 "Jumper" H 5100 3420 50  0000 C CNN
+F 2 "" H 5100 3500 50  0001 C CNN
+F 3 "" H 5100 3500 50  0001 C CNN
+	1    5100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5A76A1A4
+P 5600 3750
+F 0 "C1" H 5625 3850 50  0000 L CNN
+F 1 "100μF" H 5625 3650 50  0000 L CNN
+F 2 "" H 5638 3600 50  0001 C CNN
+F 3 "" H 5600 3750 50  0001 C CNN
+	1    5600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5A76A1AB
+P 5950 3750
+F 0 "C2" H 5975 3850 50  0000 L CNN
+F 1 "10μF" H 5975 3650 50  0000 L CNN
+F 2 "" H 5988 3600 50  0001 C CNN
+F 3 "" H 5950 3750 50  0001 C CNN
+	1    5950 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5A76A1B2
+P 6300 3750
+F 0 "C3" H 6325 3850 50  0000 L CNN
+F 1 "1μF" H 6325 3650 50  0000 L CNN
+F 2 "" H 6338 3600 50  0001 C CNN
+F 3 "" H 6300 3750 50  0001 C CNN
+	1    6300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5A76A1B9
+P 6600 3750
+F 0 "C4" H 6625 3850 50  0000 L CNN
+F 1 "0.1μF" H 6625 3650 50  0000 L CNN
+F 2 "" H 6638 3600 50  0001 C CNN
+F 3 "" H 6600 3750 50  0001 C CNN
+	1    6600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 5A76A1C0
+P 6900 3750
+F 0 "C5" H 6925 3850 50  0000 L CNN
+F 1 "0.01μF" H 6925 3650 50  0000 L CNN
+F 2 "" H 6938 3600 50  0001 C CNN
+F 3 "" H 6900 3750 50  0001 C CNN
+	1    6900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR12
+U 1 1 5A76A1C7
+P 6900 3300
+F 0 "#PWR12" H 6900 3150 50  0001 C CNN
+F 1 "VCC" H 6900 3450 50  0000 C CNN
+F 2 "" H 6900 3300 50  0001 C CNN
+F 3 "" H 6900 3300 50  0001 C CNN
+	1    6900 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3500 3900 3850
+Wire Wire Line
+	3900 3500 4250 3500
+Wire Wire Line
+	3900 4300 6900 4300
+Wire Wire Line
+	4650 3500 4800 3500
+Wire Wire Line
+	5600 4300 5600 3900
+Connection ~ 5600 4300
+Wire Wire Line
+	6300 4300 6300 3900
+Wire Wire Line
+	5950 4300 5950 3900
+Connection ~ 5950 4300
+Wire Wire Line
+	6600 4300 6600 3900
+Connection ~ 6300 4300
+Wire Wire Line
+	6900 3900 6900 4550
+Connection ~ 6600 4300
+Wire Wire Line
+	5400 3500 6900 3500
+Wire Wire Line
+	5600 3500 5600 3600
+Wire Wire Line
+	5950 3500 5950 3600
+Wire Wire Line
+	6300 3500 6300 3600
+Connection ~ 5950 3500
+Wire Wire Line
+	6600 3500 6600 3600
+Connection ~ 6300 3500
+Wire Wire Line
+	6900 3300 6900 3600
+Connection ~ 6600 3500
+Connection ~ 6900 3500
+Connection ~ 6900 4300
+Text Notes 6550 3000 2    60   ~ 0
+Battery connector & Reservoir Capacitors
+Wire Wire Line
+	4450 3800 4450 4300
+Wire Wire Line
+	3900 4150 3900 4300
+Connection ~ 4450 4300
+Connection ~ 5600 3500
+$EndSCHEMATC

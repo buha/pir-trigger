@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP IRA-S210ST01
+D Air Purge Collar
+K
+F https://www.murata.com/~/media/webrenewal/products/sensor/infrared/datasheet_pir.ashx?la=en-us
+$ENDCMP
+#
+#End Doc Library
