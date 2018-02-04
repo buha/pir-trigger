@@ -334,6 +334,30 @@ X ~ 2 0 -100 20 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# MAX44009EDT+T
+#
+DEF MAX44009EDT+T IC 0 30 Y Y 1 F N
+F0 "IC" 0 300 50 H V C CNN
+F1 "MAX44009EDT+T" 0 -200 50 H V C CNN
+F2 "SON65P200X200X65-7N" -50 -500 50 H I C CNN
+F3 "https://componentsearchengine.com/Datasheets/2/MAX44009EDT T.pdf" -50 -600 50 H I C CNN
+F4 "Ambient Light Sensor with ADC OTDFN6 Maxim MAX44009EDT+T, Light Sensor IC, Light to Serial I2C 1.7  3.6 V 6-Pin UTDFN" -50 -700 50 H I C CNN "Description"
+F5 "RS" -50 -800 50 H I C CNN "Supplier_Name"
+F6 "7577103" -50 -900 50 H I C CNN "RS Part Number"
+F7 "Maxim Integrated" -50 -1000 50 H I C CNN "Manufacturer_Name"
+F8 "MAX44009EDT+T" -50 -1100 50 H I C CNN "Manufacturer_Part_Number"
+F9 "0.65" 300 -1400 50 H I C CNN "Height"
+DRAW
+S -300 250 300 -150 0 0 10 f
+X VCC 1 -500 150 200 R 50 50 0 0 W
+X GND 2 -500 50 200 R 50 50 0 0 W
+X A0 3 -500 -50 200 R 50 50 0 0 I
+X ~INT 4 500 -50 200 L 50 50 0 0 O
+X SCL 5 500 50 200 L 50 50 0 0 I
+X SDA 6 500 150 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
 # R
 #
 DEF R R 0 0 N Y 1 F N

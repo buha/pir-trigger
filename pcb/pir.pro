@@ -1,4 +1,4 @@
-update=Sat 03 Feb 2018 21:12:54 CET
+update=Sun 04 Feb 2018 12:38:54 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -69,3 +69,4 @@ LibName37=lib/IRA-S210ST01
 LibName38=lib/CC2540F256RHAT
 LibName39=lib/CC2541F256RHAR
 LibName40=lib/CC2541F128RHAT
+LibName41=lib/MAX44009EDT+T
