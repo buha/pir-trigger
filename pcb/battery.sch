@@ -1,47 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:LPV802DGKT
-LIBS:SI2323DS-T1-E3
-LIBS:1N4148X-TP
-LIBS:TLV3691IDCKR
-LIBS:IRA-S210ST01
-LIBS:CC2540F256RHAT
-LIBS:CC2541F256RHAR
-LIBS:CC2541F128RHAT
-LIBS:MAX44009EDT+T
+EESchema Schematic File Version 4
 LIBS:pir-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -56,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Battery_Cell BT1
+L device:Battery_Cell BT1
 U 1 1 5A76A189
 P 3800 4000
 F 0 "BT1" H 3900 4100 50  0000 L CNN
@@ -67,7 +26,7 @@ F 3 "" V 3800 4060 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR18
+L power:Earth #PWR18
 U 1 1 5A76A190
 P 7450 4350
 F 0 "#PWR18" H 7450 4100 50  0001 C CNN
@@ -78,7 +37,7 @@ F 3 "" H 7450 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper JP2
+L device:Jumper JP2
 U 1 1 5A76A19D
 P 4200 3450
 F 0 "JP2" H 4200 3600 50  0000 C CNN
@@ -89,7 +48,7 @@ F 3 "" H 4200 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C15
+L device:C C15
 U 1 1 5A76A1A4
 P 6750 3600
 F 0 "C15" H 6775 3700 50  0000 L CNN
@@ -100,7 +59,7 @@ F 3 "" H 6750 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C16
+L device:C C16
 U 1 1 5A76A1AB
 P 7100 3600
 F 0 "C16" H 7125 3700 50  0000 L CNN
@@ -111,7 +70,7 @@ F 3 "" H 7100 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C17
+L device:C C17
 U 1 1 5A76A1B2
 P 7450 3600
 F 0 "C17" H 7475 3700 50  0000 L CNN
@@ -122,7 +81,7 @@ F 3 "" H 7450 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C18
+L device:C C18
 U 1 1 5A76A1B9
 P 7750 3600
 F 0 "C18" H 7775 3700 50  0000 L CNN
@@ -133,7 +92,7 @@ F 3 "" H 7750 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C19
+L device:C C19
 U 1 1 5A76A1C0
 P 8050 3600
 F 0 "C19" H 8075 3700 50  0000 L CNN
@@ -144,11 +103,11 @@ F 3 "" H 8050 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 4150 8050 4150
+	6750 4150 7100 4150
 Wire Wire Line
 	6750 4150 6750 3750
 Wire Wire Line
-	7450 3750 7450 4350
+	7450 3750 7450 4150
 Wire Wire Line
 	7100 4150 7100 3750
 Wire Wire Line
@@ -157,13 +116,13 @@ Wire Wire Line
 	8050 4150 8050 3750
 Connection ~ 7750 4150
 Wire Wire Line
-	5450 3350 8050 3350
+	5450 3350 5700 3350
 Wire Wire Line
 	6750 3350 6750 3450
 Wire Wire Line
 	7100 3350 7100 3450
 Wire Wire Line
-	7450 2950 7450 3450
+	7450 2950 7450 3350
 Connection ~ 7100 3350
 Wire Wire Line
 	7750 3350 7750 3450
@@ -177,7 +136,7 @@ Connection ~ 6750 3350
 Text HLabel 2750 2900 0    60   Input ~ 0
 CC3V3
 $Comp
-L D_Schottky D3
+L device:D_Schottky D3
 U 1 1 5A76813E
 P 5100 2900
 F 0 "D3" H 5100 3000 50  0000 C CNN
@@ -194,7 +153,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 4100 3800 4250
 $Comp
-L SI2323DS-T1-E3 IC6
+L SI2323DS-T1-E3:SI2323DS-T1-E3 IC6
 U 1 1 5A7685A7
 P 4750 3350
 F 0 "IC6" H 5100 3500 50  0000 C CNN
@@ -215,7 +174,7 @@ $EndComp
 Wire Wire Line
 	4750 3450 4500 3450
 $Comp
-L R R1
+L device:R R1
 U 1 1 5A768BF5
 P 3100 3850
 F 0 "R1" V 3180 3850 50  0000 C CNN
@@ -226,7 +185,7 @@ F 3 "" H 3100 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR16
+L power:Earth #PWR16
 U 1 1 5A768D52
 P 3800 4250
 F 0 "#PWR16" H 3800 4000 50  0001 C CNN
@@ -237,7 +196,7 @@ F 3 "" H 3800 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Earth #PWR15
+L power:Earth #PWR15
 U 1 1 5A768DD5
 P 3100 4250
 F 0 "#PWR15" H 3100 4000 50  0001 C CNN
@@ -248,9 +207,9 @@ F 3 "" H 3100 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 2900 3500 2900
+	2750 2900 3100 2900
 Wire Wire Line
-	4100 2900 4950 2900
+	4100 2900 4550 2900
 Wire Wire Line
 	3100 2900 3100 3700
 Wire Wire Line
@@ -264,7 +223,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 2900 5700 3350
 $Comp
-L Jumper JP1
+L device:Jumper JP1
 U 1 1 5A769069
 P 3800 2900
 F 0 "JP1" H 3800 3050 50  0000 C CNN
@@ -280,7 +239,7 @@ Connection ~ 5700 3350
 Connection ~ 7450 4150
 Connection ~ 7100 4150
 $Comp
-L VCC #PWR17
+L power:VCC #PWR17
 U 1 1 5A769C0A
 P 7450 2950
 F 0 "#PWR17" H 7450 2800 50  0001 C CNN
@@ -290,4 +249,55 @@ F 3 "" H 7450 2950 50  0001 C CNN
 	1    7450 2950
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7750 4150 8050 4150
+Wire Wire Line
+	7100 3350 7450 3350
+Wire Wire Line
+	7450 3350 7450 3450
+Wire Wire Line
+	7450 3350 7750 3350
+Wire Wire Line
+	7750 3350 8050 3350
+Wire Wire Line
+	6750 3350 7100 3350
+Wire Wire Line
+	3100 2900 3500 2900
+Wire Wire Line
+	4550 2900 4950 2900
+Wire Wire Line
+	5700 3350 6750 3350
+Wire Wire Line
+	7450 4150 7750 4150
+Wire Wire Line
+	7450 4150 7450 4350
+Wire Wire Line
+	7100 4150 7450 4150
+$Comp
+L pspice:VSOURCE V?
+U 1 1 5A775452
+P 1900 5700
+F 0 "V?" H 2328 5746 50  0000 L CNN
+F 1 "VSOURCE" H 2328 5655 50  0000 L CNN
+F 2 "" H 1900 5700 50  0001 C CNN
+F 3 "" H 1900 5700 50  0001 C CNN
+F 4 "V" H 1900 5700 50  0001 C CNN "Spice_Primitive"
+F 5 "dc 3.3 pulse(0 3.3 1 0 0 1 1)" H 1900 5700 50  0001 C CNN "Spice_Model"
+F 6 "Y" H 1900 5700 50  0001 C CNN "Spice_Netlist_Enabled"
+	1    1900 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5A775D13
+P 1900 6400
+F 0 "#PWR?" H 1900 6150 50  0001 C CNN
+F 1 "Earth" H 1900 6250 50  0001 C CNN
+F 2 "" H 1900 6400 50  0001 C CNN
+F 3 "" H 1900 6400 50  0001 C CNN
+	1    1900 6400
+	1    0    0    -1  
+$EndComp
+Text HLabel 1900 5000 0    60   Input ~ 0
+CC3V3
 $EndSCHEMATC
