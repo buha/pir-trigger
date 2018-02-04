@@ -1,0 +1,31 @@
+<Qucs Schematic 0.0.19>
+<Properties>
+  <View=-98,-10,1495,767,0.693439,0,0>
+  <Grid=10,10,0>
+  <DataSet=sensor.dat>
+  <DataDisplay=sensor.sch>
+  <OpenDisplay=1>
+  <Script=sensor.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 20 468 628 458 3 #c0c0c0 1 00 1 -1 0.2 1 1 -1 0.2 1 1 -1 0.2 1 315 0 225 "" "" "">
+	<"ngspice/tran.v(sensor)@time" #ff0000 0 3 0 0 0>
+  </Rect>
+  <Rect 820 488 628 458 3 #c0c0c0 1 00 1 0 0.01 0.1 1 0 0.5 3 1 -1 0.2 1 315 0 225 "" "" "">
+	<"ngspice/tran.v(stage1)" #ff0000 0 3 0 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>
