@@ -1,6 +1,6 @@
 <Qucs Schematic 0.0.19>
 <Properties>
-  <View=-139,-65,2228,1134,0.573107,0,0>
+  <View=-139,-65,2228,1192,0.573107,1,1>
   <Grid=10,10,0>
   <DataSet=sensor-alternative.dat>
   <DataDisplay=sensor-alternative.sch>
@@ -20,18 +20,23 @@
 <Wires>
 </Wires>
 <Diagrams>
-  <Rect 20 468 628 458 3 #c0c0c0 1 00 1 0 1 10 1 -0.12044 0.2 1.3244 1 -1 0.2 1 315 0 225 "" "" "">
+  <Rect 20 468 628 458 3 #c0c0c0 1 00 1 0 0.2 3 1 1.14933 0.02 1.26 1 -1 0.2 1 315 0 225 "" "" "">
 	<"ngspice/sensor-alternative:tran.v(sensor)" #ff0000 0 3 0 0 0>
+	<"sensor.Vt" #ff0000 0 3 0 0 0>
   </Rect>
-  <Rect 820 488 628 458 3 #c0c0c0 1 00 1 0 1 10 1 -0.0571555 0.2 1.31938 1 -1 0.2 1 315 0 225 "" "" "">
+  <Rect 820 488 628 458 3 #c0c0c0 1 00 1 0 0.2 3 1 1.14991 0.02 1.26615 1 -1 0.2 1 315 0 225 "" "" "">
 	<"ngspice/sensor-alternative:tran.v(stage1)" #ff0000 0 3 0 0 0>
+	<"stage1.Vt" #ff0000 0 3 0 0 0>
   </Rect>
-  <Rect 10 1029 642 449 3 #c0c0c0 1 00 1 0 1 10 1 -0.0987098 0.2 1.8 1 -1 0.2 1 315 0 225 "" "" "">
+  <Rect 10 1029 642 449 3 #c0c0c0 1 00 1 0 0.2 3 1 -0.072098 0.5 3.07123 1 -1 0.2 1 315 0 225 "" "" "">
 	<"ngspice/sensor-alternative:tran.v(stage2h)" #ff0000 0 3 0 0 0>
+	<"stage2h.Vt" #ff0000 0 3 0 0 0>
   </Rect>
-  <Rect 810 1039 646 459 3 #c0c0c0 1 00 1 0 0.2 3 1 1.47505 0.0001 1.47563 1 -1 0.2 1 315 0 225 "" "" "">
+  <Rect 810 1039 646 459 3 #c0c0c0 1 00 1 0 0.2 3 1 -0.231885 0.5 3.23206 1 -1 0.2 1 315 0 225 "" "" "">
 	<"ngspice/sensor-alternative:tran.v(stage3h)" #0000ff 0 3 0 0 0>
 	<"ngspice/sensor-alternative:tran.v(stage3l)" #ff0000 0 3 0 0 0>
+	<"stage3h.Vt" #ff00ff 0 3 0 0 0>
+	<"stage3l.Vt" #00ff00 0 3 0 0 0>
   </Rect>
 </Diagrams>
 <Paintings>
