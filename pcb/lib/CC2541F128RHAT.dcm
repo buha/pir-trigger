@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP CC2541F128RHAT
-D 2.4GHz Bluetooth Low Energy SoC VQFN40EP CC2541F128RHAT, RF Transceiver Maximum of 2440MHz, GFSK, MSK, 2  3.6 V 40-Pin VQFN
-K
-F http://docs-europe.electrocomponents.com/webdocs/130f/0900766b8130f4c3.pdf
-$ENDCMP
-#
-#End Doc Library

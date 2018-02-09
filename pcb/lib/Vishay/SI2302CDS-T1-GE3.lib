@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model SI2302CDS-T1-GE3
+#/184090/34661/2.21/3/3/Integrated Circuit
+DEF SI2302CDS-T1-GE3 IC 0 30 Y Y 1 F N
+F0 "IC" 650 300 50 H V L CNN
+F1 "SI2302CDS-T1-GE3" 650 200 50 H V L CNN
+F2 "SOT95P237X112-3N" 650 100 50 H I L CNN
+F3 "http://www.vishay.com/docs/68645/si2302cd.pdf" 650 0 50 H I L CNN
+F4 "SI2302CDS-T1-GE3, N-channel MOSFET Transistor 2.6 A 20 V, 3-Pin SOT-23" 650 -100 50 H I L CNN "Description"
+F5 "Vishay" 650 -200 50 H I L CNN "Manufacturer_Name"
+F6 "SI2302CDS-T1-GE3" 650 -300 50 H I L CNN "Manufacturer_Part_Number"
+F7 "RS" 650 -400 50 H I L CNN "Supplier_Name"
+F8 "7103232P" 650 -500 50 H I L CNN "RS Part Number"
+F9 "1.12" 650 -600 50 H I L CNN "Height"
+DRAW
+X G 1 0 0 200 R 50 50 0 0 B
+X S 2 0 -100 200 R 50 50 0 0 B
+X D 3 800 0 200 L 50 50 0 0 B
+P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library

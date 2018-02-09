@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP CC2540F256RHAT
-D CC2540F256RHAT, System-On-Chip Microcontroller CMOS for Bluetooth, 2 to 3.6V 40-Pin VQFN
-K
-F http://www.ti.com/lit/ds/symlink/cc2540.pdf
-$ENDCMP
-#
-#End Doc Library

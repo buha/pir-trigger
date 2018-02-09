@@ -1,0 +1,812 @@
+EESchema Schematic File Version 4
+LIBS:pir-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:VCC #PWR?
+U 1 1 5A7F0431
+P 3850 1400
+F 0 "#PWR?" H 3850 1250 50  0001 C CNN
+F 1 "VCC" H 3850 1550 50  0000 C CNN
+F 2 "" H 3850 1400 50  0001 C CNN
+F 3 "" H 3850 1400 50  0001 C CNN
+	1    3850 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5A7F0437
+P 3850 1700
+F 0 "R?" V 3930 1700 50  0000 C CNN
+F 1 "47K" V 3850 1700 50  0000 C CNN
+F 2 "" V 3780 1700 50  0001 C CNN
+F 3 "" H 3850 1700 50  0001 C CNN
+	1    3850 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L switches:SW_Push SW?
+U 1 1 5A7F043E
+P 3850 2200
+F 0 "SW?" H 3900 2300 50  0000 L CNN
+F 1 "SW_Push" H 3850 2140 50  0000 C CNN
+F 2 "" H 3850 2400 50  0001 C CNN
+F 3 "" H 3850 2400 50  0001 C CNN
+	1    3850 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A7F0445
+P 4300 2200
+F 0 "C?" H 4310 2270 50  0000 L CNN
+F 1 "2200pF" H 4310 2120 50  0000 L CNN
+F 2 "" H 4300 2200 50  0001 C CNN
+F 3 "" H 4300 2200 50  0001 C CNN
+	1    4300 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5A7F044C
+P 3850 2550
+F 0 "#PWR?" H 3850 2300 50  0001 C CNN
+F 1 "Earth" H 3850 2400 50  0001 C CNN
+F 2 "" H 3850 2550 50  0001 C CNN
+F 3 "" H 3850 2550 50  0001 C CNN
+	1    3850 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2550 3850 2400
+Wire Wire Line
+	3850 1850 3850 1950
+Wire Wire Line
+	3850 1550 3850 1400
+Wire Wire Line
+	3850 1950 4300 1950
+Wire Wire Line
+	4300 1950 4300 2100
+Connection ~ 3850 1950
+$Comp
+L power:Earth #PWR?
+U 1 1 5A7F0458
+P 4300 2400
+F 0 "#PWR?" H 4300 2150 50  0001 C CNN
+F 1 "Earth" H 4300 2250 50  0001 C CNN
+F 2 "" H 4300 2400 50  0001 C CNN
+F 3 "" H 4300 2400 50  0001 C CNN
+	1    4300 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2300 4300 2400
+Text GLabel 4500 1950 2    60   Input ~ 0
+LeftButton
+Connection ~ 4300 1950
+Wire Wire Line
+	3850 1950 3850 2000
+Wire Wire Line
+	4300 1950 4500 1950
+$Comp
+L power:VCC #PWR?
+U 1 1 5A7F0684
+P 5600 1400
+F 0 "#PWR?" H 5600 1250 50  0001 C CNN
+F 1 "VCC" H 5600 1550 50  0000 C CNN
+F 2 "" H 5600 1400 50  0001 C CNN
+F 3 "" H 5600 1400 50  0001 C CNN
+	1    5600 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5A7F068A
+P 5600 1700
+F 0 "R?" V 5680 1700 50  0000 C CNN
+F 1 "47K" V 5600 1700 50  0000 C CNN
+F 2 "" V 5530 1700 50  0001 C CNN
+F 3 "" H 5600 1700 50  0001 C CNN
+	1    5600 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L switches:SW_Push SW?
+U 1 1 5A7F0691
+P 5600 2200
+F 0 "SW?" H 5650 2300 50  0000 L CNN
+F 1 "SW_Push" H 5600 2140 50  0000 C CNN
+F 2 "" H 5600 2400 50  0001 C CNN
+F 3 "" H 5600 2400 50  0001 C CNN
+	1    5600 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A7F0698
+P 6050 2200
+F 0 "C?" H 6060 2270 50  0000 L CNN
+F 1 "2200pF" H 6060 2120 50  0000 L CNN
+F 2 "" H 6050 2200 50  0001 C CNN
+F 3 "" H 6050 2200 50  0001 C CNN
+	1    6050 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5A7F069F
+P 5600 2550
+F 0 "#PWR?" H 5600 2300 50  0001 C CNN
+F 1 "Earth" H 5600 2400 50  0001 C CNN
+F 2 "" H 5600 2550 50  0001 C CNN
+F 3 "" H 5600 2550 50  0001 C CNN
+	1    5600 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 2550 5600 2400
+Wire Wire Line
+	5600 1850 5600 1950
+Wire Wire Line
+	5600 1550 5600 1400
+Wire Wire Line
+	5600 1950 6050 1950
+Wire Wire Line
+	6050 1950 6050 2100
+Connection ~ 5600 1950
+$Comp
+L power:Earth #PWR?
+U 1 1 5A7F06AB
+P 6050 2400
+F 0 "#PWR?" H 6050 2150 50  0001 C CNN
+F 1 "Earth" H 6050 2250 50  0001 C CNN
+F 2 "" H 6050 2400 50  0001 C CNN
+F 3 "" H 6050 2400 50  0001 C CNN
+	1    6050 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 2300 6050 2400
+Text GLabel 6250 1950 2    60   Input ~ 0
+CenterButton
+Connection ~ 6050 1950
+Wire Wire Line
+	5600 1950 5600 2000
+Wire Wire Line
+	6050 1950 6250 1950
+$Comp
+L power:VCC #PWR?
+U 1 1 5A7F0A18
+P 7300 1400
+F 0 "#PWR?" H 7300 1250 50  0001 C CNN
+F 1 "VCC" H 7300 1550 50  0000 C CNN
+F 2 "" H 7300 1400 50  0001 C CNN
+F 3 "" H 7300 1400 50  0001 C CNN
+	1    7300 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5A7F0A1E
+P 7300 1700
+F 0 "R?" V 7380 1700 50  0000 C CNN
+F 1 "47K" V 7300 1700 50  0000 C CNN
+F 2 "" V 7230 1700 50  0001 C CNN
+F 3 "" H 7300 1700 50  0001 C CNN
+	1    7300 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L switches:SW_Push SW?
+U 1 1 5A7F0A25
+P 7300 2200
+F 0 "SW?" H 7350 2300 50  0000 L CNN
+F 1 "SW_Push" H 7300 2140 50  0000 C CNN
+F 2 "" H 7300 2400 50  0001 C CNN
+F 3 "" H 7300 2400 50  0001 C CNN
+	1    7300 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A7F0A2C
+P 7750 2200
+F 0 "C?" H 7760 2270 50  0000 L CNN
+F 1 "2200pF" H 7760 2120 50  0000 L CNN
+F 2 "" H 7750 2200 50  0001 C CNN
+F 3 "" H 7750 2200 50  0001 C CNN
+	1    7750 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5A7F0A33
+P 7300 2550
+F 0 "#PWR?" H 7300 2300 50  0001 C CNN
+F 1 "Earth" H 7300 2400 50  0001 C CNN
+F 2 "" H 7300 2550 50  0001 C CNN
+F 3 "" H 7300 2550 50  0001 C CNN
+	1    7300 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 2550 7300 2400
+Wire Wire Line
+	7300 1850 7300 1950
+Wire Wire Line
+	7300 1550 7300 1400
+Wire Wire Line
+	7300 1950 7750 1950
+Wire Wire Line
+	7750 1950 7750 2100
+Connection ~ 7300 1950
+$Comp
+L power:Earth #PWR?
+U 1 1 5A7F0A3F
+P 7750 2400
+F 0 "#PWR?" H 7750 2150 50  0001 C CNN
+F 1 "Earth" H 7750 2250 50  0001 C CNN
+F 2 "" H 7750 2400 50  0001 C CNN
+F 3 "" H 7750 2400 50  0001 C CNN
+	1    7750 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2300 7750 2400
+Text GLabel 7950 1950 2    60   Input ~ 0
+RightButton
+Connection ~ 7750 1950
+Wire Wire Line
+	7300 1950 7300 2000
+Wire Wire Line
+	7750 1950 7950 1950
+$Comp
+L FH12-24S-0.5SH(55):FH12-24S-0.5SH(55) J?
+U 1 1 5A7F5511
+P 6950 4500
+F 0 "J?" H 7400 4765 50  0000 C CNN
+F 1 "FH12-24S-0.5SH(55)" H 7400 4674 50  0000 C CNN
+F 2 "FH12-24S-0.5SH(55)" H 7700 4600 50  0001 L CNN
+F 3 "https://www.hirose.com/product/en/download_file/key_name/FH12-18S-0.5SH%2855%29/category/Drawing%20(2D)/doc_file_id/75611/?file_category_id=6&item_id=05860530155&is_series=" H 7700 4500 50  0001 L CNN
+F 4 "HIROSE(HRS) - FH12-24S-0.5SH(55) - SOCKET FFC/FPC, ZIF, 0.5MM, 24WAY" H 7700 4400 50  0001 L CNN "Description"
+F 5 "Hirose" H 7700 4300 50  0001 L CNN "Manufacturer_Name"
+F 6 "FH12-24S-0.5SH(55)" H 7700 4200 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "RS" H 7700 4100 50  0001 L CNN "Supplier_Name"
+F 8 "" H 7700 4000 50  0001 L CNN "RS Part Number"
+F 9 "" H 7700 3900 50  0001 L CNN "Height"
+	1    6950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A7F5A3C
+P 6300 4500
+F 0 "C?" H 6310 4570 50  0000 L CNN
+F 1 "1uF" H 6310 4420 50  0000 L CNN
+F 2 "" H 6300 4500 50  0001 C CNN
+F 3 "" H 6300 4500 50  0001 C CNN
+	1    6300 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A7F5D68
+P 8500 4500
+F 0 "C?" H 8510 4570 50  0000 L CNN
+F 1 "1uF" H 8510 4420 50  0000 L CNN
+F 2 "" H 8500 4500 50  0001 C CNN
+F 3 "" H 8500 4500 50  0001 C CNN
+	1    8500 4500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A7F5E4A
+P 5800 4700
+F 0 "C?" H 5810 4770 50  0000 L CNN
+F 1 "1uF" H 5810 4620 50  0000 L CNN
+F 2 "" H 5800 4700 50  0001 C CNN
+F 3 "" H 5800 4700 50  0001 C CNN
+	1    5800 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A7F5E7E
+P 8750 4600
+F 0 "C?" H 8760 4670 50  0000 L CNN
+F 1 "1uF" H 8760 4520 50  0000 L CNN
+F 2 "" H 8750 4600 50  0001 C CNN
+F 3 "" H 8750 4600 50  0001 C CNN
+	1    8750 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A7F5EB8
+P 9000 4700
+F 0 "C?" H 9010 4770 50  0000 L CNN
+F 1 "1uF" H 9010 4620 50  0000 L CNN
+F 2 "" H 9000 4700 50  0001 C CNN
+F 3 "" H 9000 4700 50  0001 C CNN
+	1    9000 4700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A7F5F2E
+P 9500 4900
+F 0 "C?" H 9510 4970 50  0000 L CNN
+F 1 "100n" H 9510 4820 50  0000 L CNN
+F 2 "" H 9500 4900 50  0001 C CNN
+F 3 "" H 9500 4900 50  0001 C CNN
+	1    9500 4900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A7F5FDD
+P 5550 4800
+F 0 "C?" H 5560 4870 50  0000 L CNN
+F 1 "1uF" H 5560 4720 50  0000 L CNN
+F 2 "" H 5550 4800 50  0001 C CNN
+F 3 "" H 5550 4800 50  0001 C CNN
+	1    5550 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A7F6734
+P 6050 4600
+F 0 "C?" H 6060 4670 50  0000 L CNN
+F 1 "1uF" H 6060 4520 50  0000 L CNN
+F 2 "" H 6050 4600 50  0001 C CNN
+F 3 "" H 6050 4600 50  0001 C CNN
+	1    6050 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5A7F6EBE
+P 5150 4950
+F 0 "#PWR?" H 5150 4700 50  0001 C CNN
+F 1 "Earth" H 5150 4800 50  0001 C CNN
+F 2 "" H 5150 4950 50  0001 C CNN
+F 3 "~" H 5150 4950 50  0001 C CNN
+	1    5150 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 4500 6950 4500
+Wire Wire Line
+	6150 4600 6950 4600
+Wire Wire Line
+	5900 4700 6950 4700
+Wire Wire Line
+	5650 4800 6950 4800
+Wire Wire Line
+	7850 4500 8300 4500
+Wire Wire Line
+	7850 4600 8250 4600
+Wire Wire Line
+	7850 4700 8900 4700
+Wire Wire Line
+	7850 4900 8100 4900
+$Comp
+L power:Earth #PWR?
+U 1 1 5A7F8DE2
+P 7850 4800
+F 0 "#PWR?" H 7850 4550 50  0001 C CNN
+F 1 "Earth" H 7850 4650 50  0001 C CNN
+F 2 "" H 7850 4800 50  0001 C CNN
+F 3 "~" H 7850 4800 50  0001 C CNN
+	1    7850 4800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5A7F8FC1
+P 6950 4900
+F 0 "#PWR?" H 6950 4750 50  0001 C CNN
+F 1 "VCC" H 6950 5050 50  0000 C CNN
+F 2 "" H 6950 4900 50  0001 C CNN
+F 3 "" H 6950 4900 50  0001 C CNN
+	1    6950 4900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5150 4500 6200 4500
+Wire Wire Line
+	5950 4600 5150 4600
+Connection ~ 5150 4600
+Wire Wire Line
+	5150 4600 5150 4500
+Wire Wire Line
+	5150 4600 5150 4700
+Wire Wire Line
+	5700 4700 5150 4700
+Connection ~ 5150 4700
+Wire Wire Line
+	5150 4700 5150 4800
+Wire Wire Line
+	5450 4800 5150 4800
+Connection ~ 5150 4800
+Wire Wire Line
+	5150 4800 5150 4950
+$Comp
+L power:Earth #PWR?
+U 1 1 5A7FC712
+P 9750 4950
+F 0 "#PWR?" H 9750 4700 50  0001 C CNN
+F 1 "Earth" H 9750 4800 50  0001 C CNN
+F 2 "" H 9750 4950 50  0001 C CNN
+F 3 "~" H 9750 4950 50  0001 C CNN
+	1    9750 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4500 9750 4500
+Wire Wire Line
+	9750 4500 9750 4600
+Wire Wire Line
+	9600 4900 9750 4900
+Connection ~ 9750 4900
+Wire Wire Line
+	9750 4900 9750 4950
+Wire Wire Line
+	9150 4700 9750 4700
+Connection ~ 9750 4700
+Wire Wire Line
+	9750 4700 9750 4900
+Wire Wire Line
+	8850 4600 9750 4600
+Connection ~ 9750 4600
+Wire Wire Line
+	9750 4600 9750 4700
+Text Label 7950 4500 0    50   ~ 0
+PREVGL
+Text Label 7950 4600 0    50   ~ 0
+PREVGH
+$Comp
+L power:VCC #PWR?
+U 1 1 5A7FEEAE
+P 8100 4900
+F 0 "#PWR?" H 8100 4750 50  0001 C CNN
+F 1 "VCC" H 8100 5050 50  0000 C CNN
+F 2 "" H 8100 4900 50  0001 C CNN
+F 3 "" H 8100 4900 50  0001 C CNN
+	1    8100 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 8100 4900
+Wire Wire Line
+	8100 4900 9400 4900
+Text HLabel 6650 5000 0    50   Input ~ 0
+EINK_MOSI
+Text HLabel 8100 5000 2    50   Input ~ 0
+EINK_SCK
+Text HLabel 6650 5100 0    50   Input ~ 0
+EINK_CS
+Text HLabel 6650 5200 0    50   Input ~ 0
+EINK_RST
+Text HLabel 8100 5200 2    50   Input ~ 0
+EINK_BUSY
+Text HLabel 8100 5100 2    50   Input ~ 0
+EINK_D/C
+Text HLabel 6650 5300 0    50   Input ~ 0
+EINK_BS
+NoConn ~ 7850 5300
+NoConn ~ 6950 5400
+$Comp
+L device:C_Small C?
+U 1 1 5A803A4C
+P 8200 5400
+F 0 "C?" H 8210 5470 50  0000 L CNN
+F 1 "1uF" H 8210 5320 50  0000 L CNN
+F 2 "" H 8200 5400 50  0001 C CNN
+F 3 "" H 8200 5400 50  0001 C CNN
+	1    8200 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A803AFC
+P 6550 5500
+F 0 "C?" H 6560 5570 50  0000 L CNN
+F 1 "1uF" H 6560 5420 50  0000 L CNN
+F 2 "" H 6550 5500 50  0001 C CNN
+F 3 "" H 6550 5500 50  0001 C CNN
+	1    6550 5500
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 7850 5600
+Wire Wire Line
+	6650 5000 6950 5000
+Wire Wire Line
+	6650 5100 6950 5100
+Wire Wire Line
+	6650 5200 6950 5200
+Wire Wire Line
+	6650 5300 6950 5300
+Wire Wire Line
+	6650 5500 6950 5500
+Wire Wire Line
+	6650 5600 6950 5600
+Wire Wire Line
+	8100 5000 7850 5000
+Wire Wire Line
+	8100 5100 7850 5100
+Wire Wire Line
+	8100 5200 7850 5200
+Wire Wire Line
+	8100 5400 7850 5400
+Wire Wire Line
+	8100 5500 7850 5500
+$Comp
+L power:Earth #PWR?
+U 1 1 5A80C7A8
+P 6450 5500
+F 0 "#PWR?" H 6450 5250 50  0001 C CNN
+F 1 "Earth" H 6450 5350 50  0001 C CNN
+F 2 "" H 6450 5500 50  0001 C CNN
+F 3 "~" H 6450 5500 50  0001 C CNN
+	1    6450 5500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5A80C7EF
+P 8300 5400
+F 0 "#PWR?" H 8300 5150 50  0001 C CNN
+F 1 "Earth" H 8300 5250 50  0001 C CNN
+F 2 "" H 8300 5400 50  0001 C CNN
+F 3 "~" H 8300 5400 50  0001 C CNN
+	1    8300 5400
+	0    -1   -1   0   
+$EndComp
+Text Notes 5600 3450 0    50   ~ 0
+E-Ink Display
+Text Notes 5500 900  0    50   ~ 0
+Buttons
+$Comp
+L SI2302CDS-T1-GE3:SI2302CDS-T1-GE3 IC?
+U 1 1 5A810C38
+P 3150 5100
+F 0 "IC?" H 3550 5365 50  0000 C CNN
+F 1 "SI2302CDS-T1-GE3" H 3550 5274 50  0000 C CNN
+F 2 "SOT95P237X112-3N" H 3800 5200 50  0001 L CNN
+F 3 "http://www.vishay.com/docs/68645/si2302cd.pdf" H 3800 5100 50  0001 L CNN
+F 4 "SI2302CDS-T1-GE3, N-channel MOSFET Transistor 2.6 A 20 V, 3-Pin SOT-23" H 3800 5000 50  0001 L CNN "Description"
+F 5 "Vishay" H 3800 4900 50  0001 L CNN "Manufacturer_Name"
+F 6 "SI2302CDS-T1-GE3" H 3800 4800 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "RS" H 3800 4700 50  0001 L CNN "Supplier_Name"
+F 8 "7103232P" H 3800 4600 50  0001 L CNN "RS Part Number"
+F 9 "1.12" H 3800 4500 50  0001 L CNN "Height"
+	1    3150 5100
+	1    0    0    -1  
+$EndComp
+Text Label 6700 5600 0    50   ~ 0
+GDR
+Text Label 7900 5500 0    50   ~ 0
+RESE
+$Comp
+L diode:MBR0530 D?
+U 1 1 5A816F5D
+P 4450 3750
+F 0 "D?" H 4450 3966 50  0000 C CNN
+F 1 "MBR0530" H 4450 3875 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-123" H 4450 3575 50  0001 C CNN
+F 3 "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf" H 4450 3750 50  0001 C CNN
+	1    4450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L diode:MBR0530 D?
+U 1 1 5A81723B
+P 4450 3350
+F 0 "D?" H 4450 3134 50  0000 C CNN
+F 1 "MBR0530" H 4450 3225 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-123" H 4450 3175 50  0001 C CNN
+F 3 "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf" H 4450 3350 50  0001 C CNN
+	1    4450 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5A81732B
+P 4600 3350
+F 0 "#PWR?" H 4600 3100 50  0001 C CNN
+F 1 "Earth" H 4600 3200 50  0001 C CNN
+F 2 "" H 4600 3350 50  0001 C CNN
+F 3 "~" H 4600 3350 50  0001 C CNN
+	1    4600 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L diode:MBR0530 D?
+U 1 1 5A8174BD
+P 4450 4200
+F 0 "D?" H 4450 3984 50  0000 C CNN
+F 1 "MBR0530" H 4450 4075 50  0000 C CNN
+F 2 "Diodes_SMD:SOD-123" H 4450 4025 50  0001 C CNN
+F 3 "http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf" H 4450 4200 50  0001 C CNN
+	1    4450 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4300 3750 4100 3750
+Wire Wire Line
+	4100 3750 4100 3550
+Wire Wire Line
+	4100 3350 4300 3350
+$Comp
+L device:C_Small C?
+U 1 1 5A81A09F
+P 3750 3700
+F 0 "C?" H 3760 3770 50  0000 L CNN
+F 1 "100n" H 3760 3620 50  0000 L CNN
+F 2 "" H 3750 3700 50  0001 C CNN
+F 3 "" H 3750 3700 50  0001 C CNN
+	1    3750 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3600 3750 3550
+Wire Wire Line
+	3750 3550 4100 3550
+Connection ~ 4100 3550
+Wire Wire Line
+	4100 3550 4100 3350
+Wire Wire Line
+	3750 3800 3750 4200
+Wire Wire Line
+	3750 4200 4300 4200
+Wire Wire Line
+	8300 4500 8300 3750
+Wire Wire Line
+	4600 3750 8300 3750
+Connection ~ 8300 4500
+Wire Wire Line
+	8300 4500 8400 4500
+Wire Wire Line
+	8250 4600 8250 4200
+Wire Wire Line
+	4600 4200 8250 4200
+Connection ~ 8250 4600
+Wire Wire Line
+	8250 4600 8650 4600
+$Comp
+L device:L L?
+U 1 1 5A822DFA
+P 3050 4200
+F 0 "L?" V 3240 4200 50  0000 C CNN
+F 1 "68nH" V 3149 4200 50  0000 C CNN
+F 2 "" H 3050 4200 50  0001 C CNN
+F 3 "" H 3050 4200 50  0001 C CNN
+	1    3050 4200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3200 4200 3750 4200
+Connection ~ 3750 4200
+$Comp
+L device:C_Small C?
+U 1 1 5A82A540
+P 2600 4450
+F 0 "C?" H 2610 4520 50  0000 L CNN
+F 1 "100n" H 2610 4370 50  0000 L CNN
+F 2 "" H 2600 4450 50  0001 C CNN
+F 3 "" H 2600 4450 50  0001 C CNN
+	1    2600 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5A82A5F3
+P 2600 4700
+F 0 "#PWR?" H 2600 4450 50  0001 C CNN
+F 1 "Earth" H 2600 4550 50  0001 C CNN
+F 2 "" H 2600 4700 50  0001 C CNN
+F 3 "" H 2600 4700 50  0001 C CNN
+	1    2600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5A82A7E4
+P 2250 4050
+F 0 "#PWR?" H 2250 3900 50  0001 C CNN
+F 1 "VCC" H 2250 4200 50  0000 C CNN
+F 2 "" H 2250 4050 50  0001 C CNN
+F 3 "" H 2250 4050 50  0001 C CNN
+	1    2250 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4050 2250 4200
+Wire Wire Line
+	2250 4200 2600 4200
+Wire Wire Line
+	2600 4200 2600 4350
+Connection ~ 2600 4200
+Wire Wire Line
+	2600 4200 2900 4200
+Wire Wire Line
+	2600 4550 2600 4700
+$Comp
+L power:Earth #PWR?
+U 1 1 5A831908
+P 2700 6000
+F 0 "#PWR?" H 2700 5750 50  0001 C CNN
+F 1 "Earth" H 2700 5850 50  0001 C CNN
+F 2 "" H 2700 6000 50  0001 C CNN
+F 3 "" H 2700 6000 50  0001 C CNN
+	1    2700 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5A8319B6
+P 2900 5700
+F 0 "R?" V 2980 5700 50  0000 C CNN
+F 1 "3R" V 2900 5700 50  0000 C CNN
+F 2 "" V 2830 5700 50  0001 C CNN
+F 3 "" H 2900 5700 50  0001 C CNN
+	1    2900 5700
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5A831B6D
+P 2550 5700
+F 0 "R?" V 2630 5700 50  0000 C CNN
+F 1 "10k" V 2550 5700 50  0000 C CNN
+F 2 "" V 2480 5700 50  0001 C CNN
+F 3 "" H 2550 5700 50  0001 C CNN
+	1    2550 5700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2550 5850 2550 5950
+Wire Wire Line
+	2550 5950 2700 5950
+Wire Wire Line
+	2700 5950 2700 6000
+Wire Wire Line
+	2700 5950 2900 5950
+Wire Wire Line
+	2900 5950 2900 5850
+Connection ~ 2700 5950
+Wire Wire Line
+	3150 5100 2550 5100
+Wire Wire Line
+	2550 5100 2550 5550
+Wire Wire Line
+	3150 5200 2900 5200
+Wire Wire Line
+	2900 5200 2900 5550
+Wire Wire Line
+	3950 5100 4100 5100
+Wire Wire Line
+	4100 4600 3750 4600
+Wire Wire Line
+	3750 4600 3750 4200
+Wire Wire Line
+	4100 4600 4100 5100
+Text Label 2900 5400 1    50   ~ 0
+RESE
+Text Label 2550 5400 1    50   ~ 0
+GDR
+$EndSCHEMATC
