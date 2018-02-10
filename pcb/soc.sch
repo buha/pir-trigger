@@ -1,6 +1,7 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
 LIBS:pir-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -137,7 +138,7 @@ $EndComp
 Wire Wire Line
 	-4450 2050 -4250 2050
 Wire Wire Line
-	-4250 2050 -4250 2450
+	-4250 2050 -4250 2750
 Wire Wire Line
 	-4250 2450 -4050 2450
 Wire Wire Line
@@ -146,9 +147,9 @@ Connection ~ -4250 2450
 Wire Wire Line
 	-4250 2750 -4050 2750
 Wire Wire Line
-	-2450 2750 -2350 2750
+	-2450 2750 -1750 2750
 Wire Wire Line
-	-2350 2550 -2350 2650
+	-2350 2550 -2350 3350
 Wire Wire Line
 	-2350 2650 -2450 2650
 Connection ~ -2350 2750
@@ -189,13 +190,13 @@ Wire Wire Line
 Wire Wire Line
 	-2450 3150 -1750 3150
 Wire Wire Line
-	-1750 3150 -1750 3750
+	-1750 3150 -1750 4050
 Wire Wire Line
 	-1750 3750 -1800 3750
 Wire Wire Line
 	-2450 3250 -2150 3250
 Wire Wire Line
-	-2150 3250 -2150 3750
+	-2150 3250 -2150 4050
 Wire Wire Line
 	-2150 3750 -2100 3750
 Connection ~ -2150 3750
@@ -337,7 +338,7 @@ F 3 "" H -2600 4850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	-2850 4150 -2850 4850
+	-2850 4150 -2850 5000
 Wire Wire Line
 	-2850 4850 -2750 4850
 Text GLabel -2300 4850 2    60   Input ~ 0
@@ -450,22 +451,6 @@ Text GLabel -4200 3150 0    60   Input ~ 0
 INTn
 Wire Wire Line
 	-4050 3150 -4200 3150
-Wire Wire Line
-	-4250 2450 -4250 2750
-Wire Wire Line
-	-2350 2750 -1750 2750
-Wire Wire Line
-	-2350 2750 -2350 3050
-Wire Wire Line
-	-2350 2650 -2350 2750
-Wire Wire Line
-	-2350 3050 -2350 3350
-Wire Wire Line
-	-2150 3750 -2150 4050
-Wire Wire Line
-	-1750 3750 -1750 4050
-Wire Wire Line
-	-2850 4850 -2850 5000
 $Comp
 L stm32:STM32L051C6Tx U?
 U 1 1 5A7EB4A5

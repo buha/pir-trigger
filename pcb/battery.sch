@@ -1,6 +1,7 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
 LIBS:pir-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -103,7 +104,7 @@ F 3 "" H 8050 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 4150 7100 4150
+	6750 4150 8050 4150
 Wire Wire Line
 	6750 4150 6750 3750
 Wire Wire Line
@@ -118,7 +119,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 3350 7100 3450
 Wire Wire Line
-	7450 2950 7450 3350
+	7450 2950 7450 3450
 Connection ~ 7100 3350
 Wire Wire Line
 	7750 3350 7750 3450
@@ -183,29 +184,15 @@ F 3 "" H 7450 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 4150 8050 4150
+	5500 3350 8050 3350
 Wire Wire Line
-	7100 3350 7450 3350
-Wire Wire Line
-	7450 3350 7450 3450
-Wire Wire Line
-	7450 3350 7750 3350
-Wire Wire Line
-	7750 3350 8050 3350
-Wire Wire Line
-	6750 3350 7100 3350
-Wire Wire Line
-	7450 4150 7750 4150
-Wire Wire Line
-	7450 4150 7450 4350
-Wire Wire Line
-	7100 4150 7450 4150
+	7450 3750 7450 4350
 Wire Wire Line
 	3600 4650 3850 4650
 Wire Wire Line
-	4450 4650 5300 4650
+	5300 4650 4450 4650
 Wire Wire Line
-	5300 4650 5300 4350
+	5300 3650 5300 4650
 $Comp
 L device:R R1
 U 1 1 5A77BAAF
@@ -234,20 +221,12 @@ Wire Wire Line
 	5650 4350 5300 4350
 Connection ~ 5300 4350
 Wire Wire Line
-	5300 4350 5300 3750
-Wire Wire Line
 	5300 3750 5550 3750
 Connection ~ 5300 3750
-Wire Wire Line
-	5300 3750 5300 3650
 Wire Wire Line
 	5850 3750 6100 3750
 Wire Wire Line
 	6100 3750 6100 3350
-Wire Wire Line
-	6100 3350 5500 3350
-Wire Wire Line
-	6100 3350 6750 3350
 Connection ~ 6100 3350
 Connection ~ 6750 3350
 $Comp
@@ -261,6 +240,4 @@ F 3 "" H 5300 3450 50  0001 C CNN
 	1    5300 3450
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7450 3750 7450 4150
 $EndSCHEMATC
