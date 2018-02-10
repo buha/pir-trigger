@@ -477,4 +477,18 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    5750 3550
 	1    0    0    -1  
 $EndComp
+Text HLabel 1000 750  0    50   Input ~ 0
+EINK_SCK
+Text HLabel 1000 900  0    50   Input ~ 0
+EINK_MOSI
+Text HLabel 950  1050 0    50   Input ~ 0
+EINK_CS
+Text HLabel 950  1200 0    50   Input ~ 0
+EINK_RST
+Text HLabel 1000 1350 0    50   Input ~ 0
+EINK_BUSY
+Text HLabel 1000 1500 0    50   Input ~ 0
+EINK_C/D
+Text HLabel 950  1650 0    50   Input ~ 0
+EINK_BS
 $EndSCHEMATC
