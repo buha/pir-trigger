@@ -1,5 +1,133 @@
 EESchema Schematic File Version 2
+LIBS:74xgxx
+LIBS:74xx
+LIBS:Altera
+LIBS:ESD_Protection
+LIBS:LEM
+LIBS:Lattice
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:RFSolutions
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:Zilog
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:allegro
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intel
+LIBS:interface
+LIBS:intersil
+LIBS:ir
+LIBS:leds
+LIBS:linear
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:philips
 LIBS:power
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm32
+LIBS:stm8
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:wiznet
+LIBS:xilinx
+LIBS:zetex
+LIBS:SparkFun
+LIBS:ab2_7segment
+LIBS:ab2_audio
+LIBS:ab2_buffer
+LIBS:ab2_capacitor
+LIBS:ab2_connectivity
+LIBS:ab2_dac
+LIBS:ab2_diode
+LIBS:ab2_fuse
+LIBS:ab2_gpio_expansion
+LIBS:ab2_header
+LIBS:ab2_idc
+LIBS:ab2_inductor
+LIBS:ab2_input_devices
+LIBS:ab2_jumper
+LIBS:ab2_lcd
+LIBS:ab2_led
+LIBS:ab2_memory
+LIBS:ab2_opamp
+LIBS:ab2_pinouts
+LIBS:ab2_pot
+LIBS:ab2_power
+LIBS:ab2_regulator
+LIBS:ab2_relay
+LIBS:ab2_resistor
+LIBS:ab2_sensor
+LIBS:ab2_stepper
+LIBS:ab2_supply
+LIBS:ab2_terminal_block
+LIBS:ab2_test
+LIBS:ab2_transistor
+LIBS:ab2_uC
+LIBS:ab2_usb
+LIBS:ab2_xtal
 LIBS:pir-cache
 EELAYER 25 0
 EELAYER END
@@ -18,81 +146,79 @@ $EndDescr
 $Comp
 L power:VCC #PWR?
 U 1 1 5A7F0431
-P 2050 1350
-F 0 "#PWR?" H 2050 1200 50  0001 C CNN
-F 1 "VCC" H 2050 1500 50  0000 C CNN
-F 2 "" H 2050 1350 50  0001 C CNN
-F 3 "" H 2050 1350 50  0001 C CNN
-	1    2050 1350
+P 1200 1400
+F 0 "#PWR?" H 1200 1250 50  0001 C CNN
+F 1 "VCC" H 1200 1550 50  0000 C CNN
+F 2 "" H 1200 1400 50  0001 C CNN
+F 3 "" H 1200 1400 50  0001 C CNN
+	1    1200 1400
 	1    0    0    -1  
 $EndComp
 $Comp
 L device:R R?
 U 1 1 5A7F0437
-P 2050 2200
-F 0 "R?" V 2130 2200 50  0000 C CNN
-F 1 "100k" V 2050 2200 50  0000 C CNN
-F 2 "" V 1980 2200 50  0001 C CNN
-F 3 "" H 2050 2200 50  0001 C CNN
-	1    2050 2200
+P 1200 2250
+F 0 "R?" V 1280 2250 50  0000 C CNN
+F 1 "100k" V 1200 2250 50  0000 C CNN
+F 2 "" V 1130 2250 50  0001 C CNN
+F 3 "" H 1200 2250 50  0001 C CNN
+	1    1200 2250
 	-1   0    0    1   
 $EndComp
 $Comp
 L switches:SW_Push SW?
 U 1 1 5A7F043E
-P 2050 1650
-F 0 "SW?" H 2100 1750 50  0000 L CNN
-F 1 "SW_Push" H 2050 1590 50  0000 C CNN
-F 2 "" H 2050 1850 50  0001 C CNN
-F 3 "" H 2050 1850 50  0001 C CNN
-	1    2050 1650
+P 1200 1700
+F 0 "SW?" H 1250 1800 50  0000 L CNN
+F 1 "SW_Push" H 1200 1640 50  0000 C CNN
+F 2 "" H 1200 1900 50  0001 C CNN
+F 3 "" H 1200 1900 50  0001 C CNN
+	1    1200 1700
 	0    -1   -1   0   
 $EndComp
 $Comp
 L device:C_Small C?
 U 1 1 5A7F0445
-P 2600 2150
-F 0 "C?" H 2610 2220 50  0000 L CNN
-F 1 "100nF" H 2610 2070 50  0000 L CNN
-F 2 "" H 2600 2150 50  0001 C CNN
-F 3 "" H 2600 2150 50  0001 C CNN
-	1    2600 2150
+P 1750 2200
+F 0 "C?" H 1760 2270 50  0000 L CNN
+F 1 "100nF" H 1760 2120 50  0000 L CNN
+F 2 "" H 1750 2200 50  0001 C CNN
+F 3 "" H 1750 2200 50  0001 C CNN
+	1    1750 2200
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:Earth #PWR?
 U 1 1 5A7F044C
-P 2050 2500
-F 0 "#PWR?" H 2050 2250 50  0001 C CNN
-F 1 "Earth" H 2050 2350 50  0001 C CNN
-F 2 "" H 2050 2500 50  0001 C CNN
-F 3 "" H 2050 2500 50  0001 C CNN
-	1    2050 2500
+P 1200 2550
+F 0 "#PWR?" H 1200 2300 50  0001 C CNN
+F 1 "Earth" H 1200 2400 50  0001 C CNN
+F 2 "" H 1200 2550 50  0001 C CNN
+F 3 "" H 1200 2550 50  0001 C CNN
+	1    1200 2550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2050 2500 2050 2350
+	1200 2550 1200 2400
 Wire Wire Line
-	2050 1850 2050 2050
+	1200 1900 1200 2100
 Wire Wire Line
-	2450 1900 2800 1900
+	1600 1950 1950 1950
 Wire Wire Line
-	2600 1900 2600 2050
+	1750 1950 1750 2100
 $Comp
 L power:Earth #PWR?
 U 1 1 5A7F0458
-P 2600 2350
-F 0 "#PWR?" H 2600 2100 50  0001 C CNN
-F 1 "Earth" H 2600 2200 50  0001 C CNN
-F 2 "" H 2600 2350 50  0001 C CNN
-F 3 "" H 2600 2350 50  0001 C CNN
-	1    2600 2350
+P 1750 2400
+F 0 "#PWR?" H 1750 2150 50  0001 C CNN
+F 1 "Earth" H 1750 2250 50  0001 C CNN
+F 2 "" H 1750 2400 50  0001 C CNN
+F 3 "" H 1750 2400 50  0001 C CNN
+	1    1750 2400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 2250 2600 2350
-Text GLabel 2800 1900 2    60   Input ~ 0
-LeftButton
+	1750 2300 1750 2400
 $Comp
 L FH12-24S-0.5SH(55):FH12-24S-0.5SH(55) J?
 U 1 1 5A7F5511
@@ -650,22 +776,22 @@ EINK_VCC
 Text Notes 4000 6200 0    60   ~ 0
 E-Ink power on/off switch controlled by MCU
 Wire Wire Line
-	2050 1350 2050 1450
+	1200 1400 1200 1500
 $Comp
 L device:R R?
 U 1 1 5A7F349C
-P 2300 1900
-F 0 "R?" V 2380 1900 50  0000 C CNN
-F 1 "10k" V 2300 1900 50  0000 C CNN
-F 2 "" V 2230 1900 50  0001 C CNN
-F 3 "" H 2300 1900 50  0001 C CNN
-	1    2300 1900
+P 1450 1950
+F 0 "R?" V 1530 1950 50  0000 C CNN
+F 1 "10k" V 1450 1950 50  0000 C CNN
+F 2 "" V 1380 1950 50  0001 C CNN
+F 3 "" H 1450 1950 50  0001 C CNN
+	1    1450 1950
 	0    -1   -1   0   
 $EndComp
-Connection ~ 2600 1900
+Connection ~ 1750 1950
 Wire Wire Line
-	2150 1900 2050 1900
-Connection ~ 2050 1900
+	1300 1950 1200 1950
+Connection ~ 1200 1950
 $Comp
 L power:VCC #PWR?
 U 1 1 5A7F43D1
@@ -742,8 +868,6 @@ F 3 "" H 6000 2350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6000 2250 6000 2350
-Text GLabel 6200 1900 2    60   Input ~ 0
-CenterButton
 Wire Wire Line
 	5450 1350 5450 1450
 $Comp
@@ -764,96 +888,290 @@ Connection ~ 5450 1900
 $Comp
 L power:VCC #PWR?
 U 1 1 5A7F4771
-P 8400 1350
-F 0 "#PWR?" H 8400 1200 50  0001 C CNN
-F 1 "VCC" H 8400 1500 50  0000 C CNN
-F 2 "" H 8400 1350 50  0001 C CNN
-F 3 "" H 8400 1350 50  0001 C CNN
-	1    8400 1350
+P 7400 1300
+F 0 "#PWR?" H 7400 1150 50  0001 C CNN
+F 1 "VCC" H 7400 1450 50  0000 C CNN
+F 2 "" H 7400 1300 50  0001 C CNN
+F 3 "" H 7400 1300 50  0001 C CNN
+	1    7400 1300
 	1    0    0    -1  
 $EndComp
 $Comp
 L device:R R?
 U 1 1 5A7F4777
-P 8400 2200
-F 0 "R?" V 8480 2200 50  0000 C CNN
-F 1 "100k" V 8400 2200 50  0000 C CNN
-F 2 "" V 8330 2200 50  0001 C CNN
-F 3 "" H 8400 2200 50  0001 C CNN
-	1    8400 2200
+P 7400 2150
+F 0 "R?" V 7480 2150 50  0000 C CNN
+F 1 "100k" V 7400 2150 50  0000 C CNN
+F 2 "" V 7330 2150 50  0001 C CNN
+F 3 "" H 7400 2150 50  0001 C CNN
+	1    7400 2150
 	-1   0    0    1   
 $EndComp
 $Comp
 L switches:SW_Push SW?
 U 1 1 5A7F477D
-P 8400 1650
-F 0 "SW?" H 8450 1750 50  0000 L CNN
-F 1 "SW_Push" H 8400 1590 50  0000 C CNN
-F 2 "" H 8400 1850 50  0001 C CNN
-F 3 "" H 8400 1850 50  0001 C CNN
-	1    8400 1650
+P 7400 1600
+F 0 "SW?" H 7450 1700 50  0000 L CNN
+F 1 "SW_Push" H 7400 1540 50  0000 C CNN
+F 2 "" H 7400 1800 50  0001 C CNN
+F 3 "" H 7400 1800 50  0001 C CNN
+	1    7400 1600
 	0    -1   -1   0   
 $EndComp
 $Comp
 L device:C_Small C?
 U 1 1 5A7F4783
-P 8950 2150
-F 0 "C?" H 8960 2220 50  0000 L CNN
-F 1 "100nF" H 8960 2070 50  0000 L CNN
-F 2 "" H 8950 2150 50  0001 C CNN
-F 3 "" H 8950 2150 50  0001 C CNN
-	1    8950 2150
+P 7950 2100
+F 0 "C?" H 7960 2170 50  0000 L CNN
+F 1 "100nF" H 7960 2020 50  0000 L CNN
+F 2 "" H 7950 2100 50  0001 C CNN
+F 3 "" H 7950 2100 50  0001 C CNN
+	1    7950 2100
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:Earth #PWR?
 U 1 1 5A7F4789
-P 8400 2500
-F 0 "#PWR?" H 8400 2250 50  0001 C CNN
-F 1 "Earth" H 8400 2350 50  0001 C CNN
-F 2 "" H 8400 2500 50  0001 C CNN
-F 3 "" H 8400 2500 50  0001 C CNN
-	1    8400 2500
+P 7400 2450
+F 0 "#PWR?" H 7400 2200 50  0001 C CNN
+F 1 "Earth" H 7400 2300 50  0001 C CNN
+F 2 "" H 7400 2450 50  0001 C CNN
+F 3 "" H 7400 2450 50  0001 C CNN
+	1    7400 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 2500 8400 2350
+	7400 2450 7400 2300
 Wire Wire Line
-	8400 1850 8400 2050
+	7400 1800 7400 2000
 Wire Wire Line
-	8800 1900 9150 1900
+	7800 1850 8150 1850
 Wire Wire Line
-	8950 1900 8950 2050
+	7950 1850 7950 2000
 $Comp
 L power:Earth #PWR?
 U 1 1 5A7F4793
-P 8950 2350
-F 0 "#PWR?" H 8950 2100 50  0001 C CNN
-F 1 "Earth" H 8950 2200 50  0001 C CNN
-F 2 "" H 8950 2350 50  0001 C CNN
-F 3 "" H 8950 2350 50  0001 C CNN
-	1    8950 2350
+P 7950 2300
+F 0 "#PWR?" H 7950 2050 50  0001 C CNN
+F 1 "Earth" H 7950 2150 50  0001 C CNN
+F 2 "" H 7950 2300 50  0001 C CNN
+F 3 "" H 7950 2300 50  0001 C CNN
+	1    7950 2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8950 2250 8950 2350
-Text GLabel 9150 1900 2    60   Input ~ 0
-RightButton
+	7950 2200 7950 2300
 Wire Wire Line
-	8400 1350 8400 1450
+	7400 1300 7400 1400
 $Comp
 L device:R R?
 U 1 1 5A7F479C
-P 8650 1900
-F 0 "R?" V 8730 1900 50  0000 C CNN
-F 1 "10k" V 8650 1900 50  0000 C CNN
-F 2 "" V 8580 1900 50  0001 C CNN
-F 3 "" H 8650 1900 50  0001 C CNN
-	1    8650 1900
+P 7650 1850
+F 0 "R?" V 7730 1850 50  0000 C CNN
+F 1 "10k" V 7650 1850 50  0000 C CNN
+F 2 "" V 7580 1850 50  0001 C CNN
+F 3 "" H 7650 1850 50  0001 C CNN
+	1    7650 1850
 	0    -1   -1   0   
 $EndComp
-Connection ~ 8950 1900
+Connection ~ 7950 1850
 Wire Wire Line
-	8500 1900 8400 1900
-Connection ~ 8400 1900
+	7500 1850 7400 1850
+Connection ~ 7400 1850
+$Comp
+L power:VCC #PWR?
+U 1 1 5A81CDD6
+P 3350 1350
+F 0 "#PWR?" H 3350 1200 50  0001 C CNN
+F 1 "VCC" H 3350 1500 50  0000 C CNN
+F 2 "" H 3350 1350 50  0001 C CNN
+F 3 "" H 3350 1350 50  0001 C CNN
+	1    3350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5A81CDDC
+P 3350 2200
+F 0 "R?" V 3430 2200 50  0000 C CNN
+F 1 "100k" V 3350 2200 50  0000 C CNN
+F 2 "" V 3280 2200 50  0001 C CNN
+F 3 "" H 3350 2200 50  0001 C CNN
+	1    3350 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L switches:SW_Push SW?
+U 1 1 5A81CDE2
+P 3350 1650
+F 0 "SW?" H 3400 1750 50  0000 L CNN
+F 1 "SW_Push" H 3350 1590 50  0000 C CNN
+F 2 "" H 3350 1850 50  0001 C CNN
+F 3 "" H 3350 1850 50  0001 C CNN
+	1    3350 1650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A81CDE8
+P 3900 2150
+F 0 "C?" H 3910 2220 50  0000 L CNN
+F 1 "100nF" H 3910 2070 50  0000 L CNN
+F 2 "" H 3900 2150 50  0001 C CNN
+F 3 "" H 3900 2150 50  0001 C CNN
+	1    3900 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5A81CDEE
+P 3350 2500
+F 0 "#PWR?" H 3350 2250 50  0001 C CNN
+F 1 "Earth" H 3350 2350 50  0001 C CNN
+F 2 "" H 3350 2500 50  0001 C CNN
+F 3 "" H 3350 2500 50  0001 C CNN
+	1    3350 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 2500 3350 2350
+Wire Wire Line
+	3350 1850 3350 2050
+Wire Wire Line
+	3750 1900 4100 1900
+Wire Wire Line
+	3900 1900 3900 2050
+$Comp
+L power:Earth #PWR?
+U 1 1 5A81CDF8
+P 3900 2350
+F 0 "#PWR?" H 3900 2100 50  0001 C CNN
+F 1 "Earth" H 3900 2200 50  0001 C CNN
+F 2 "" H 3900 2350 50  0001 C CNN
+F 3 "" H 3900 2350 50  0001 C CNN
+	1    3900 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 2250 3900 2350
+Wire Wire Line
+	3350 1350 3350 1450
+$Comp
+L device:R R?
+U 1 1 5A81CE01
+P 3600 1900
+F 0 "R?" V 3680 1900 50  0000 C CNN
+F 1 "10k" V 3600 1900 50  0000 C CNN
+F 2 "" V 3530 1900 50  0001 C CNN
+F 3 "" H 3600 1900 50  0001 C CNN
+	1    3600 1900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 3900 1900
+Wire Wire Line
+	3450 1900 3350 1900
+Connection ~ 3350 1900
+$Comp
+L power:VCC #PWR?
+U 1 1 5A81D403
+P 9250 1300
+F 0 "#PWR?" H 9250 1150 50  0001 C CNN
+F 1 "VCC" H 9250 1450 50  0000 C CNN
+F 2 "" H 9250 1300 50  0001 C CNN
+F 3 "" H 9250 1300 50  0001 C CNN
+	1    9250 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5A81D409
+P 9250 2150
+F 0 "R?" V 9330 2150 50  0000 C CNN
+F 1 "100k" V 9250 2150 50  0000 C CNN
+F 2 "" V 9180 2150 50  0001 C CNN
+F 3 "" H 9250 2150 50  0001 C CNN
+	1    9250 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L switches:SW_Push SW?
+U 1 1 5A81D40F
+P 9250 1600
+F 0 "SW?" H 9300 1700 50  0000 L CNN
+F 1 "SW_Push" H 9250 1540 50  0000 C CNN
+F 2 "" H 9250 1800 50  0001 C CNN
+F 3 "" H 9250 1800 50  0001 C CNN
+	1    9250 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C_Small C?
+U 1 1 5A81D415
+P 9800 2100
+F 0 "C?" H 9810 2170 50  0000 L CNN
+F 1 "100nF" H 9810 2020 50  0000 L CNN
+F 2 "" H 9800 2100 50  0001 C CNN
+F 3 "" H 9800 2100 50  0001 C CNN
+	1    9800 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5A81D41B
+P 9250 2450
+F 0 "#PWR?" H 9250 2200 50  0001 C CNN
+F 1 "Earth" H 9250 2300 50  0001 C CNN
+F 2 "" H 9250 2450 50  0001 C CNN
+F 3 "" H 9250 2450 50  0001 C CNN
+	1    9250 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2450 9250 2300
+Wire Wire Line
+	9250 1800 9250 2000
+Wire Wire Line
+	9650 1850 10000 1850
+Wire Wire Line
+	9800 1850 9800 2000
+$Comp
+L power:Earth #PWR?
+U 1 1 5A81D425
+P 9800 2300
+F 0 "#PWR?" H 9800 2050 50  0001 C CNN
+F 1 "Earth" H 9800 2150 50  0001 C CNN
+F 2 "" H 9800 2300 50  0001 C CNN
+F 3 "" H 9800 2300 50  0001 C CNN
+	1    9800 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 2200 9800 2300
+Wire Wire Line
+	9250 1300 9250 1400
+$Comp
+L device:R R?
+U 1 1 5A81D42E
+P 9500 1850
+F 0 "R?" V 9580 1850 50  0000 C CNN
+F 1 "10k" V 9500 1850 50  0000 C CNN
+F 2 "" V 9430 1850 50  0001 C CNN
+F 3 "" H 9500 1850 50  0001 C CNN
+	1    9500 1850
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9800 1850
+Wire Wire Line
+	9350 1850 9250 1850
+Connection ~ 9250 1850
+Text HLabel 10000 1850 2    60   Input ~ 0
+Down
+Text HLabel 8150 1850 2    60   Input ~ 0
+Right
+Text HLabel 6200 1900 2    60   Input ~ 0
+OK
+Text HLabel 4100 1900 2    60   Input ~ 0
+Up
+Text HLabel 1950 1950 2    60   Input ~ 0
+Left
 $EndSCHEMATC

@@ -1,5 +1,133 @@
 EESchema Schematic File Version 2
+LIBS:74xgxx
+LIBS:74xx
+LIBS:Altera
+LIBS:ESD_Protection
+LIBS:LEM
+LIBS:Lattice
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:RFSolutions
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:Zilog
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:allegro
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intel
+LIBS:interface
+LIBS:intersil
+LIBS:ir
+LIBS:leds
+LIBS:linear
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:philips
 LIBS:power
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm32
+LIBS:stm8
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:wiznet
+LIBS:xilinx
+LIBS:zetex
+LIBS:SparkFun
+LIBS:ab2_7segment
+LIBS:ab2_audio
+LIBS:ab2_buffer
+LIBS:ab2_capacitor
+LIBS:ab2_connectivity
+LIBS:ab2_dac
+LIBS:ab2_diode
+LIBS:ab2_fuse
+LIBS:ab2_gpio_expansion
+LIBS:ab2_header
+LIBS:ab2_idc
+LIBS:ab2_inductor
+LIBS:ab2_input_devices
+LIBS:ab2_jumper
+LIBS:ab2_lcd
+LIBS:ab2_led
+LIBS:ab2_memory
+LIBS:ab2_opamp
+LIBS:ab2_pinouts
+LIBS:ab2_pot
+LIBS:ab2_power
+LIBS:ab2_regulator
+LIBS:ab2_relay
+LIBS:ab2_resistor
+LIBS:ab2_sensor
+LIBS:ab2_stepper
+LIBS:ab2_supply
+LIBS:ab2_terminal_block
+LIBS:ab2_test
+LIBS:ab2_transistor
+LIBS:ab2_uC
+LIBS:ab2_usb
+LIBS:ab2_xtal
 LIBS:pir-cache
 EELAYER 25 0
 EELAYER END
@@ -168,21 +296,21 @@ F 3 "" H 7650 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R 1.3M1
+L device:R 56k
 U 1 1 5A74FD88
-P 6100 5200
-F 0 "1.3M1" V 6180 5200 50  0000 C CNN
-F 1 "R" V 6100 5200 50  0000 C CNN
-F 2 "" V 6030 5200 50  0001 C CNN
-F 3 "" H 6100 5200 50  0001 C CNN
-	1    6100 5200
+P 5900 5200
+F 0 "56k" V 5980 5200 50  0000 C CNN
+F 1 "R" V 5900 5200 50  0000 C CNN
+F 2 "" V 5830 5200 50  0001 C CNN
+F 3 "" H 5900 5200 50  0001 C CNN
+	1    5900 5200
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R 1.5M1
+L device:R 680k
 U 1 1 5A75816E
 P 6000 4100
-F 0 "1.5M1" V 6080 4100 50  0000 C CNN
+F 0 "680k" V 6080 4100 50  0000 C CNN
 F 1 "R" V 6000 4100 50  0000 C CNN
 F 2 "" V 5930 4100 50  0001 C CNN
 F 3 "" H 6000 4100 50  0001 C CNN
@@ -194,7 +322,7 @@ L device:C C9
 U 1 1 5A75830A
 P 6000 3700
 F 0 "C9" H 6025 3800 50  0000 L CNN
-F 1 "0.01μF" H 6025 3600 50  0000 L CNN
+F 1 "47nF" H 6025 3600 50  0000 L CNN
 F 2 "" H 6038 3550 50  0001 C CNN
 F 3 "" H 6000 3700 50  0001 C CNN
 	1    6000 3700
@@ -220,25 +348,6 @@ F 11 "" H 6000 2150 50  0001 C CNN "Other Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L 1N4148X-TP:1N4148X-TP D2
-U 1 1 5A7585B5
-P 6300 2650
-F 0 "D2" H 6600 2800 50  0000 C CNN
-F 1 "1N4148X-TP" H 6600 2500 50  0000 C CNN
-F 2 "SODFL1608X70N" H 6600 2400 50  0001 C CNN
-F 3 "http://www.mouser.com/ds/2/258/1N4148X(SOD-523)-349105.pdf" H 6600 2300 50  0001 C CNN
-F 4 "Diodes - General Purpose, Power, Switching 150mA 75V" H 6600 2200 50  0001 C CNN "Description"
-F 5 "RS" H 6600 2100 50  0001 C CNN "Supplier_Name"
-F 6 "" H 6600 2000 50  0001 C CNN "RS Part Number"
-F 7 "Micro Commercial Components (MCC)" H 6600 1900 50  0001 C CNN "Manufacturer_Name"
-F 8 "1N4148X-TP" H 6600 1800 50  0001 C CNN "Manufacturer_Part_Number"
-F 9 "" H 6600 1700 50  0001 C CNN "Allied_Number"
-F 10 "0.7" H 6600 1500 50  0001 C CNN "Height"
-F 11 "" H 6600 1600 50  0001 C CNN "Other Part Number"
-	1    6300 2650
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:Earth #PWR06
 U 1 1 5A7586B3
 P 5100 3700
@@ -250,10 +359,10 @@ F 3 "" H 5100 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R 6.81K1
+L device:R 13k
 U 1 1 5A758706
 P 5100 2850
-F 0 "6.81K1" V 5180 2850 50  0000 C CNN
+F 0 "13k" V 5180 2850 50  0000 C CNN
 F 1 "R" V 5100 2850 50  0000 C CNN
 F 2 "" V 5030 2850 50  0001 C CNN
 F 3 "" H 5100 2850 50  0001 C CNN
@@ -265,7 +374,7 @@ L device:C C8
 U 1 1 5A759015
 P 5100 3400
 F 0 "C8" H 5125 3500 50  0000 L CNN
-F 1 "33μF" H 5125 3300 50  0000 L CNN
+F 1 "22μF" H 5125 3300 50  0000 L CNN
 F 2 "" H 5138 3250 50  0001 C CNN
 F 3 "" H 5100 3400 50  0001 C CNN
 	1    5100 3400
@@ -278,17 +387,17 @@ L device:C C10
 U 1 1 5A75C2C5
 P 6800 4100
 F 0 "C10" H 6825 4200 50  0000 L CNN
-F 1 "3.3μF" H 6825 4000 50  0000 L CNN
+F 1 "22μF" H 6825 4000 50  0000 L CNN
 F 2 "" H 6838 3950 50  0001 C CNN
 F 3 "" H 6800 4100 50  0001 C CNN
 	1    6800 4100
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R 68.1K1
+L device:R 13k
 U 1 1 5A75C4C6
 P 7350 4100
-F 0 "68.1K1" V 7430 4100 50  0000 C CNN
+F 0 "13k" V 7430 4100 50  0000 C CNN
 F 1 "R" V 7350 4100 50  0000 C CNN
 F 2 "" V 7280 4100 50  0001 C CNN
 F 3 "" H 7350 4100 50  0001 C CNN
@@ -296,86 +405,26 @@ F 3 "" H 7350 4100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TLV3691IDCKR:TLV3691IDCKR IC4
-U 1 1 5A75C81D
-P 9350 4100
-F 0 "IC4" H 9800 4250 50  0000 C CNN
-F 1 "TLV3691IDCKR" H 9800 3750 50  0000 C CNN
-F 2 "SOT65P210X110-5N" H 9800 3650 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/tlv3691" H 9800 3550 50  0001 C CNN
-F 4 "0.9V to 6.5V, Nano-Power Comparator" H 9800 3450 50  0001 C CNN "Description"
-F 5 "RS" H 9800 3350 50  0001 C CNN "Supplier_Name"
-F 6 "" H 9800 3250 50  0001 C CNN "RS Part Number"
-F 7 "Texas Instruments" H 9800 3150 50  0001 C CNN "Manufacturer_Name"
-F 8 "TLV3691IDCKR" H 9800 3050 50  0001 C CNN "Manufacturer_Part_Number"
-F 9 "" H 9800 2950 50  0001 C CNN "Allied_Number"
-F 10 "" H 9800 2850 50  0001 C CNN "Other Part Number"
-F 11 "1.1" H 10100 2750 50  0001 C CNN "Height"
-	1    9350 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L TLV3691IDCKR:TLV3691IDCKR IC5
-U 1 1 5A75C9FD
-P 9350 5250
-F 0 "IC5" H 9800 5400 50  0000 C CNN
-F 1 "TLV3691IDCKR" H 9800 4900 50  0000 C CNN
-F 2 "SOT65P210X110-5N" H 9800 4800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/tlv3691" H 9800 4700 50  0001 C CNN
-F 4 "0.9V to 6.5V, Nano-Power Comparator" H 9800 4600 50  0001 C CNN "Description"
-F 5 "RS" H 9800 4500 50  0001 C CNN "Supplier_Name"
-F 6 "" H 9800 4400 50  0001 C CNN "RS Part Number"
-F 7 "Texas Instruments" H 9800 4300 50  0001 C CNN "Manufacturer_Name"
-F 8 "TLV3691IDCKR" H 9800 4200 50  0001 C CNN "Manufacturer_Part_Number"
-F 9 "" H 9800 4100 50  0001 C CNN "Allied_Number"
-F 10 "" H 9800 4000 50  0001 C CNN "Other Part Number"
-F 11 "1.1" H 10100 3900 50  0001 C CNN "Height"
-	1    9350 5250
-	1    0    0    -1  
-$EndComp
-$Comp
 L device:C C12
 U 1 1 5A75CE5D
 P 8000 3800
 F 0 "C12" H 8025 3900 50  0000 L CNN
-F 1 "3.3μF" H 8025 3700 50  0000 L CNN
+F 1 "47nF" H 8025 3700 50  0000 L CNN
 F 2 "" H 8038 3650 50  0001 C CNN
 F 3 "" H 8000 3800 50  0001 C CNN
 	1    8000 3800
 	0    1    1    0   
 $EndComp
 $Comp
-L device:R 68.1K2
+L device:R 680k
 U 1 1 5A75CF06
 P 8000 3450
-F 0 "68.1K2" V 8080 3450 50  0000 C CNN
+F 0 "680k" V 8080 3450 50  0000 C CNN
 F 1 "R" V 8000 3450 50  0000 C CNN
 F 2 "" V 7930 3450 50  0001 C CNN
 F 3 "" H 8000 3450 50  0001 C CNN
 	1    8000 3450
 	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR013
-U 1 1 5A75E6F0
-P 10300 4250
-F 0 "#PWR013" H 10300 4100 50  0001 C CNN
-F 1 "VCC" H 10300 4400 50  0000 C CNN
-F 2 "" H 10300 4250 50  0001 C CNN
-F 3 "" H 10300 4250 50  0001 C CNN
-	1    10300 4250
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:VCC #PWR014
-U 1 1 5A75E75B
-P 10300 5400
-F 0 "#PWR014" H 10300 5250 50  0001 C CNN
-F 1 "VCC" H 10300 5550 50  0000 C CNN
-F 2 "" H 10300 5400 50  0001 C CNN
-F 3 "" H 10300 5400 50  0001 C CNN
-	1    10300 5400
-	-1   0    0    1   
 $EndComp
 $Comp
 L device:R 15M1
@@ -433,25 +482,14 @@ F 3 "" H 8750 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR011
-U 1 1 5A75FB22
-P 9300 4800
-F 0 "#PWR011" H 9300 4550 50  0001 C CNN
-F 1 "Earth" H 9300 4650 50  0001 C CNN
-F 2 "" H 9300 4800 50  0001 C CNN
-F 3 "" H 9300 4800 50  0001 C CNN
-	1    9300 4800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:Earth #PWR012
 U 1 1 5A75FC29
-P 9300 5800
-F 0 "#PWR012" H 9300 5550 50  0001 C CNN
-F 1 "Earth" H 9300 5650 50  0001 C CNN
-F 2 "" H 9300 5800 50  0001 C CNN
-F 3 "" H 9300 5800 50  0001 C CNN
-	1    9300 5800
+P 9100 5800
+F 0 "#PWR012" H 9100 5550 50  0001 C CNN
+F 1 "Earth" H 9100 5650 50  0001 C CNN
+F 2 "" H 9100 5800 50  0001 C CNN
+F 3 "" H 9100 5800 50  0001 C CNN
+	1    9100 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -512,7 +550,7 @@ $EndComp
 Wire Wire Line
 	1200 5050 1550 5050
 Wire Wire Line
-	1850 5050 2100 5050
+	1850 5050 4000 5050
 Wire Wire Line
 	2100 5050 2100 5250
 Wire Wire Line
@@ -534,7 +572,7 @@ Wire Wire Line
 	4000 5050 4000 5250
 Connection ~ 3700 5050
 Wire Wire Line
-	2100 5550 2100 5700
+	2100 5550 2100 5800
 Wire Wire Line
 	2450 5700 2450 5550
 Connection ~ 2100 5700
@@ -559,18 +597,18 @@ Wire Wire Line
 Wire Wire Line
 	7650 4550 7650 4450
 Wire Wire Line
-	2100 5700 2450 5700
+	2100 5700 6400 5700
 Wire Wire Line
-	5650 4750 6100 4750
+	5650 4750 6450 4750
 Wire Wire Line
 	6450 4850 6400 4850
 Wire Wire Line
 	6400 4850 6400 5700
 Wire Wire Line
-	6100 4750 6100 5050
+	5900 4750 5900 5050
 Wire Wire Line
-	6100 5350 6100 5700
-Connection ~ 6100 5700
+	5900 5700 5900 5350
+Connection ~ 5900 5700
 Wire Wire Line
 	5100 3250 5100 3000
 Wire Wire Line
@@ -578,26 +616,23 @@ Wire Wire Line
 Wire Wire Line
 	5100 2650 5650 2650
 Wire Wire Line
-	6300 2650 6350 2650
-Wire Wire Line
-	6350 2650 6350 3200
+	6350 3200 6350 4550
 Wire Wire Line
 	6350 3200 6300 3200
 Wire Wire Line
 	5700 3200 5650 3200
 Wire Wire Line
-	5650 2650 5650 3200
+	5650 2650 5650 4650
 Wire Wire Line
 	5650 3700 5850 3700
 Connection ~ 5650 3200
 Wire Wire Line
 	6350 3700 6150 3700
-Connection ~ 6350 3200
 Wire Wire Line
 	5650 4100 5850 4100
 Connection ~ 5650 3700
 Wire Wire Line
-	6150 4100 6350 4100
+	6150 4100 6650 4100
 Connection ~ 6350 3700
 Wire Wire Line
 	6350 4550 6450 4550
@@ -608,7 +643,7 @@ Connection ~ 5650 4100
 Wire Wire Line
 	5100 3550 5100 3700
 Wire Wire Line
-	4850 5500 4850 5700
+	4850 5700 4850 5500
 Connection ~ 4850 5700
 Wire Wire Line
 	4445 5050 4005 5050
@@ -616,13 +651,13 @@ Wire Wire Line
 	5255 5050 5650 5050
 Wire Wire Line
 	5650 5050 5650 4750
-Connection ~ 6100 4750
+Connection ~ 5900 4750
 Wire Wire Line
 	6950 4100 7200 4100
 Wire Wire Line
 	7800 4100 7500 4100
 Wire Wire Line
-	7800 3450 7800 3800
+	7800 3450 7800 4750
 Wire Wire Line
 	7800 4750 7550 4750
 Wire Wire Line
@@ -634,69 +669,40 @@ Connection ~ 7800 3800
 Wire Wire Line
 	8150 3450 8200 3450
 Wire Wire Line
-	8200 3450 8200 3800
+	8200 3450 8200 4650
 Wire Wire Line
 	8200 3800 8150 3800
-Wire Wire Line
-	8200 4100 9350 4100
 Connection ~ 8200 3800
-Connection ~ 8200 4100
 Wire Wire Line
-	10250 5350 10300 5350
-Wire Wire Line
-	10300 5350 10300 5400
-Wire Wire Line
-	10250 4200 10300 4200
-Wire Wire Line
-	10300 4200 10300 4250
-Wire Wire Line
-	10250 4100 10400 4100
-Wire Wire Line
-	10250 5250 10400 5250
-Wire Wire Line
-	8750 3950 8750 4300
+	8750 3950 8750 4350
 Wire Wire Line
 	8750 5750 8750 5800
 Wire Wire Line
 	8750 3650 8750 3400
 Wire Wire Line
-	8750 4300 9100 4300
+	8750 4300 9900 4300
 Connection ~ 8750 4300
 Wire Wire Line
-	8750 4650 8750 4850
+	8750 4650 8750 4900
 Wire Wire Line
-	9350 4200 9300 4200
+	9100 5700 9100 5800
 Wire Wire Line
-	9350 5350 9300 5350
+	8750 5200 8750 5450
 Wire Wire Line
-	9300 5350 9300 5750
-Wire Wire Line
-	8200 5450 9350 5450
-Wire Wire Line
-	8750 5200 8750 5250
-Wire Wire Line
-	9300 4200 9300 4750
-Wire Wire Line
-	8750 5250 9100 5250
+	8750 5250 9900 5250
 Connection ~ 8750 5250
 Wire Wire Line
 	9100 4300 9100 4350
 Connection ~ 9100 4300
 Wire Wire Line
-	9300 4750 9100 4750
-Wire Wire Line
-	9100 4750 9100 4650
-Connection ~ 9300 4750
+	9100 4650 9100 4850
 Wire Wire Line
 	9100 5250 9100 5400
 Connection ~ 9100 5250
 Wire Wire Line
-	9100 5700 9100 5750
+	9100 5750 9100 5750
 Wire Wire Line
-	9100 5750 9300 5750
-Connection ~ 9300 5750
-Wire Wire Line
-	7550 4850 7750 4850
+	7550 4850 8750 4850
 Connection ~ 8750 4850
 Wire Wire Line
 	7750 4850 7750 5350
@@ -704,17 +710,11 @@ Connection ~ 7750 4850
 Wire Wire Line
 	7750 5650 7750 5800
 Wire Wire Line
-	7550 4650 8200 4650
-Connection ~ 8200 4650
+	8200 4650 7550 4650
 Text Notes 9000 2600 2    60   ~ 0
 PIR Signal Amplification & Conditioning
 Wire Wire Line
 	1200 5050 1200 4700
-Connection ~ 5650 2650
-Text HLabel 10400 4100 2    60   Output ~ 0
-PIR_HIGH
-Text HLabel 10400 5250 2    60   Output ~ 0
-PIR_LOW
 $Comp
 L power:Earth #PWR02
 U 1 1 5A76FBFD
@@ -744,9 +744,9 @@ Wire Wire Line
 Wire Wire Line
 	1600 1950 1200 1950
 Wire Wire Line
-	1200 1950 1200 2050
+	1200 1950 1200 2150
 Wire Wire Line
-	1600 2050 1200 2050
+	1200 2050 1600 2050
 Connection ~ 1200 2050
 $Comp
 L MAX44009EDT+T:MAX44009EDT+T IC1
@@ -812,23 +812,17 @@ F 3 "" H 3050 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2600 1850 2800 1850
+	2600 1850 3550 1850
 Wire Wire Line
 	2800 1850 2800 1750
 Wire Wire Line
-	2600 1950 3050 1950
+	2600 1950 3800 1950
 Wire Wire Line
 	3050 1950 3050 1750
 Wire Wire Line
-	2600 2050 3300 2050
+	2600 2050 4050 2050
 Wire Wire Line
 	3300 2050 3300 1750
-Text GLabel 3550 1850 2    60   Input ~ 0
-SDA
-Text GLabel 3800 1950 2    60   Input ~ 0
-SCL
-Text GLabel 4050 2050 2    60   Input ~ 0
-INTn
 Connection ~ 3050 1950
 Connection ~ 2800 1850
 Connection ~ 3300 2050
@@ -837,96 +831,53 @@ Ambient Light Sensor
 Wire Wire Line
 	2800 1450 2800 1400
 Wire Wire Line
-	2800 1400 3050 1400
+	2800 1400 3300 1400
 Wire Wire Line
-	3050 1300 3050 1400
+	3050 1300 3050 1450
 Connection ~ 3050 1400
 Wire Wire Line
 	3300 1400 3300 1450
+Text HLabel 3550 1850 2    60   Input ~ 0
+SDA
+Text HLabel 3800 1950 2    60   Input ~ 0
+SCL
+Text HLabel 4050 2050 2    60   Output ~ 0
+Ambient
+$Comp
+L device:C C?
+U 1 1 5A80E859
+P 6200 5200
+F 0 "C?" H 6225 5300 50  0000 L CNN
+F 1 "3.3nF" H 6225 5100 50  0000 L CNN
+F 2 "" H 6238 5050 50  0001 C CNN
+F 3 "" H 6200 5200 50  0001 C CNN
+	1    6200 5200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2100 5050 2450 5050
+	6200 5050 6200 4750
+Connection ~ 6200 4750
 Wire Wire Line
-	2450 5050 2800 5050
+	6200 5350 6200 5700
+Connection ~ 6200 5700
+$Comp
+L power:Earth #PWR?
+U 1 1 5A810C65
+P 9100 4850
+F 0 "#PWR?" H 9100 4600 50  0001 C CNN
+F 1 "Earth" H 9100 4700 50  0001 C CNN
+F 2 "" H 9100 4850 50  0001 C CNN
+F 3 "" H 9100 4850 50  0001 C CNN
+	1    9100 4850
+	1    0    0    -1  
+$EndComp
+Text HLabel 9900 4300 2    60   Output ~ 0
+PIR_HIGH_TH
+Text HLabel 9900 5250 2    60   Output ~ 0
+PIR_LOW_TH
 Wire Wire Line
-	2800 5050 3100 5050
-Wire Wire Line
-	3100 5050 3400 5050
-Wire Wire Line
-	3400 5050 3700 5050
-Wire Wire Line
-	3700 5050 4000 5050
-Wire Wire Line
-	2100 5700 2100 5800
-Wire Wire Line
-	2450 5700 2800 5700
-Wire Wire Line
-	2800 5700 3100 5700
-Wire Wire Line
-	3100 5700 3400 5700
-Wire Wire Line
-	3400 5700 3700 5700
-Wire Wire Line
-	3700 5700 4000 5700
-Wire Wire Line
-	4000 5700 4850 5700
-Wire Wire Line
-	6100 5700 6400 5700
-Wire Wire Line
-	5650 3200 5650 3700
-Wire Wire Line
-	6350 3200 6350 3700
-Wire Wire Line
-	5650 3700 5650 4100
-Wire Wire Line
-	6350 3700 6350 4100
-Wire Wire Line
-	6350 4100 6650 4100
-Wire Wire Line
-	6350 4100 6350 4550
-Wire Wire Line
-	5650 4100 5650 4650
-Wire Wire Line
-	4850 5700 6100 5700
-Wire Wire Line
-	6100 4750 6450 4750
-Wire Wire Line
-	7800 4100 7800 4750
-Wire Wire Line
-	7800 3800 7800 4100
-Wire Wire Line
-	8200 3800 8200 4100
-Wire Wire Line
-	8200 4100 8200 4650
-Wire Wire Line
-	8750 4300 8750 4350
-Wire Wire Line
-	8750 5250 8750 5450
-Wire Wire Line
-	9100 4300 9350 4300
-Wire Wire Line
-	9300 4750 9300 4800
-Wire Wire Line
-	9100 5250 9350 5250
-Wire Wire Line
-	9300 5750 9300 5800
-Wire Wire Line
-	8750 4850 8750 4900
-Wire Wire Line
-	7750 4850 8750 4850
-Wire Wire Line
-	8200 4650 8200 5450
-Wire Wire Line
-	5650 2650 5700 2650
-Wire Wire Line
-	1200 2050 1200 2150
-Wire Wire Line
-	3050 1950 3800 1950
-Wire Wire Line
-	2800 1850 3550 1850
-Wire Wire Line
-	3300 2050 4050 2050
-Wire Wire Line
-	3050 1400 3300 1400
-Wire Wire Line
-	3050 1400 3050 1450
+	8200 4100 9900 4100
+Connection ~ 8200 4100
+Text HLabel 9900 4100 2    60   Output ~ 0
+PIR
 $EndSCHEMATC
