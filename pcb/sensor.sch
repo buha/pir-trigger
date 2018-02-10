@@ -269,33 +269,6 @@ F 7 "IRA-S210ST01" H 5450 4150 50  0001 C CNN "Manufacturer_Part_Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L LPV802DGKT:LPV802DGKT IC3
-U 1 1 5A74EE7D
-P 6450 4550
-F 0 "IC3" H 7000 4700 50  0000 C CNN
-F 1 "LPV802DGKT" H 7000 4100 50  0000 C CNN
-F 2 "SOP65P490X110-8N" H 7000 4000 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lpv802.pdf" H 7000 3900 50  0001 C CNN
-F 4 "Operational Amplifiers - Op Amps Dual Channel 320nA Op Amp" H 7000 3800 50  0001 C CNN "Description"
-F 5 "RS" H 7000 3700 50  0001 C CNN "Supplier_Name"
-F 6 "Texas Instruments" H 7000 3500 50  0001 C CNN "Manufacturer_Name"
-F 7 "LPV802DGKT" H 7000 3400 50  0001 C CNN "Manufacturer_Part_Number"
-F 8 "1.1" H 7400 3100 50  0001 C CNN "Height"
-	1    6450 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR07
-U 1 1 5A74F424
-P 7650 4450
-F 0 "#PWR07" H 7650 4300 50  0001 C CNN
-F 1 "VCC" H 7650 4600 50  0000 C CNN
-F 2 "" H 7650 4450 50  0001 C CNN
-F 3 "" H 7650 4450 50  0001 C CNN
-	1    7650 4450
-	1    0    0    -1  
-$EndComp
-$Comp
 L device:R 56k
 U 1 1 5A74FD88
 P 5900 5200
@@ -382,171 +355,6 @@ F 3 "" H 5100 3400 50  0001 C CNN
 $EndComp
 Text Notes 4600 4750 0    60   ~ 0
 PIR Sensor
-$Comp
-L device:C C10
-U 1 1 5A75C2C5
-P 6800 4100
-F 0 "C10" H 6825 4200 50  0000 L CNN
-F 1 "22μF" H 6825 4000 50  0000 L CNN
-F 2 "" H 6838 3950 50  0001 C CNN
-F 3 "" H 6800 4100 50  0001 C CNN
-	1    6800 4100
-	0    1    1    0   
-$EndComp
-$Comp
-L device:R 13k
-U 1 1 5A75C4C6
-P 7350 4100
-F 0 "13k" V 7430 4100 50  0000 C CNN
-F 1 "R" V 7350 4100 50  0000 C CNN
-F 2 "" V 7280 4100 50  0001 C CNN
-F 3 "" H 7350 4100 50  0001 C CNN
-	1    7350 4100
-	0    1    1    0   
-$EndComp
-$Comp
-L device:C C12
-U 1 1 5A75CE5D
-P 8000 3800
-F 0 "C12" H 8025 3900 50  0000 L CNN
-F 1 "47nF" H 8025 3700 50  0000 L CNN
-F 2 "" H 8038 3650 50  0001 C CNN
-F 3 "" H 8000 3800 50  0001 C CNN
-	1    8000 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L device:R 680k
-U 1 1 5A75CF06
-P 8000 3450
-F 0 "680k" V 8080 3450 50  0000 C CNN
-F 1 "R" V 8000 3450 50  0000 C CNN
-F 2 "" V 7930 3450 50  0001 C CNN
-F 3 "" H 8000 3450 50  0001 C CNN
-	1    8000 3450
-	0    1    1    0   
-$EndComp
-$Comp
-L device:R 15M1
-U 1 1 5A75F02F
-P 8750 3800
-F 0 "15M1" V 8830 3800 50  0000 C CNN
-F 1 "R" V 8750 3800 50  0000 C CNN
-F 2 "" V 8680 3800 50  0001 C CNN
-F 3 "" H 8750 3800 50  0001 C CNN
-	1    8750 3800
-	-1   0    0    1   
-$EndComp
-$Comp
-L device:R 15M2
-U 1 1 5A75F0D4
-P 8750 4500
-F 0 "15M2" V 8830 4500 50  0000 C CNN
-F 1 "R" V 8750 4500 50  0000 C CNN
-F 2 "" V 8680 4500 50  0001 C CNN
-F 3 "" H 8750 4500 50  0001 C CNN
-	1    8750 4500
-	-1   0    0    1   
-$EndComp
-$Comp
-L device:R 15M3
-U 1 1 5A75F386
-P 8750 5050
-F 0 "15M3" V 8830 5050 50  0000 C CNN
-F 1 "R" V 8750 5050 50  0000 C CNN
-F 2 "" V 8680 5050 50  0001 C CNN
-F 3 "" H 8750 5050 50  0001 C CNN
-	1    8750 5050
-	-1   0    0    1   
-$EndComp
-$Comp
-L device:R 15M4
-U 1 1 5A75F4BA
-P 8750 5600
-F 0 "15M4" V 8830 5600 50  0000 C CNN
-F 1 "R" V 8750 5600 50  0000 C CNN
-F 2 "" V 8680 5600 50  0001 C CNN
-F 3 "" H 8750 5600 50  0001 C CNN
-	1    8750 5600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:VCC #PWR09
-U 1 1 5A75F9AF
-P 8750 3400
-F 0 "#PWR09" H 8750 3250 50  0001 C CNN
-F 1 "VCC" H 8750 3550 50  0000 C CNN
-F 2 "" H 8750 3400 50  0001 C CNN
-F 3 "" H 8750 3400 50  0001 C CNN
-	1    8750 3400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR012
-U 1 1 5A75FC29
-P 9100 5800
-F 0 "#PWR012" H 9100 5550 50  0001 C CNN
-F 1 "Earth" H 9100 5650 50  0001 C CNN
-F 2 "" H 9100 5800 50  0001 C CNN
-F 3 "" H 9100 5800 50  0001 C CNN
-	1    9100 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR010
-U 1 1 5A75FF6B
-P 8750 5800
-F 0 "#PWR010" H 8750 5550 50  0001 C CNN
-F 1 "Earth" H 8750 5650 50  0001 C CNN
-F 2 "" H 8750 5800 50  0001 C CNN
-F 3 "" H 8750 5800 50  0001 C CNN
-	1    8750 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:C C13
-U 1 1 5A7618C9
-P 9100 4500
-F 0 "C13" H 9125 4600 50  0000 L CNN
-F 1 "0.1μF" H 9125 4400 50  0000 L CNN
-F 2 "" H 9138 4350 50  0001 C CNN
-F 3 "" H 9100 4500 50  0001 C CNN
-	1    9100 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:C C14
-U 1 1 5A761E88
-P 9100 5550
-F 0 "C14" H 9125 5650 50  0000 L CNN
-F 1 "0.1μF" H 9125 5450 50  0000 L CNN
-F 2 "" H 9138 5400 50  0001 C CNN
-F 3 "" H 9100 5550 50  0001 C CNN
-	1    9100 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:C C11
-U 1 1 5A7623E0
-P 7750 5500
-F 0 "C11" H 7775 5600 50  0000 L CNN
-F 1 "0.1μF" H 7775 5400 50  0000 L CNN
-F 2 "" H 7788 5350 50  0001 C CNN
-F 3 "" H 7750 5500 50  0001 C CNN
-	1    7750 5500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:Earth #PWR08
-U 1 1 5A7624AD
-P 7750 5800
-F 0 "#PWR08" H 7750 5550 50  0001 C CNN
-F 1 "Earth" H 7750 5650 50  0001 C CNN
-F 2 "" H 7750 5800 50  0001 C CNN
-F 3 "" H 7750 5800 50  0001 C CNN
-	1    7750 5800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1200 5050 1550 5050
 Wire Wire Line
@@ -593,17 +401,9 @@ Wire Wire Line
 Connection ~ 3700 5700
 Connection ~ 4000 5700
 Wire Wire Line
-	7550 4550 7650 4550
+	2100 5700 6200 5700
 Wire Wire Line
-	7650 4550 7650 4450
-Wire Wire Line
-	2100 5700 6400 5700
-Wire Wire Line
-	5650 4750 6450 4750
-Wire Wire Line
-	6450 4850 6400 4850
-Wire Wire Line
-	6400 4850 6400 5700
+	5650 4750 6800 4750
 Wire Wire Line
 	5900 4750 5900 5050
 Wire Wire Line
@@ -632,13 +432,13 @@ Wire Wire Line
 	5650 4100 5850 4100
 Connection ~ 5650 3700
 Wire Wire Line
-	6150 4100 6650 4100
+	6150 4100 6350 4100
 Connection ~ 6350 3700
 Wire Wire Line
-	6350 4550 6450 4550
+	6350 4550 6800 4550
 Connection ~ 6350 4100
 Wire Wire Line
-	5650 4650 6450 4650
+	5650 4650 6800 4650
 Connection ~ 5650 4100
 Wire Wire Line
 	5100 3550 5100 3700
@@ -652,65 +452,6 @@ Wire Wire Line
 Wire Wire Line
 	5650 5050 5650 4750
 Connection ~ 5900 4750
-Wire Wire Line
-	6950 4100 7200 4100
-Wire Wire Line
-	7800 4100 7500 4100
-Wire Wire Line
-	7800 3450 7800 4750
-Wire Wire Line
-	7800 4750 7550 4750
-Wire Wire Line
-	7800 3800 7850 3800
-Connection ~ 7800 4100
-Wire Wire Line
-	7800 3450 7850 3450
-Connection ~ 7800 3800
-Wire Wire Line
-	8150 3450 8200 3450
-Wire Wire Line
-	8200 3450 8200 4650
-Wire Wire Line
-	8200 3800 8150 3800
-Connection ~ 8200 3800
-Wire Wire Line
-	8750 3950 8750 4350
-Wire Wire Line
-	8750 5750 8750 5800
-Wire Wire Line
-	8750 3650 8750 3400
-Wire Wire Line
-	8750 4300 9900 4300
-Connection ~ 8750 4300
-Wire Wire Line
-	8750 4650 8750 4900
-Wire Wire Line
-	9100 5700 9100 5800
-Wire Wire Line
-	8750 5200 8750 5450
-Wire Wire Line
-	8750 5250 9900 5250
-Connection ~ 8750 5250
-Wire Wire Line
-	9100 4300 9100 4350
-Connection ~ 9100 4300
-Wire Wire Line
-	9100 4650 9100 4850
-Wire Wire Line
-	9100 5250 9100 5400
-Connection ~ 9100 5250
-Wire Wire Line
-	9100 5750 9100 5750
-Wire Wire Line
-	7550 4850 8750 4850
-Connection ~ 8750 4850
-Wire Wire Line
-	7750 4850 7750 5350
-Connection ~ 7750 4850
-Wire Wire Line
-	7750 5650 7750 5800
-Wire Wire Line
-	8200 4650 7550 4650
 Text Notes 9000 2600 2    60   ~ 0
 PIR Signal Amplification & Conditioning
 Wire Wire Line
@@ -858,26 +599,119 @@ Wire Wire Line
 	6200 5050 6200 4750
 Connection ~ 6200 4750
 Wire Wire Line
-	6200 5350 6200 5700
-Connection ~ 6200 5700
+	6200 5700 6200 5350
+Text HLabel 6800 4750 2    60   Input ~ 0
+OPAMP1+
+Text HLabel 6800 4650 2    60   Input ~ 0
+OPAMP1-
+Text HLabel 6800 4550 2    60   Input ~ 0
+OPAMP1OUT
+Text HLabel 8350 4150 2    60   Input ~ 0
+OPAMP2-
 $Comp
-L power:Earth #PWR?
-U 1 1 5A810C65
-P 9100 4850
-F 0 "#PWR?" H 9100 4600 50  0001 C CNN
-F 1 "Earth" H 9100 4700 50  0001 C CNN
-F 2 "" H 9100 4850 50  0001 C CNN
-F 3 "" H 9100 4850 50  0001 C CNN
-	1    9100 4850
+L device:C C?
+U 1 1 5A83B4D6
+P 7000 4150
+F 0 "C?" H 7025 4250 50  0000 L CNN
+F 1 "22uF" H 7025 4050 50  0000 L CNN
+F 2 "" H 7038 4000 50  0001 C CNN
+F 3 "" H 7000 4150 50  0001 C CNN
+	1    7000 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R 13k
+U 1 1 5A83B581
+P 7450 4150
+F 0 "13k" V 7530 4150 50  0000 C CNN
+F 1 "R" V 7450 4150 50  0000 C CNN
+F 2 "" V 7380 4150 50  0001 C CNN
+F 3 "" H 7450 4150 50  0001 C CNN
+	1    7450 4150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6650 4550 6650 4150
+Wire Wire Line
+	6650 4150 6850 4150
+Connection ~ 6650 4550
+Wire Wire Line
+	7150 4150 7300 4150
+Wire Wire Line
+	7600 4150 8350 4150
+$Comp
+L power:VCC #PWR?
+U 1 1 5A83FC10
+P 8000 4500
+F 0 "#PWR?" H 8000 4350 50  0001 C CNN
+F 1 "VCC" H 8000 4650 50  0000 C CNN
+F 2 "" H 8000 4500 50  0001 C CNN
+F 3 "" H 8000 4500 50  0001 C CNN
+	1    8000 4500
 	1    0    0    -1  
 $EndComp
-Text HLabel 9900 4300 2    60   Output ~ 0
-PIR_HIGH_TH
-Text HLabel 9900 5250 2    60   Output ~ 0
-PIR_LOW_TH
+$Comp
+L device:R 13k?
+U 1 1 5A83FDFF
+P 8000 4750
+F 0 "13k?" V 8080 4750 50  0000 C CNN
+F 1 "R" V 8000 4750 50  0000 C CNN
+F 2 "" V 7930 4750 50  0001 C CNN
+F 3 "" H 8000 4750 50  0001 C CNN
+	1    8000 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:R 13k?
+U 1 1 5A83FF1B
+P 8000 5150
+F 0 "13k?" V 8080 5150 50  0000 C CNN
+F 1 "R" V 8000 5150 50  0000 C CNN
+F 2 "" V 7930 5150 50  0001 C CNN
+F 3 "" H 8000 5150 50  0001 C CNN
+	1    8000 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR?
+U 1 1 5A83FF97
+P 8000 5400
+F 0 "#PWR?" H 8000 5150 50  0001 C CNN
+F 1 "Earth" H 8000 5250 50  0001 C CNN
+F 2 "" H 8000 5400 50  0001 C CNN
+F 3 "" H 8000 5400 50  0001 C CNN
+	1    8000 5400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	8200 4100 9900 4100
-Connection ~ 8200 4100
-Text HLabel 9900 4100 2    60   Output ~ 0
-PIR
+	8000 4500 8000 4600
+Wire Wire Line
+	8000 4900 8000 5000
+Wire Wire Line
+	8000 5300 8000 5400
+Wire Wire Line
+	8000 4950 8350 4950
+Connection ~ 8000 4950
+Text HLabel 8350 4950 2    60   Input ~ 0
+OPAMP2+
+Text HLabel 8350 3600 2    60   Input ~ 0
+OPAMP2OUT
+$Comp
+L device:C C?
+U 1 1 5A840800
+P 8000 3900
+F 0 "C?" H 8025 4000 50  0000 L CNN
+F 1 "47nF" H 8025 3800 50  0000 L CNN
+F 2 "" H 8038 3750 50  0001 C CNN
+F 3 "" H 8000 3900 50  0001 C CNN
+	1    8000 3900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 3750 8000 3600
+Wire Wire Line
+	8000 3600 8350 3600
+Wire Wire Line
+	8000 4050 8000 4150
+Connection ~ 8000 4150
 $EndSCHEMATC
