@@ -1,4 +1,4 @@
-update=Sat 10 Feb 2018 15:41:53 CET
+update=Sun 11 Feb 2018 23:39:09 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=lib
 [eeschema/libraries]
 LibName1=74xgxx
 LibName2=74xx
@@ -158,3 +158,4 @@ LibName126=ab2_transistor
 LibName127=ab2_uC
 LibName128=ab2_usb
 LibName129=ab2_xtal
+LibName130=lib/EL817S

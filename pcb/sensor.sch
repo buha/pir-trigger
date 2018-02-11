@@ -128,6 +128,7 @@ LIBS:ab2_transistor
 LIBS:ab2_uC
 LIBS:ab2_usb
 LIBS:ab2_xtal
+LIBS:EL817S
 LIBS:pir-cache
 EELAYER 25 0
 EELAYER END

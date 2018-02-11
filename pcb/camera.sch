@@ -128,12 +128,13 @@ LIBS:ab2_transistor
 LIBS:ab2_uC
 LIBS:ab2_usb
 LIBS:ab2_xtal
+LIBS:EL817S
 LIBS:pir-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -143,10 +144,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5300 2050 0    60   Input ~ 0
+Text HLabel 4650 2050 0    60   Input ~ 0
 FOCUS
-Text HLabel 5250 3250 0    60   Input ~ 0
-SHUTTER
 $Comp
 L AUDIO-JACK2.5MM J1
 U 1 1 5A8040DB
@@ -156,23 +155,6 @@ F 1 "AUDIO-JACK2.5MM" H 1700 2300 50  0000 L BNN
 F 2 "SparkFun-STEREOJACK2.5MM_STEREOJACK2.5MM" H 2000 2250 50  0001 C CNN
 F 3 "" H 1900 2500 60  0001 C CNN
 	1    1900 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L SI2302CDS-T1-GE3:SI2302CDS-T1-GE3 IC4
-U 1 1 5A804D7D
-P 5600 2050
-F 0 "IC4" H 6250 2350 50  0000 L CNN
-F 1 "SI2302CDS" H 6250 2250 50  0000 L CNN
-F 2 "SOT95P237X112-3N" H 6250 2150 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/68645/si2302cd.pdf" H 6250 2050 50  0001 L CNN
-F 4 "SI2302CDS-T1-GE3, N-channel MOSFET Transistor 2.6 A 20 V, 3-Pin SOT-23" H 6250 1950 50  0001 L CNN "Description"
-F 5 "Vishay" H 6250 1850 50  0001 L CNN "Manufacturer_Name"
-F 6 "SI2302CDS-T1-GE3" H 6250 1750 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "RS" H 6250 1650 50  0001 L CNN "Supplier_Name"
-F 8 "7103232P" H 6250 1550 50  0001 L CNN "RS Part Number"
-F 9 "1.12" H 6250 1450 50  0001 L CNN "Height"
-	1    5600 2050
 	1    0    0    -1  
 $EndComp
 Text GLabel 2550 2600 2    60   Input ~ 0
@@ -197,47 +179,116 @@ Wire Wire Line
 	2350 2300 2550 2300
 Wire Wire Line
 	5300 2050 5600 2050
-Text GLabel 6800 2050 2    60   Input ~ 0
+Text GLabel 7500 2050 2    60   Input ~ 0
 RING
 Wire Wire Line
-	6400 2050 6800 2050
-Text GLabel 6800 2350 2    60   Input ~ 0
+	7100 2050 7500 2050
+Text GLabel 7850 2150 2    60   Input ~ 0
 SHIELD
-Wire Wire Line
-	5600 2150 5500 2150
-Wire Wire Line
-	5500 2150 5500 2350
-Wire Wire Line
-	5500 2350 6800 2350
 $Comp
-L SI2302CDS-T1-GE3:SI2302CDS-T1-GE3 IC3
-U 1 1 5A805147
-P 5550 3250
-F 0 "IC3" H 6200 3550 50  0000 L CNN
-F 1 "SI2302CDS" H 6200 3450 50  0000 L CNN
-F 2 "SOT95P237X112-3N" H 6200 3350 50  0001 L CNN
-F 3 "http://www.vishay.com/docs/68645/si2302cd.pdf" H 6200 3250 50  0001 L CNN
-F 4 "SI2302CDS-T1-GE3, N-channel MOSFET Transistor 2.6 A 20 V, 3-Pin SOT-23" H 6200 3150 50  0001 L CNN "Description"
-F 5 "Vishay" H 6200 3050 50  0001 L CNN "Manufacturer_Name"
-F 6 "SI2302CDS-T1-GE3" H 6200 2950 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "RS" H 6200 2850 50  0001 L CNN "Supplier_Name"
-F 8 "7103232P" H 6200 2750 50  0001 L CNN "RS Part Number"
-F 9 "1.12" H 6200 2650 50  0001 L CNN "Height"
-	1    5550 3250
+L EL817S IC3
+U 1 1 5A80CC0F
+P 5600 2050
+F 0 "IC3" H 6950 2350 50  0000 L CNN
+F 1 "EL817S" H 6950 2250 50  0000 L CNN
+F 2 "EL817S" H 6950 2150 50  0001 L CNN
+F 3 "http://www.mouser.com/ds/2/143/201407061833256242-365628.pdf" H 6950 2050 50  0001 L CNN
+F 4 "Transistor Output Optocouplers Photo-Coupler" H 6950 1950 50  0001 L CNN "Description"
+F 5 "Everlight" H 6950 1850 50  0001 L CNN "Manufacturer_Name"
+F 6 "EL817S" H 6950 1750 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "RS" H 6950 1650 50  0001 L CNN "Supplier_Name"
+F 8 "" H 6950 1550 50  0001 L CNN "RS Part Number"
+F 9 "" H 6950 1450 50  0001 L CNN "Height"
+	1    5600 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR13
+U 1 1 5A80CEBC
+P 5500 2300
+F 0 "#PWR13" H 5500 2050 50  0001 C CNN
+F 1 "Earth" H 5500 2150 50  0001 C CNN
+F 2 "" H 5500 2300 50  0001 C CNN
+F 3 "" H 5500 2300 50  0001 C CNN
+	1    5500 2300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5250 3250 5550 3250
-Text GLabel 6750 3250 2    60   Input ~ 0
+	5500 2300 5500 2150
+Wire Wire Line
+	5500 2150 5600 2150
+Wire Wire Line
+	7100 2150 7850 2150
+$Comp
+L R R25
+U 1 1 5A80CFBA
+P 5150 2050
+F 0 "R25" V 5230 2050 50  0000 C CNN
+F 1 "150" V 5150 2050 50  0000 C CNN
+F 2 "" V 5080 2050 50  0001 C CNN
+F 3 "" H 5150 2050 50  0001 C CNN
+	1    5150 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 2050 5000 2050
+Text HLabel 4650 3200 0    60   Input ~ 0
+SHUTTER
+Wire Wire Line
+	5300 3200 5600 3200
+Text GLabel 7500 3200 2    60   Input ~ 0
 TIP
 Wire Wire Line
-	6350 3250 6750 3250
-Text GLabel 6750 3550 2    60   Input ~ 0
+	7100 3200 7500 3200
+Text GLabel 7850 3300 2    60   Input ~ 0
 SHIELD
+$Comp
+L EL817S IC4
+U 1 1 5A80D1A3
+P 5600 3200
+F 0 "IC4" H 6950 3500 50  0000 L CNN
+F 1 "EL817S" H 6950 3400 50  0000 L CNN
+F 2 "EL817S" H 6950 3300 50  0001 L CNN
+F 3 "http://www.mouser.com/ds/2/143/201407061833256242-365628.pdf" H 6950 3200 50  0001 L CNN
+F 4 "Transistor Output Optocouplers Photo-Coupler" H 6950 3100 50  0001 L CNN "Description"
+F 5 "Everlight" H 6950 3000 50  0001 L CNN "Manufacturer_Name"
+F 6 "EL817S" H 6950 2900 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "RS" H 6950 2800 50  0001 L CNN "Supplier_Name"
+F 8 "" H 6950 2700 50  0001 L CNN "RS Part Number"
+F 9 "" H 6950 2600 50  0001 L CNN "Height"
+	1    5600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Earth #PWR14
+U 1 1 5A80D1A9
+P 5500 3450
+F 0 "#PWR14" H 5500 3200 50  0001 C CNN
+F 1 "Earth" H 5500 3300 50  0001 C CNN
+F 2 "" H 5500 3450 50  0001 C CNN
+F 3 "" H 5500 3450 50  0001 C CNN
+	1    5500 3450
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	5550 3350 5450 3350
+	5500 3450 5500 3300
 Wire Wire Line
-	5450 3350 5450 3550
+	5500 3300 5600 3300
 Wire Wire Line
-	5450 3550 6750 3550
+	7100 3300 7850 3300
+$Comp
+L R R26
+U 1 1 5A80D1B2
+P 5150 3200
+F 0 "R26" V 5230 3200 50  0000 C CNN
+F 1 "150" V 5150 3200 50  0000 C CNN
+F 2 "" V 5080 3200 50  0001 C CNN
+F 3 "" H 5150 3200 50  0001 C CNN
+	1    5150 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4650 3200 5000 3200
+Text Notes 4800 1550 0    60   ~ 0
+Optocoupler based camera interface\nWorks with Canon/Nikon/Fuji/Sony/Pentax/Sigma/Hasselblad/Olympus\nDoes not work with Panasonic
 $EndSCHEMATC

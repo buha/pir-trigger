@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EL817S
+D Transistor Output Optocouplers Photo-Coupler
+K
+F http://www.mouser.com/ds/2/143/201407061833256242-365628.pdf
+$ENDCMP
+#
+#End Doc Library
