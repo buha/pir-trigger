@@ -129,6 +129,7 @@ LIBS:ab2_uC
 LIBS:ab2_usb
 LIBS:ab2_xtal
 LIBS:EL817S
+LIBS:IRA-S210ST01
 LIBS:pir-cache
 EELAYER 25 0
 EELAYER END
@@ -145,10 +146,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:VCC #PWR3
+L power:VCC #PWR01
 U 1 1 5A74E3A0
 P 1200 4700
-F 0 "#PWR3" H 1200 4550 50  0001 C CNN
+F 0 "#PWR01" H 1200 4550 50  0001 C CNN
 F 1 "VCC" H 1200 4850 50  0000 C CNN
 F 2 "" H 1200 4700 50  0001 C CNN
 F 3 "" H 1200 4700 50  0001 C CNN
@@ -244,29 +245,14 @@ F 3 "" H 4000 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR4
+L power:Earth #PWR02
 U 1 1 5A74FD7A
 P 2100 5800
-F 0 "#PWR4" H 2100 5550 50  0001 C CNN
+F 0 "#PWR02" H 2100 5550 50  0001 C CNN
 F 1 "Earth" H 2100 5650 50  0001 C CNN
 F 2 "" H 2100 5800 50  0001 C CNN
 F 3 "" H 2100 5800 50  0001 C CNN
 	1    2100 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L IRA-S210ST01:IRA-S210ST01 IC2
-U 1 1 5A74E937
-P 4850 5100
-F 0 "IC2" H 4850 5400 50  0000 C CNN
-F 1 "IRA-S210ST01" H 5250 4900 50  0000 C CNN
-F 2 "IRA-S210ST01" H 5450 4750 50  0001 C CNN
-F 3 "https://www.murata.com/~/media/webrenewal/products/sensor/infrared/datasheet_pir.ashx?la=en-us" H 5450 4650 50  0001 C CNN
-F 4 "RS" H 5450 4450 50  0001 C CNN "Supplier_Name"
-F 5 "1245981" H 5450 4350 50  0001 C CNN "RS Part Number"
-F 6 "Murata Electronics" H 5450 4250 50  0001 C CNN "Manufacturer_Name"
-F 7 "IRA-S210ST01" H 5450 4150 50  0001 C CNN "Manufacturer_Part_Number"
-	1    4850 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -322,10 +308,10 @@ F 11 "" H 6000 2150 50  0001 C CNN "Other Part Number"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR6
+L power:Earth #PWR03
 U 1 1 5A7586B3
 P 5100 3700
-F 0 "#PWR6" H 5100 3450 50  0001 C CNN
+F 0 "#PWR03" H 5100 3450 50  0001 C CNN
 F 1 "Earth" H 5100 3550 50  0001 C CNN
 F 2 "" H 5100 3700 50  0001 C CNN
 F 3 "" H 5100 3700 50  0001 C CNN
@@ -356,10 +342,205 @@ F 3 "" H 5100 3400 50  0001 C CNN
 $EndComp
 Text Notes 4600 4750 0    60   ~ 0
 PIR Sensor
+Text Notes 9000 2600 2    60   ~ 0
+PIR Signal Amplification & Conditioning
+$Comp
+L power:Earth #PWR04
+U 1 1 5A76FBFD
+P 1200 2150
+F 0 "#PWR04" H 1200 1900 50  0001 C CNN
+F 1 "Earth" H 1200 2000 50  0001 C CNN
+F 2 "" H 1200 2150 50  0001 C CNN
+F 3 "" H 1200 2150 50  0001 C CNN
+	1    1200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR05
+U 1 1 5A76FC4F
+P 1200 1800
+F 0 "#PWR05" H 1200 1650 50  0001 C CNN
+F 1 "VCC" H 1200 1950 50  0000 C CNN
+F 2 "" H 1200 1800 50  0001 C CNN
+F 3 "" H 1200 1800 50  0001 C CNN
+	1    1200 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX44009EDT+T:MAX44009EDT+T IC1
+U 1 1 5A76F6EB
+P 2100 2000
+F 0 "IC1" H 2100 2300 50  0000 C CNN
+F 1 "MAX44009EDT+T" H 2100 1800 50  0000 C CNN
+F 2 "SON65P200X200X65-7N" H 2600 1450 50  0001 C CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/MAX44009EDT T.pdf" H 2600 1350 50  0001 C CNN
+F 4 "Ambient Light Sensor with ADC OTDFN6 Maxim MAX44009EDT+T, Light Sensor IC, Light to Serial I2C 1.7  3.6 V 6-Pin UTDFN" H 2600 1250 50  0001 C CNN "Description"
+F 5 "RS" H 2600 1150 50  0001 C CNN "Supplier_Name"
+F 6 "7577103" H 2600 1050 50  0001 C CNN "RS Part Number"
+F 7 "Maxim Integrated" H 2600 950 50  0001 C CNN "Manufacturer_Name"
+F 8 "MAX44009EDT+T" H 2600 850 50  0001 C CNN "Manufacturer_Part_Number"
+F 9 "" H 2600 750 50  0001 C CNN "Allied_Number"
+F 10 "" H 2600 650 50  0001 C CNN "Other Part Number"
+F 11 "0.65" H 2950 550 50  0001 C CNN "Height"
+	1    2100 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R1
+U 1 1 5A770F59
+P 2800 1600
+F 0 "R1" V 2880 1600 50  0000 C CNN
+F 1 "10k" V 2800 1600 50  0000 C CNN
+F 2 "" V 2730 1600 50  0001 C CNN
+F 3 "" H 2800 1600 50  0001 C CNN
+	1    2800 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R2
+U 1 1 5A77107B
+P 3050 1600
+F 0 "R2" V 3130 1600 50  0000 C CNN
+F 1 "10k" V 3050 1600 50  0000 C CNN
+F 2 "" V 2980 1600 50  0001 C CNN
+F 3 "" H 3050 1600 50  0001 C CNN
+	1    3050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR06
+U 1 1 5A7712E7
+P 3050 1300
+F 0 "#PWR06" H 3050 1150 50  0001 C CNN
+F 1 "VCC" H 3050 1450 50  0000 C CNN
+F 2 "" H 3050 1300 50  0001 C CNN
+F 3 "" H 3050 1300 50  0001 C CNN
+	1    3050 1300
+	1    0    0    -1  
+$EndComp
+Text Notes 2500 1400 2    60   ~ 0
+Ambient Light Sensor
+Text HLabel 3550 1850 2    60   Input ~ 0
+SDA
+Text HLabel 3800 1950 2    60   Input ~ 0
+SCL
+Text HLabel 4050 2050 2    60   Output ~ 0
+Ambient
+$Comp
+L device:C C10
+U 1 1 5A80E859
+P 6200 5200
+F 0 "C10" H 6225 5300 50  0000 L CNN
+F 1 "3.3nF" H 6225 5100 50  0000 L CNN
+F 2 "" H 6238 5050 50  0001 C CNN
+F 3 "" H 6200 5200 50  0001 C CNN
+	1    6200 5200
+	1    0    0    -1  
+$EndComp
+Text HLabel 6800 4750 2    60   Input ~ 0
+OPAMP1+
+Text HLabel 6800 4650 2    60   Input ~ 0
+OPAMP1-
+Text HLabel 6800 4550 2    60   Input ~ 0
+OPAMP1OUT
+Text HLabel 8350 4150 2    60   Input ~ 0
+OPAMP2-
+$Comp
+L device:C C11
+U 1 1 5A83B4D6
+P 7000 4150
+F 0 "C11" H 7025 4250 50  0000 L CNN
+F 1 "22uF" H 7025 4050 50  0000 L CNN
+F 2 "" H 7038 4000 50  0001 C CNN
+F 3 "" H 7000 4150 50  0001 C CNN
+	1    7000 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR07
+U 1 1 5A83FC10
+P 8000 4500
+F 0 "#PWR07" H 8000 4350 50  0001 C CNN
+F 1 "VCC" H 8000 4650 50  0000 C CNN
+F 2 "" H 8000 4500 50  0001 C CNN
+F 3 "" H 8000 4500 50  0001 C CNN
+	1    8000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R8
+U 1 1 5A83FDFF
+P 8000 4750
+F 0 "R8" V 8080 4750 50  0000 C CNN
+F 1 "1M" V 8000 4750 50  0000 C CNN
+F 2 "" V 7930 4750 50  0001 C CNN
+F 3 "" H 8000 4750 50  0001 C CNN
+	1    8000 4750
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:R R9
+U 1 1 5A83FF1B
+P 8000 5150
+F 0 "R9" V 8080 5150 50  0000 C CNN
+F 1 "1M" V 8000 5150 50  0000 C CNN
+F 2 "" V 7930 5150 50  0001 C CNN
+F 3 "" H 8000 5150 50  0001 C CNN
+	1    8000 5150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR08
+U 1 1 5A83FF97
+P 8000 5400
+F 0 "#PWR08" H 8000 5150 50  0001 C CNN
+F 1 "Earth" H 8000 5250 50  0001 C CNN
+F 2 "" H 8000 5400 50  0001 C CNN
+F 3 "" H 8000 5400 50  0001 C CNN
+	1    8000 5400
+	1    0    0    -1  
+$EndComp
+Text HLabel 8350 4950 2    60   Input ~ 0
+OPAMP2+
+Text HLabel 8350 3600 2    60   Input ~ 0
+OPAMP2OUT
+$Comp
+L device:C C12
+U 1 1 5A840800
+P 8000 3900
+F 0 "C12" H 8025 4000 50  0000 L CNN
+F 1 "47nF" H 8025 3800 50  0000 L CNN
+F 2 "" H 8038 3750 50  0001 C CNN
+F 3 "" H 8000 3900 50  0001 C CNN
+	1    8000 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:R R3
+U 1 1 5A80F84C
+P 3300 1600
+F 0 "R3" V 3380 1600 50  0000 C CNN
+F 1 "10k" V 3300 1600 50  0000 C CNN
+F 2 "" V 3230 1600 50  0001 C CNN
+F 3 "" H 3300 1600 50  0001 C CNN
+	1    3300 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R7
+U 1 1 5A80FE16
+P 7450 4150
+F 0 "R7" V 7530 4150 50  0000 C CNN
+F 1 "13k" V 7450 4150 50  0000 C CNN
+F 2 "" V 7380 4150 50  0001 C CNN
+F 3 "" H 7450 4150 50  0001 C CNN
+	1    7450 4150
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	1200 5050 1550 5050
 Wire Wire Line
-	1850 5050 4000 5050
+	1850 5050 4150 5050
 Wire Wire Line
 	2100 5050 2100 5250
 Wire Wire Line
@@ -444,41 +625,7 @@ Connection ~ 5650 4100
 Wire Wire Line
 	5100 3550 5100 3700
 Wire Wire Line
-	4850 5700 4850 5500
-Connection ~ 4850 5700
-Wire Wire Line
-	4445 5050 4005 5050
-Wire Wire Line
-	5255 5050 5650 5050
-Wire Wire Line
-	5650 5050 5650 4750
-Connection ~ 5900 4750
-Text Notes 9000 2600 2    60   ~ 0
-PIR Signal Amplification & Conditioning
-Wire Wire Line
 	1200 5050 1200 4700
-$Comp
-L power:Earth #PWR2
-U 1 1 5A76FBFD
-P 1200 2150
-F 0 "#PWR2" H 1200 1900 50  0001 C CNN
-F 1 "Earth" H 1200 2000 50  0001 C CNN
-F 2 "" H 1200 2150 50  0001 C CNN
-F 3 "" H 1200 2150 50  0001 C CNN
-	1    1200 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR1
-U 1 1 5A76FC4F
-P 1200 1800
-F 0 "#PWR1" H 1200 1650 50  0001 C CNN
-F 1 "VCC" H 1200 1950 50  0000 C CNN
-F 2 "" H 1200 1800 50  0001 C CNN
-F 3 "" H 1200 1800 50  0001 C CNN
-	1    1200 1800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1600 1850 1200 1850
 Wire Wire Line
@@ -490,58 +637,6 @@ Wire Wire Line
 Wire Wire Line
 	1200 2050 1600 2050
 Connection ~ 1200 2050
-$Comp
-L MAX44009EDT+T:MAX44009EDT+T IC1
-U 1 1 5A76F6EB
-P 2100 2000
-F 0 "IC1" H 2100 2300 50  0000 C CNN
-F 1 "MAX44009EDT+T" H 2100 1800 50  0000 C CNN
-F 2 "SON65P200X200X65-7N" H 2600 1450 50  0001 C CNN
-F 3 "https://componentsearchengine.com/Datasheets/2/MAX44009EDT T.pdf" H 2600 1350 50  0001 C CNN
-F 4 "Ambient Light Sensor with ADC OTDFN6 Maxim MAX44009EDT+T, Light Sensor IC, Light to Serial I2C 1.7  3.6 V 6-Pin UTDFN" H 2600 1250 50  0001 C CNN "Description"
-F 5 "RS" H 2600 1150 50  0001 C CNN "Supplier_Name"
-F 6 "7577103" H 2600 1050 50  0001 C CNN "RS Part Number"
-F 7 "Maxim Integrated" H 2600 950 50  0001 C CNN "Manufacturer_Name"
-F 8 "MAX44009EDT+T" H 2600 850 50  0001 C CNN "Manufacturer_Part_Number"
-F 9 "" H 2600 750 50  0001 C CNN "Allied_Number"
-F 10 "" H 2600 650 50  0001 C CNN "Other Part Number"
-F 11 "0.65" H 2950 550 50  0001 C CNN "Height"
-	1    2100 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R1
-U 1 1 5A770F59
-P 2800 1600
-F 0 "R1" V 2880 1600 50  0000 C CNN
-F 1 "10k" V 2800 1600 50  0000 C CNN
-F 2 "" V 2730 1600 50  0001 C CNN
-F 3 "" H 2800 1600 50  0001 C CNN
-	1    2800 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R2
-U 1 1 5A77107B
-P 3050 1600
-F 0 "R2" V 3130 1600 50  0000 C CNN
-F 1 "10k" V 3050 1600 50  0000 C CNN
-F 2 "" V 2980 1600 50  0001 C CNN
-F 3 "" H 3050 1600 50  0001 C CNN
-	1    3050 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR5
-U 1 1 5A7712E7
-P 3050 1300
-F 0 "#PWR5" H 3050 1150 50  0001 C CNN
-F 1 "VCC" H 3050 1450 50  0000 C CNN
-F 2 "" H 3050 1300 50  0001 C CNN
-F 3 "" H 3050 1300 50  0001 C CNN
-	1    3050 1300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2600 1850 3550 1850
 Wire Wire Line
@@ -557,8 +652,6 @@ Wire Wire Line
 Connection ~ 3050 1950
 Connection ~ 2800 1850
 Connection ~ 3300 2050
-Text Notes 2500 1400 2    60   ~ 0
-Ambient Light Sensor
 Wire Wire Line
 	2800 1450 2800 1400
 Wire Wire Line
@@ -568,47 +661,11 @@ Wire Wire Line
 Connection ~ 3050 1400
 Wire Wire Line
 	3300 1400 3300 1450
-Text HLabel 3550 1850 2    60   Input ~ 0
-SDA
-Text HLabel 3800 1950 2    60   Input ~ 0
-SCL
-Text HLabel 4050 2050 2    60   Output ~ 0
-Ambient
-$Comp
-L device:C C10
-U 1 1 5A80E859
-P 6200 5200
-F 0 "C10" H 6225 5300 50  0000 L CNN
-F 1 "3.3nF" H 6225 5100 50  0000 L CNN
-F 2 "" H 6238 5050 50  0001 C CNN
-F 3 "" H 6200 5200 50  0001 C CNN
-	1    6200 5200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6200 5050 6200 4750
 Connection ~ 6200 4750
 Wire Wire Line
 	6200 5700 6200 5350
-Text HLabel 6800 4750 2    60   Input ~ 0
-OPAMP1+
-Text HLabel 6800 4650 2    60   Input ~ 0
-OPAMP1-
-Text HLabel 6800 4550 2    60   Input ~ 0
-OPAMP1OUT
-Text HLabel 8350 4150 2    60   Input ~ 0
-OPAMP2-
-$Comp
-L device:C C11
-U 1 1 5A83B4D6
-P 7000 4150
-F 0 "C11" H 7025 4250 50  0000 L CNN
-F 1 "22uF" H 7025 4050 50  0000 L CNN
-F 2 "" H 7038 4000 50  0001 C CNN
-F 3 "" H 7000 4150 50  0001 C CNN
-	1    7000 4150
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6650 4550 6650 4150
 Wire Wire Line
@@ -618,50 +675,6 @@ Wire Wire Line
 	7150 4150 7300 4150
 Wire Wire Line
 	7600 4150 8350 4150
-$Comp
-L power:VCC #PWR7
-U 1 1 5A83FC10
-P 8000 4500
-F 0 "#PWR7" H 8000 4350 50  0001 C CNN
-F 1 "VCC" H 8000 4650 50  0000 C CNN
-F 2 "" H 8000 4500 50  0001 C CNN
-F 3 "" H 8000 4500 50  0001 C CNN
-	1    8000 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:R R8
-U 1 1 5A83FDFF
-P 8000 4750
-F 0 "R8" V 8080 4750 50  0000 C CNN
-F 1 "1M" V 8000 4750 50  0000 C CNN
-F 2 "" V 7930 4750 50  0001 C CNN
-F 3 "" H 8000 4750 50  0001 C CNN
-	1    8000 4750
-	-1   0    0    1   
-$EndComp
-$Comp
-L device:R R9
-U 1 1 5A83FF1B
-P 8000 5150
-F 0 "R9" V 8080 5150 50  0000 C CNN
-F 1 "1M" V 8000 5150 50  0000 C CNN
-F 2 "" V 7930 5150 50  0001 C CNN
-F 3 "" H 8000 5150 50  0001 C CNN
-	1    8000 5150
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:Earth #PWR8
-U 1 1 5A83FF97
-P 8000 5400
-F 0 "#PWR8" H 8000 5150 50  0001 C CNN
-F 1 "Earth" H 8000 5250 50  0001 C CNN
-F 2 "" H 8000 5400 50  0001 C CNN
-F 3 "" H 8000 5400 50  0001 C CNN
-	1    8000 5400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8000 4500 8000 4600
 Wire Wire Line
@@ -671,21 +684,6 @@ Wire Wire Line
 Wire Wire Line
 	8000 4950 8350 4950
 Connection ~ 8000 4950
-Text HLabel 8350 4950 2    60   Input ~ 0
-OPAMP2+
-Text HLabel 8350 3600 2    60   Input ~ 0
-OPAMP2OUT
-$Comp
-L device:C C12
-U 1 1 5A840800
-P 8000 3900
-F 0 "C12" H 8025 4000 50  0000 L CNN
-F 1 "47nF" H 8025 3800 50  0000 L CNN
-F 2 "" H 8038 3750 50  0001 C CNN
-F 3 "" H 8000 3900 50  0001 C CNN
-	1    8000 3900
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	8000 3750 8000 3600
 Wire Wire Line
@@ -693,26 +691,34 @@ Wire Wire Line
 Wire Wire Line
 	8000 4050 8000 4150
 Connection ~ 8000 4150
+Connection ~ 4000 5050
 $Comp
-L device:R R3
-U 1 1 5A80F84C
-P 3300 1600
-F 0 "R3" V 3380 1600 50  0000 C CNN
-F 1 "10k" V 3300 1600 50  0000 C CNN
-F 2 "" V 3230 1600 50  0001 C CNN
-F 3 "" H 3300 1600 50  0001 C CNN
-	1    3300 1600
+L IRA-S210ST01 IC2
+U 1 1 5A8115E6
+P 4150 5050
+F 0 "IC2" H 4850 5300 50  0000 L CNN
+F 1 "IRA-S210ST01" H 4600 5200 50  0000 L CNN
+F 2 "IRA-S210ST01" H 5300 5150 50  0001 L CNN
+F 3 "https://www.murata.com/~/media/webrenewal/products/sensor/infrared/datasheet_pir.ashx?la=en" H 5300 5050 50  0001 L CNN
+F 4 "Air Purge Collar" H 5300 4950 50  0001 L CNN "Description"
+F 5 "Murata Electronics" H 5300 4850 50  0001 L CNN "Manufacturer_Name"
+F 6 "IRA-S210ST01" H 5300 4750 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "DigiKey" H 5300 4650 50  0001 L CNN "Supplier_Name"
+F 8 "490-11915-ND" H 5300 4550 50  0001 L CNN "RS Part Number"
+F 9 "" H 5300 4450 50  0001 L CNN "Height"
+	1    4150 5050
 	1    0    0    -1  
 $EndComp
-$Comp
-L device:R R7
-U 1 1 5A80FE16
-P 7450 4150
-F 0 "R7" V 7530 4150 50  0000 C CNN
-F 1 "13k" V 7450 4150 50  0000 C CNN
-F 2 "" V 7380 4150 50  0001 C CNN
-F 3 "" H 7450 4150 50  0001 C CNN
-	1    7450 4150
-	0    1    1    0   
-$EndComp
+Wire Wire Line
+	5450 5050 5500 5050
+Wire Wire Line
+	5500 5050 5500 5700
+Connection ~ 5500 5700
+Wire Wire Line
+	4150 5150 4150 5350
+Wire Wire Line
+	4150 5350 5650 5350
+Wire Wire Line
+	5650 5350 5650 4750
+Connection ~ 5900 4750
 $EndSCHEMATC

@@ -1,4 +1,4 @@
-update=Sun 11 Feb 2018 23:39:09 CET
+update=Sun 11 Feb 2018 23:54:56 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -159,3 +159,4 @@ LibName127=ab2_uC
 LibName128=ab2_usb
 LibName129=ab2_xtal
 LibName130=lib/EL817S
+LibName131=lib/IRA-S210ST01
