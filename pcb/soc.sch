@@ -128,12 +128,11 @@ LIBS:ab2_transistor
 LIBS:ab2_uC
 LIBS:ab2_usb
 LIBS:ab2_xtal
-LIBS:pir-cache
 EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 4 6
+Sheet 6 6
 Title ""
 Date ""
 Rev ""
@@ -907,17 +906,6 @@ F 3 "" H 15550 5250 50  0001 C CNN
 	1    15550 5250
 	0    1    1    0   
 $EndComp
-$Comp
-L TEST TP?
-U 1 1 5A8433BD
-P 14750 5350
-F 0 "TP?" H 14750 5650 50  0000 C BNN
-F 1 "TEST" H 14750 5600 50  0000 C CNN
-F 2 "" H 14750 5350 50  0001 C CNN
-F 3 "" H 14750 5350 50  0001 C CNN
-	1    14750 5350
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	14550 5350 14750 5350
 Wire Wire Line
@@ -928,4 +916,6 @@ Wire Wire Line
 	15550 4550 14550 4550
 Wire Wire Line
 	14550 4350 15550 4350
+Text HLabel 14750 5350 2    60   Input ~ 0
+Ambient
 $EndSCHEMATC
