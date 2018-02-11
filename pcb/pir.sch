@@ -128,6 +128,7 @@ LIBS:ab2_transistor
 LIBS:ab2_uC
 LIBS:ab2_usb
 LIBS:ab2_xtal
+LIBS:pir-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
