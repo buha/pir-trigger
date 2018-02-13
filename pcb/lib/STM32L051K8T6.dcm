@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP STM32L051K8T6
-D 32-Bit MCU 64K Flash 32MHz LQFP32 STMicroelectronics STM32L051K8T6, 32bit ARM Cortex M0+ Microcontroller, 32MHz, 64 kB Flash, 32-Pin LQFP
-K
-F https://componentsearchengine.com/Datasheets/2/STM32L051K8T6.pdf
-$ENDCMP
-#
-#End Doc Library
