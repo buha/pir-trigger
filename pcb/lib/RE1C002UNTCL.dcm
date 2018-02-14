@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP RE1C002UNTCL
+D MOSFET 1.2V Drive Nch MOSFET
+K
+F http://rohmfs.rohm.com/en/products/databook/datasheet/discrete/transistor/mosfet/re1c002un.pdf
+$ENDCMP
+#
+#End Doc Library

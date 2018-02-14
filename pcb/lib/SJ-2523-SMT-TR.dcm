@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SJ-2523-SMT-TR
+D 2.5 MM AUDIO JACK
+K
+F http://www.cui.com/product/resource/digikeypdf/sj-252x-smt_series.pdf
+$ENDCMP
+#
+#End Doc Library

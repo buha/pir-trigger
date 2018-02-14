@@ -8,4 +8,7 @@
   (lib (name SI2302CDS-T1-GE3)(type Legacy)(uri ${KIPRJMOD}/lib/SI2302CDS-T1-GE3.mod)(options "")(descr ""))
   (lib (name SI2323DS-T1-E3)(type Legacy)(uri ${KIPRJMOD}/lib/SI2323DS-T1-E3.mod)(options "")(descr ""))
   (lib (name TLV3691IDCKR)(type Legacy)(uri ${KIPRJMOD}/lib/TLV3691IDCKR.mod)(options "")(descr ""))
+  (lib (name RE1C002UNTCL)(type Legacy)(uri ${KIPRJMOD}/lib/RE1C002UNTCL.mod)(options "")(descr ""))
+  (lib (name SJ-2523-SMT-TR)(type Legacy)(uri ${KIPRJMOD}/lib/SJ-2523-SMT-TR.mod)(options "")(descr ""))
+  (lib (name MBR0530)(type Legacy)(uri ${KIPRJMOD}/lib/MBR0530T3G.mod)(options "")(descr ""))
 )

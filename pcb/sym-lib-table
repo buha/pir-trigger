@@ -10,4 +10,5 @@
   (lib (name MAX44009EDT+T)(type Legacy)(uri ${KIPRJMOD}/lib/MAX44009EDT+T.lib)(options "")(descr ""))
   (lib (name "FH12-24S-0.5SH(55)")(type Legacy)(uri "${KIPRJMOD}/lib/Hirose/FH12-24S-0.5SH(55).lib")(options "")(descr ""))
   (lib (name SI2302CDS-T1-GE3)(type Legacy)(uri ${KIPRJMOD}/lib/Vishay/SI2302CDS-T1-GE3.lib)(options "")(descr ""))
+  (lib (name SJ-2523-SMT)(type Legacy)(uri ${KIPRJMOD}/lib/SJ-2523-SMT-TR.lib)(options "")(descr "2.5mm audio jack"))
 )

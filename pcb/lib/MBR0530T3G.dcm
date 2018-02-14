@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MBR0530T3G
+D Diode Schottky 30V 500mA SOD123 ON Semiconductor MBR0530T3G Schottky Diode, 0.5A, 30V, 2-Pin SOD-123
+K
+F http://www.onsemi.com/pub/Collateral/MBR0530T1-D.PDF
+$ENDCMP
+#
+#End Doc Library

@@ -1,0 +1,24 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model MBR0530T3G
+#/224929/34661/2.21/2/3/Diode
+DEF MBR0530T3G D 0 30 Y Y 1 F N
+F0 "D" 450 200 50 H V L CNN
+F1 "MBR0530T3G" 450 100 50 H V L CNN
+F2 "SOD3716X135N" 450 0 50 H I L CNN
+F3 "http://www.onsemi.com/pub/Collateral/MBR0530T1-D.PDF" 450 -100 50 H I L CNN
+F4 "Diode Schottky 30V 500mA SOD123 ON Semiconductor MBR0530T3G Schottky Diode, 0.5A, 30V, 2-Pin SOD-123" 450 -200 50 H I L CNN "Description"
+F5 "ON Semiconductor" 450 -300 50 H I L CNN "Manufacturer_Name"
+F6 "MBR0530T3G" 450 -400 50 H I L CNN "Manufacturer_Part_Number"
+F7 "RS" 450 -500 50 H I L CNN "Supplier_Name"
+F8 "7916069P" 450 -600 50 H I L CNN "RS Part Number"
+F9 "1.35" 450 -700 50 H I L CNN "Height"
+DRAW
+X ~ 1 0 0 200 R 50 50 0 0 B
+X ~ 2 600 0 200 L 50 50 0 0 B
+P 4 0 1 6 200 0 400 100 400 -100 200 0 N
+P 2 0 1 6 200 100 200 -100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
