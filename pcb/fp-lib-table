@@ -11,4 +11,5 @@
   (lib (name RE1C002UNTCL)(type Legacy)(uri ${KIPRJMOD}/lib/RE1C002UNTCL.mod)(options "")(descr ""))
   (lib (name SJ-2523-SMT-TR)(type Legacy)(uri ${KIPRJMOD}/lib/SJ-2523-SMT-TR.mod)(options "")(descr ""))
   (lib (name MBR0530)(type Legacy)(uri ${KIPRJMOD}/lib/MBR0530T3G.mod)(options "")(descr ""))
+  (lib (name Murata-Fresnel)(type KiCad)(uri /home/dari/Work/pir-trigger/pcb/lib/Murata-Fresnel.pretty)(options "")(descr ""))
 )

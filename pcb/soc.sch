@@ -157,17 +157,17 @@ Text Notes 2350 9450 2    60   ~ 0
 Debugger interface
 Text HLabel 14750 4650 2    50   Output ~ 0
 EINK_SCK
-Text HLabel 14750 6350 2    50   Output ~ 0
+Text HLabel 14750 6250 2    50   Output ~ 0
 EINK_MOSI
 Text HLabel 14750 5650 2    50   Output ~ 0
 EINK_CS
 Text HLabel 14750 7350 2    50   Output ~ 0
 EINK_RST
-Text HLabel 14750 7050 2    50   Input ~ 0
+Text HLabel 1400 7050 0    50   Input ~ 0
 EINK_D/C
 Text HLabel 14750 7150 2    50   Input ~ 0
 EINK_BS
-Text HLabel 14750 6450 2    50   Output ~ 0
+Text HLabel 1700 7150 0    50   Output ~ 0
 EINK_PWR
 $Comp
 L power:Earth #PWR043
@@ -641,15 +641,15 @@ Wire Wire Line
 	14550 6150 14900 6150
 Wire Wire Line
 	14550 5450 15100 5450
-Text HLabel 14750 6550 2    60   Input ~ 0
-Left
 Text HLabel 14750 6650 2    60   Input ~ 0
-Right
+Left
 Text HLabel 14750 6750 2    60   Input ~ 0
-Up
+Right
 Text HLabel 14750 6850 2    60   Input ~ 0
-Down
+Up
 Text HLabel 14750 6950 2    60   Input ~ 0
+Down
+Text HLabel 14750 7050 2    60   Input ~ 0
 OK
 Wire Wire Line
 	14550 6550 14750 6550
@@ -817,28 +817,6 @@ F 3 "" H 1950 6950 50  0001 C CNN
 	1    1950 6950
 	0    -1   -1   0   
 $EndComp
-$Comp
-L TEST TP35
-U 1 1 5A841D8F
-P 2250 7050
-F 0 "TP35" H 2250 7350 50  0000 C BNN
-F 1 "TEST" H 2250 7300 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 2250 7050 50  0001 C CNN
-F 3 "" H 2250 7050 50  0001 C CNN
-	1    2250 7050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L TEST TP28
-U 1 1 5A841DFE
-P 1950 7150
-F 0 "TP28" H 1950 7450 50  0000 C BNN
-F 1 "TEST" H 1950 7400 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1950 7150 50  0001 C CNN
-F 3 "" H 1950 7150 50  0001 C CNN
-	1    1950 7150
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2250 6050 2350 6050
 Wire Wire Line
@@ -860,9 +838,9 @@ Wire Wire Line
 Wire Wire Line
 	1950 6950 2350 6950
 Wire Wire Line
-	2250 7050 2350 7050
+	1400 7050 2350 7050
 Wire Wire Line
-	1950 7150 2350 7150
+	1700 7150 2350 7150
 $Comp
 L TEST TP37
 U 1 1 5A842F88
@@ -902,7 +880,7 @@ Wire Wire Line
 	15550 4550 14550 4550
 Wire Wire Line
 	14550 4350 15550 4350
-Text HLabel 14750 6250 2    60   Input ~ 0
+Text HLabel 14750 6350 2    60   Input ~ 0
 Ambient
 $Comp
 L TEST TP29
@@ -925,4 +903,8 @@ Wire Wire Line
 	14550 5250 14750 5250
 Wire Wire Line
 	14550 5350 14750 5350
+Text HLabel 14750 6550 2    60   Input ~ 0
+SDA
+Text HLabel 14750 6450 2    60   Input ~ 0
+SCL
 $EndSCHEMATC
