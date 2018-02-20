@@ -94,40 +94,6 @@ LIBS:video
 LIBS:wiznet
 LIBS:xilinx
 LIBS:zetex
-LIBS:SparkFun
-LIBS:ab2_7segment
-LIBS:ab2_audio
-LIBS:ab2_buffer
-LIBS:ab2_capacitor
-LIBS:ab2_connectivity
-LIBS:ab2_dac
-LIBS:ab2_diode
-LIBS:ab2_fuse
-LIBS:ab2_gpio_expansion
-LIBS:ab2_header
-LIBS:ab2_idc
-LIBS:ab2_inductor
-LIBS:ab2_input_devices
-LIBS:ab2_jumper
-LIBS:ab2_lcd
-LIBS:ab2_led
-LIBS:ab2_memory
-LIBS:ab2_opamp
-LIBS:ab2_pinouts
-LIBS:ab2_pot
-LIBS:ab2_power
-LIBS:ab2_regulator
-LIBS:ab2_relay
-LIBS:ab2_resistor
-LIBS:ab2_sensor
-LIBS:ab2_stepper
-LIBS:ab2_supply
-LIBS:ab2_terminal_block
-LIBS:ab2_test
-LIBS:ab2_transistor
-LIBS:ab2_uC
-LIBS:ab2_usb
-LIBS:ab2_xtal
 LIBS:EL817S
 LIBS:IRA-S210ST01
 LIBS:RE1C002UNTCL
@@ -268,7 +234,7 @@ L device:C_Small C31
 U 1 1 5A7F5E7E
 P 8750 4600
 F 0 "C31" H 8760 4670 50  0000 L CNN
-F 1 "1uF" H 8760 4520 50  0000 L CNN
+F 1 "4.7uF" H 8760 4520 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206" H 8750 4600 50  0001 C CNN
 F 3 "" H 8750 4600 50  0001 C CNN
 	1    8750 4600
@@ -484,7 +450,7 @@ L device:L L1
 U 1 1 5A822DFA
 P 3050 4200
 F 0 "L1" V 3240 4200 50  0000 C CNN
-F 1 "68nH" V 3149 4200 50  0000 C CNN
+F 1 "68uH" V 3149 4200 50  0000 C CNN
 F 2 "Inductors_SMD:L_0402" H 3050 4200 50  0001 C CNN
 F 3 "" H 3050 4200 50  0001 C CNN
 	1    3050 4200
@@ -495,7 +461,7 @@ L device:C_Small C19
 U 1 1 5A82A540
 P 2600 4450
 F 0 "C19" H 2610 4520 50  0000 L CNN
-F 1 "100n" H 2610 4370 50  0000 L CNN
+F 1 "4.7uF" H 2610 4370 50  0000 L CNN
 F 2 "Capacitors_SMD:C_1206" H 2600 4450 50  0001 C CNN
 F 3 "" H 2600 4450 50  0001 C CNN
 	1    2600 4450
@@ -528,7 +494,7 @@ L device:R R17
 U 1 1 5A8319B6
 P 2900 5700
 F 0 "R17" V 2980 5700 50  0000 C CNN
-F 1 "3R" V 2900 5700 50  0000 C CNN
+F 1 "0.47" V 2900 5700 50  0000 C CNN
 F 2 "Resistors_SMD:R_1206" V 2830 5700 50  0001 C CNN
 F 3 "" H 2900 5700 50  0001 C CNN
 	1    2900 5700

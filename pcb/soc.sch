@@ -94,40 +94,6 @@ LIBS:video
 LIBS:wiznet
 LIBS:xilinx
 LIBS:zetex
-LIBS:SparkFun
-LIBS:ab2_7segment
-LIBS:ab2_audio
-LIBS:ab2_buffer
-LIBS:ab2_capacitor
-LIBS:ab2_connectivity
-LIBS:ab2_dac
-LIBS:ab2_diode
-LIBS:ab2_fuse
-LIBS:ab2_gpio_expansion
-LIBS:ab2_header
-LIBS:ab2_idc
-LIBS:ab2_inductor
-LIBS:ab2_input_devices
-LIBS:ab2_jumper
-LIBS:ab2_lcd
-LIBS:ab2_led
-LIBS:ab2_memory
-LIBS:ab2_opamp
-LIBS:ab2_pinouts
-LIBS:ab2_pot
-LIBS:ab2_power
-LIBS:ab2_regulator
-LIBS:ab2_relay
-LIBS:ab2_resistor
-LIBS:ab2_sensor
-LIBS:ab2_stepper
-LIBS:ab2_supply
-LIBS:ab2_terminal_block
-LIBS:ab2_test
-LIBS:ab2_transistor
-LIBS:ab2_uC
-LIBS:ab2_usb
-LIBS:ab2_xtal
 LIBS:EL817S
 LIBS:IRA-S210ST01
 LIBS:RE1C002UNTCL
@@ -157,7 +123,7 @@ Text Notes 2350 9450 2    60   ~ 0
 Debugger interface
 Text HLabel 14750 4650 2    50   Output ~ 0
 EINK_SCK
-Text HLabel 14750 6250 2    50   Output ~ 0
+Text HLabel 14750 6350 2    50   Output ~ 0
 EINK_MOSI
 Text HLabel 14750 5650 2    50   Output ~ 0
 EINK_CS
@@ -880,7 +846,7 @@ Wire Wire Line
 	15550 4550 14550 4550
 Wire Wire Line
 	14550 4350 15550 4350
-Text HLabel 14750 6350 2    60   Input ~ 0
+Text HLabel 14750 6250 2    60   Input ~ 0
 Ambient
 $Comp
 L TEST TP29
