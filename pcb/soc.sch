@@ -94,6 +94,40 @@ LIBS:video
 LIBS:wiznet
 LIBS:xilinx
 LIBS:zetex
+LIBS:SparkFun
+LIBS:ab2_7segment
+LIBS:ab2_audio
+LIBS:ab2_buffer
+LIBS:ab2_capacitor
+LIBS:ab2_connectivity
+LIBS:ab2_dac
+LIBS:ab2_diode
+LIBS:ab2_fuse
+LIBS:ab2_gpio_expansion
+LIBS:ab2_header
+LIBS:ab2_idc
+LIBS:ab2_inductor
+LIBS:ab2_input_devices
+LIBS:ab2_jumper
+LIBS:ab2_lcd
+LIBS:ab2_led
+LIBS:ab2_memory
+LIBS:ab2_opamp
+LIBS:ab2_pinouts
+LIBS:ab2_pot
+LIBS:ab2_power
+LIBS:ab2_regulator
+LIBS:ab2_relay
+LIBS:ab2_resistor
+LIBS:ab2_sensor
+LIBS:ab2_stepper
+LIBS:ab2_supply
+LIBS:ab2_terminal_block
+LIBS:ab2_test
+LIBS:ab2_transistor
+LIBS:ab2_uC
+LIBS:ab2_usb
+LIBS:ab2_xtal
 LIBS:EL817S
 LIBS:IRA-S210ST01
 LIBS:RE1C002UNTCL
@@ -414,9 +448,9 @@ Wire Wire Line
 Wire Wire Line
 	2350 4150 2200 4150
 Wire Wire Line
-	2200 4150 2200 3650
+	2200 3650 2200 4150
 Wire Wire Line
-	2200 3650 1650 3650
+	1650 3650 2200 3650
 Wire Wire Line
 	1900 3650 1900 3700
 Wire Wire Line
@@ -495,7 +529,7 @@ F 3 "" H 3400 9950 50  0001 C CNN
 	1    3400 9950
 	1    0    0    -1  
 $EndComp
-Text GLabel 3950 9850 2    60   Input ~ 0
+Text GLabel 3900 10050 2    60   Input ~ 0
 TX
 Text GLabel 3750 9950 2    60   Input ~ 0
 RX
@@ -506,16 +540,14 @@ Wire Wire Line
 $Comp
 L power:Earth #PWR054
 U 1 1 5A7FF0DB
-P 3900 10100
-F 0 "#PWR054" H 3900 9850 50  0001 C CNN
-F 1 "Earth" H 3900 9950 50  0001 C CNN
-F 2 "" H 3900 10100 50  0001 C CNN
-F 3 "" H 3900 10100 50  0001 C CNN
-	1    3900 10100
-	1    0    0    -1  
+P 3950 9850
+F 0 "#PWR054" H 3950 9600 50  0001 C CNN
+F 1 "Earth" H 3950 9700 50  0001 C CNN
+F 2 "" H 3950 9850 50  0001 C CNN
+F 3 "" H 3950 9850 50  0001 C CNN
+	1    3950 9850
+	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3900 10100 3900 10050
 Wire Wire Line
 	3900 10050 3600 10050
 Text Notes 3550 9450 0    60   ~ 0
@@ -574,7 +606,7 @@ EINK_BUSY
 Wire Wire Line
 	14750 7250 14550 7250
 Wire Wire Line
-	14550 7050 14750 7050
+	14550 7050 15000 7050
 Wire Wire Line
 	14550 7150 14750 7150
 Text HLabel 2350 8150 0    60   BiDi ~ 0
@@ -607,26 +639,26 @@ Wire Wire Line
 	14550 6150 14900 6150
 Wire Wire Line
 	14550 5450 15100 5450
-Text HLabel 14750 6650 2    60   Input ~ 0
+Text HLabel 2150 6750 0    60   Input ~ 0
 Left
-Text HLabel 14750 6750 2    60   Input ~ 0
+Text HLabel 2150 6550 0    60   Input ~ 0
 Right
-Text HLabel 14750 6850 2    60   Input ~ 0
+Text HLabel 15550 4950 2    60   Input ~ 0
 Up
-Text HLabel 14750 6950 2    60   Input ~ 0
+Text HLabel 2150 6450 0    60   Input ~ 0
 Down
-Text HLabel 14750 7050 2    60   Input ~ 0
+Text HLabel 2150 6650 0    60   Input ~ 0
 OK
 Wire Wire Line
 	14550 6550 14750 6550
 Wire Wire Line
-	14550 6650 14750 6650
+	14550 6650 15000 6650
 Wire Wire Line
-	14550 6750 14750 6750
+	14550 6750 15400 6750
 Wire Wire Line
-	14550 6850 14750 6850
+	14550 6850 15000 6850
 Wire Wire Line
-	14550 6950 14750 6950
+	14550 6950 15400 6950
 Text HLabel 14750 4150 2    60   Input ~ 0
 OPAMP1+
 Text HLabel 14750 4250 2    60   Input ~ 0
@@ -720,56 +752,56 @@ $EndComp
 $Comp
 L TEST TP32
 U 1 1 5A841B2C
-P 2250 6450
-F 0 "TP32" H 2250 6750 50  0000 C BNN
-F 1 "TEST" H 2250 6700 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 2250 6450 50  0001 C CNN
-F 3 "" H 2250 6450 50  0001 C CNN
-	1    2250 6450
-	0    -1   -1   0   
+P 15400 6750
+F 0 "TP32" H 15400 7050 50  0000 C BNN
+F 1 "TEST" H 15400 7000 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 15400 6750 50  0001 C CNN
+F 3 "" H 15400 6750 50  0001 C CNN
+	1    15400 6750
+	0    1    1    0   
 $EndComp
 $Comp
 L TEST TP25
 U 1 1 5A841B81
-P 1950 6550
-F 0 "TP25" H 1950 6850 50  0000 C BNN
-F 1 "TEST" H 1950 6800 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1950 6550 50  0001 C CNN
-F 3 "" H 1950 6550 50  0001 C CNN
-	1    1950 6550
-	0    -1   -1   0   
+P 15000 6650
+F 0 "TP25" H 15000 6950 50  0000 C BNN
+F 1 "TEST" H 15000 6900 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 15000 6650 50  0001 C CNN
+F 3 "" H 15000 6650 50  0001 C CNN
+	1    15000 6650
+	0    1    1    0   
 $EndComp
 $Comp
 L TEST TP33
 U 1 1 5A841BED
-P 2250 6650
-F 0 "TP33" H 2250 6950 50  0000 C BNN
-F 1 "TEST" H 2250 6900 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 2250 6650 50  0001 C CNN
-F 3 "" H 2250 6650 50  0001 C CNN
-	1    2250 6650
-	0    -1   -1   0   
+P 15400 6950
+F 0 "TP33" H 15400 7250 50  0000 C BNN
+F 1 "TEST" H 15400 7200 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 15400 6950 50  0001 C CNN
+F 3 "" H 15400 6950 50  0001 C CNN
+	1    15400 6950
+	0    1    1    0   
 $EndComp
 $Comp
 L TEST TP26
 U 1 1 5A841C4E
-P 1950 6750
-F 0 "TP26" H 1950 7050 50  0000 C BNN
-F 1 "TEST" H 1950 7000 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1950 6750 50  0001 C CNN
-F 3 "" H 1950 6750 50  0001 C CNN
-	1    1950 6750
-	0    -1   -1   0   
+P 15000 7050
+F 0 "TP26" H 15000 7350 50  0000 C BNN
+F 1 "TEST" H 15000 7300 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 15000 7050 50  0001 C CNN
+F 3 "" H 15000 7050 50  0001 C CNN
+	1    15000 7050
+	0    1    1    0   
 $EndComp
 $Comp
 L TEST TP34
 U 1 1 5A841CC0
-P 2250 6850
-F 0 "TP34" H 2250 7150 50  0000 C BNN
-F 1 "TEST" H 2250 7100 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 2250 6850 50  0001 C CNN
-F 3 "" H 2250 6850 50  0001 C CNN
-	1    2250 6850
+P 1600 6850
+F 0 "TP34" H 1600 7150 50  0000 C BNN
+F 1 "TEST" H 1600 7100 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1600 6850 50  0001 C CNN
+F 3 "" H 1600 6850 50  0001 C CNN
+	1    1600 6850
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -792,15 +824,15 @@ Wire Wire Line
 Wire Wire Line
 	1950 6350 2350 6350
 Wire Wire Line
-	2350 6450 2250 6450
+	2350 6450 2150 6450
 Wire Wire Line
-	1950 6550 2350 6550
+	2150 6550 2350 6550
 Wire Wire Line
-	2250 6650 2350 6650
+	2150 6650 2350 6650
 Wire Wire Line
-	1950 6750 2350 6750
+	2150 6750 2350 6750
 Wire Wire Line
-	2250 6850 2350 6850
+	1600 6850 2350 6850
 Wire Wire Line
 	1950 6950 2350 6950
 Wire Wire Line
@@ -832,12 +864,12 @@ $EndComp
 $Comp
 L TEST TP39
 U 1 1 5A843254
-P 15550 4950
-F 0 "TP39" H 15550 5250 50  0000 C BNN
-F 1 "TEST" H 15550 5200 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 15550 4950 50  0001 C CNN
-F 3 "" H 15550 4950 50  0001 C CNN
-	1    15550 4950
+P 15000 6850
+F 0 "TP39" H 15000 7150 50  0000 C BNN
+F 1 "TEST" H 15000 7100 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 15000 6850 50  0001 C CNN
+F 3 "" H 15000 6850 50  0001 C CNN
+	1    15000 6850
 	0    1    1    0   
 $EndComp
 Wire Wire Line
