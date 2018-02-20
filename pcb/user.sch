@@ -917,61 +917,6 @@ Text HLabel 4100 1900 2    60   Input ~ 0
 Up
 Text HLabel 1950 1950 2    60   Input ~ 0
 Left
-$Comp
-L TEST TP14
-U 1 1 5A83C384
-P 1750 1950
-F 0 "TP14" H 1750 2250 50  0000 C BNN
-F 1 "TEST" H 1750 2200 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1750 1950 50  0001 C CNN
-F 3 "" H 1750 1950 50  0001 C CNN
-	1    1750 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST TP19
-U 1 1 5A83C448
-P 3900 1900
-F 0 "TP19" H 3900 2200 50  0000 C BNN
-F 1 "TEST" H 3900 2150 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 3900 1900 50  0001 C CNN
-F 3 "" H 3900 1900 50  0001 C CNN
-	1    3900 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST TP20
-U 1 1 5A83C6BC
-P 6000 1900
-F 0 "TP20" H 6000 2200 50  0000 C BNN
-F 1 "TEST" H 6000 2150 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 6000 1900 50  0001 C CNN
-F 3 "" H 6000 1900 50  0001 C CNN
-	1    6000 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST TP21
-U 1 1 5A83C79B
-P 7950 1850
-F 0 "TP21" H 7950 2150 50  0000 C BNN
-F 1 "TEST" H 7950 2100 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 7950 1850 50  0001 C CNN
-F 3 "" H 7950 1850 50  0001 C CNN
-	1    7950 1850
-	1    0    0    -1  
-$EndComp
-$Comp
-L TEST TP22
-U 1 1 5A83C945
-P 9800 1850
-F 0 "TP22" H 9800 2150 50  0000 C BNN
-F 1 "TEST" H 9800 2100 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 9800 1850 50  0001 C CNN
-F 3 "" H 9800 1850 50  0001 C CNN
-	1    9800 1850
-	1    0    0    -1  
-$EndComp
 Text HLabel 1050 6750 0    50   Input ~ 0
 EINK_MOSI
 Text HLabel 1050 6850 0    50   Input ~ 0
