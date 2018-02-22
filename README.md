@@ -1,12 +1,12 @@
 # pir-trigger
 Camera trigger using PIR sensor
 
-## Schematic TODO's
-- [x] Run the PIR Conditioning circuit through Qucs/LTSpice
-- [ ] Adjustable sensor sensitivity (needs digital pot, possibly over I2C)
-- [x] Light sensor
-- [ ] Cross-camera interface (Canon, Nikon, Pentax, Sony, Fuji - same interface, Sigma - inverted interface, Panasonic - needs special care)
-- [ ] LED
-- [ ] User button
-- [ ] Jumper for total current measurement
-- [ ] Test points, lots of them
+# Specifications
+* 2.7" Eink screen
+* PIR sensor
+* Light sensor
+* Camera focus and shutter control (any camera with 2.5mm native or adapted cable release)
+* 5 way navigational buttons
+* >1 year on a 3V CR2477
+* Weatherproof
+
