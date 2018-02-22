@@ -937,7 +937,7 @@ U 1 1 5A83E02B
 P 1150 6650
 F 0 "TP11" H 1150 6950 50  0000 C BNN
 F 1 "TEST" H 1150 6900 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1150 6650 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1150 6650 50  0001 C CNN
 F 3 "" H 1150 6650 50  0001 C CNN
 	1    1150 6650
 	1    0    0    -1  
@@ -948,7 +948,7 @@ U 1 1 5A83E18E
 P 1350 6650
 F 0 "TP12" H 1350 6950 50  0000 C BNN
 F 1 "TEST" H 1350 6900 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1350 6650 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1350 6650 50  0001 C CNN
 F 3 "" H 1350 6650 50  0001 C CNN
 	1    1350 6650
 	1    0    0    -1  
@@ -959,7 +959,7 @@ U 1 1 5A83E235
 P 1550 6650
 F 0 "TP13" H 1550 6950 50  0000 C BNN
 F 1 "TEST" H 1550 6900 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1550 6650 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1550 6650 50  0001 C CNN
 F 3 "" H 1550 6650 50  0001 C CNN
 	1    1550 6650
 	1    0    0    -1  
@@ -970,7 +970,7 @@ U 1 1 5A83E2DF
 P 1750 6650
 F 0 "TP15" H 1750 6950 50  0000 C BNN
 F 1 "TEST" H 1750 6900 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1750 6650 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1750 6650 50  0001 C CNN
 F 3 "" H 1750 6650 50  0001 C CNN
 	1    1750 6650
 	1    0    0    -1  
@@ -981,7 +981,7 @@ U 1 1 5A83E390
 P 1950 6650
 F 0 "TP16" H 1950 6950 50  0000 C BNN
 F 1 "TEST" H 1950 6900 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 1950 6650 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 1950 6650 50  0001 C CNN
 F 3 "" H 1950 6650 50  0001 C CNN
 	1    1950 6650
 	1    0    0    -1  
@@ -992,7 +992,7 @@ U 1 1 5A83E440
 P 2150 6650
 F 0 "TP17" H 2150 6950 50  0000 C BNN
 F 1 "TEST" H 2150 6900 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 2150 6650 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2150 6650 50  0001 C CNN
 F 3 "" H 2150 6650 50  0001 C CNN
 	1    2150 6650
 	1    0    0    -1  
@@ -1003,7 +1003,7 @@ U 1 1 5A83E4F3
 P 2350 6650
 F 0 "TP18" H 2350 6950 50  0000 C BNN
 F 1 "TEST" H 2350 6900 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-TH_Small" H 2350 6650 50  0001 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 2350 6650 50  0001 C CNN
 F 3 "" H 2350 6650 50  0001 C CNN
 	1    2350 6650
 	1    0    0    -1  
