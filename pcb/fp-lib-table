@@ -2,6 +2,7 @@
   (lib (name 1N4148X-TP)(type Legacy)(uri ${KIPRJMOD}/lib/1N4148X-TP.mod)(options "")(descr ""))
   (lib (name EL817S)(type Legacy)(uri ${KIPRJMOD}/lib/EL817S.mod)(options "")(descr ""))
   (lib (name "FH12-24S-0.5SH(55)")(type Legacy)(uri "${KIPRJMOD}/lib/FH12-24S-0.5SH(55).mod")(options "")(descr ""))
+  (lib (name "FH12A-24S-0.5SH(55)")(type Legacy)(uri "${KIPRJMOD}/lib/FH12A-24S-0.5SH(55).mod")(options "")(descr ""))
   (lib (name IRA-S210ST01)(type Legacy)(uri ${KIPRJMOD}/lib/IRA-S210ST01.mod)(options "")(descr ""))
   (lib (name LPV802DGKT)(type Legacy)(uri ${KIPRJMOD}/lib/LPV802DGKT.mod)(options "")(descr ""))
   (lib (name MAX44009EDT+T)(type Legacy)(uri ${KIPRJMOD}/lib/MAX44009EDT+T.mod)(options "")(descr ""))

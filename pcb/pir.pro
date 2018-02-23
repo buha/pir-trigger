@@ -1,4 +1,4 @@
-update=Thu 22 Feb 2018 21:44:12 CET
+update=2/23/2018 12:06:55 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -164,3 +164,4 @@ LibName132=lib/IRA-S210ST01
 LibName133=lib/RE1C002UNTCL
 LibName134=lib/SJ-2523-SMT-TR
 LibName135=lib/KSC931J_LFS
+LibName136=lib/FH12A-24S-0.5SH(55)
