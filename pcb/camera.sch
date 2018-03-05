@@ -95,6 +95,40 @@ LIBS:video
 LIBS:wiznet
 LIBS:xilinx
 LIBS:zetex
+LIBS:SparkFun
+LIBS:ab2_7segment
+LIBS:ab2_audio
+LIBS:ab2_buffer
+LIBS:ab2_capacitor
+LIBS:ab2_connectivity
+LIBS:ab2_dac
+LIBS:ab2_diode
+LIBS:ab2_fuse
+LIBS:ab2_gpio_expansion
+LIBS:ab2_header
+LIBS:ab2_idc
+LIBS:ab2_inductor
+LIBS:ab2_input_devices
+LIBS:ab2_jumper
+LIBS:ab2_lcd
+LIBS:ab2_led
+LIBS:ab2_memory
+LIBS:ab2_opamp
+LIBS:ab2_pinouts
+LIBS:ab2_pot
+LIBS:ab2_power
+LIBS:ab2_regulator
+LIBS:ab2_relay
+LIBS:ab2_resistor
+LIBS:ab2_sensor
+LIBS:ab2_stepper
+LIBS:ab2_supply
+LIBS:ab2_terminal_block
+LIBS:ab2_test
+LIBS:ab2_transistor
+LIBS:ab2_uC
+LIBS:ab2_usb
+LIBS:ab2_xtal
 LIBS:EL817S
 LIBS:IRA-S210ST01
 LIBS:RE1C002UNTCL
@@ -125,28 +159,24 @@ RING
 Text GLabel 1400 2450 0    60   Input ~ 0
 TIP
 Wire Wire Line
-	2000 3800 2300 3800
+	2000 3800 2750 3800
 Text GLabel 4200 3800 2    60   Input ~ 0
 RING
 Wire Wire Line
-	3800 3800 4200 3800
+	3350 3800 4200 3800
 Text GLabel 4750 4150 2    60   Input ~ 0
 SHIELD
 $Comp
 L Earth #PWR014
 U 1 1 5A80CEBC
-P 2200 4050
-F 0 "#PWR014" H 2200 3800 50  0001 C CNN
-F 1 "Earth" H 2200 3900 50  0001 C CNN
-F 2 "" H 2200 4050 50  0001 C CNN
-F 3 "" H 2200 4050 50  0001 C CNN
-	1    2200 4050
+P 2550 4100
+F 0 "#PWR014" H 2550 3850 50  0001 C CNN
+F 1 "Earth" H 2550 3950 50  0001 C CNN
+F 2 "" H 2550 4100 50  0001 C CNN
+F 3 "" H 2550 4100 50  0001 C CNN
+	1    2550 4100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 4050 2200 3900
-Wire Wire Line
-	2200 3900 2300 3900
 $Comp
 L R R12
 U 1 1 5A80CFBA
@@ -163,43 +193,22 @@ Wire Wire Line
 Text HLabel 1350 4950 0    60   Input ~ 0
 SHUTTER
 Wire Wire Line
-	2000 4950 2300 4950
+	2000 4950 2750 4950
 Text GLabel 4500 4950 2    60   Input ~ 0
 TIP
 Text GLabel 4750 5450 2    60   Input ~ 0
 SHIELD
 $Comp
-L EL817S IC4
-U 1 1 5A80D1A3
-P 2300 4950
-F 0 "IC4" H 3650 5250 50  0000 L CNN
-F 1 "EL817S" H 3650 5150 50  0000 L CNN
-F 2 "EL817S:EL817S" H 3650 5050 50  0001 L CNN
-F 3 "http://www.mouser.com/ds/2/143/201407061833256242-365628.pdf" H 3650 4950 50  0001 L CNN
-F 4 "Transistor Output Optocouplers Photo-Coupler" H 3650 4850 50  0001 L CNN "Description"
-F 5 "Everlight" H 3650 4750 50  0001 L CNN "Manufacturer_Name"
-F 6 "EL817S" H 3650 4650 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "RS" H 3650 4550 50  0001 L CNN "Supplier_Name"
-F 8 "" H 3650 4450 50  0001 L CNN "RS Part Number"
-F 9 "" H 3650 4350 50  0001 L CNN "Height"
-	1    2300 4950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Earth #PWR015
 U 1 1 5A80D1A9
-P 2200 5200
-F 0 "#PWR015" H 2200 4950 50  0001 C CNN
-F 1 "Earth" H 2200 5050 50  0001 C CNN
-F 2 "" H 2200 5200 50  0001 C CNN
-F 3 "" H 2200 5200 50  0001 C CNN
-	1    2200 5200
+P 2550 5250
+F 0 "#PWR015" H 2550 5000 50  0001 C CNN
+F 1 "Earth" H 2550 5100 50  0001 C CNN
+F 2 "" H 2550 5250 50  0001 C CNN
+F 3 "" H 2550 5250 50  0001 C CNN
+	1    2550 5250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 5200 2200 5050
-Wire Wire Line
-	2200 5050 2300 5050
 $Comp
 L R R13
 U 1 1 5A80D1B2
@@ -218,28 +227,11 @@ Optocoupler based camera interface\nWorks with most Canon/Nikon/Pentax/Sigma/Has
 Text HLabel 5900 3800 0    60   Input ~ 0
 PANAFOCUS
 Wire Wire Line
-	6550 3800 6850 3800
+	6550 3800 7300 3800
 Text GLabel 10700 3050 2    60   Input ~ 0
 RING
 Text GLabel 10700 5900 2    60   Input ~ 0
 SHIELD
-$Comp
-L EL817S IC8
-U 1 1 5A83904A
-P 6850 3800
-F 0 "IC8" H 8200 4100 50  0000 L CNN
-F 1 "EL817S" H 8200 4000 50  0000 L CNN
-F 2 "EL817S:EL817S" H 8200 3900 50  0001 L CNN
-F 3 "http://www.mouser.com/ds/2/143/201407061833256242-365628.pdf" H 8200 3800 50  0001 L CNN
-F 4 "Transistor Output Optocouplers Photo-Coupler" H 8200 3700 50  0001 L CNN "Description"
-F 5 "Everlight" H 8200 3600 50  0001 L CNN "Manufacturer_Name"
-F 6 "EL817S" H 8200 3500 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "RS" H 8200 3400 50  0001 L CNN "Supplier_Name"
-F 8 "" H 8200 3300 50  0001 L CNN "RS Part Number"
-F 9 "" H 8200 3200 50  0001 L CNN "Height"
-	1    6850 3800
-	1    0    0    -1  
-$EndComp
 $Comp
 L Earth #PWR016
 U 1 1 5A839050
@@ -252,9 +244,9 @@ F 3 "" H 6750 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 4050 6750 3900
+	6750 4050 6750 4000
 Wire Wire Line
-	6750 3900 6850 3900
+	6750 4000 7100 4000
 $Comp
 L R R30
 U 1 1 5A839059
@@ -271,39 +263,22 @@ Wire Wire Line
 Text HLabel 5850 4950 0    60   Input ~ 0
 PANASHUTTER
 Wire Wire Line
-	6500 4950 6800 4950
-$Comp
-L EL817S IC7
-U 1 1 5A839193
-P 6800 4950
-F 0 "IC7" H 8150 5250 50  0000 L CNN
-F 1 "EL817S" H 8150 5150 50  0000 L CNN
-F 2 "EL817S:EL817S" H 8150 5050 50  0001 L CNN
-F 3 "http://www.mouser.com/ds/2/143/201407061833256242-365628.pdf" H 8150 4950 50  0001 L CNN
-F 4 "Transistor Output Optocouplers Photo-Coupler" H 8150 4850 50  0001 L CNN "Description"
-F 5 "Everlight" H 8150 4750 50  0001 L CNN "Manufacturer_Name"
-F 6 "EL817S" H 8150 4650 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "RS" H 8150 4550 50  0001 L CNN "Supplier_Name"
-F 8 "" H 8150 4450 50  0001 L CNN "RS Part Number"
-F 9 "" H 8150 4350 50  0001 L CNN "Height"
-	1    6800 4950
-	1    0    0    -1  
-$EndComp
+	6500 4950 7200 4950
 $Comp
 L Earth #PWR017
 U 1 1 5A839199
-P 6700 5200
-F 0 "#PWR017" H 6700 4950 50  0001 C CNN
-F 1 "Earth" H 6700 5050 50  0001 C CNN
-F 2 "" H 6700 5200 50  0001 C CNN
-F 3 "" H 6700 5200 50  0001 C CNN
-	1    6700 5200
+P 7050 5300
+F 0 "#PWR017" H 7050 5050 50  0001 C CNN
+F 1 "Earth" H 7050 5150 50  0001 C CNN
+F 2 "" H 7050 5300 50  0001 C CNN
+F 3 "" H 7050 5300 50  0001 C CNN
+	1    7050 5300
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6700 5200 6700 5050
+	7050 5300 7050 5150
 Wire Wire Line
-	6700 5050 6800 5050
+	7050 5150 7200 5150
 $Comp
 L R R29
 U 1 1 5A8391A2
@@ -351,29 +326,35 @@ F 3 "" H 10200 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 4500 10200 5450
+	10200 4500 10200 4950
 Wire Wire Line
-	10200 3500 10200 4200
+	10200 4950 10200 5450
+Wire Wire Line
+	10200 3500 10200 3800
+Wire Wire Line
+	10200 3800 10200 4200
 Wire Wire Line
 	10200 5750 10200 5900
 Wire Wire Line
 	10200 5900 10700 5900
 Wire Wire Line
-	9400 3050 10350 3050
+	9400 3050 10200 3050
+Wire Wire Line
+	10200 3050 10350 3050
 Wire Wire Line
 	10200 3050 10200 3200
 Wire Wire Line
-	10200 3800 8350 3800
+	7900 3800 10200 3800
 Connection ~ 10200 3800
 Wire Wire Line
-	8350 3900 9400 3900
+	8050 4000 9400 4000
 Wire Wire Line
-	9400 3550 9400 5050
+	9400 3550 9400 4000
 Wire Wire Line
-	10200 4950 8300 4950
+	9400 4000 9400 5150
+Wire Wire Line
+	7800 4950 10200 4950
 Connection ~ 10200 4950
-Wire Wire Line
-	9400 5050 8300 5050
 $Comp
 L MBR0530 D8
 U 1 1 5A83AC22
@@ -410,10 +391,6 @@ F 3 "" H 4300 4150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3800 3900 4000 3900
-Wire Wire Line
-	4000 3900 4000 4150
-Wire Wire Line
 	4000 4150 4150 4150
 Wire Wire Line
 	4450 4150 4750 4150
@@ -428,10 +405,6 @@ F 3 "" H 4300 5450 50  0001 C CNN
 	1    4300 5450
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	3800 5050 4000 5050
-Wire Wire Line
-	4000 5050 4000 5450
 Wire Wire Line
 	4000 5450 4150 5450
 Wire Wire Line
@@ -452,10 +425,10 @@ F 3 "" H 4150 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3800 4950 4000 4950
+	3350 4950 4000 4950
 Wire Wire Line
 	4300 4950 4500 4950
-Connection ~ 9400 3900
+Connection ~ 9400 4000
 Wire Wire Line
 	9400 3250 9400 3050
 Connection ~ 10200 3050
@@ -488,20 +461,73 @@ Wire Wire Line
 	2400 2300 2550 2300
 NoConn ~ 2400 2400
 $Comp
-L EL817S IC3
-U 1 1 5A80CC0F
-P 2300 3800
-F 0 "IC3" H 3650 4100 50  0000 L CNN
-F 1 "EL817S" H 3650 4000 50  0000 L CNN
-F 2 "EL817S:EL817S" H 3650 3900 50  0001 L CNN
-F 3 "http://www.mouser.com/ds/2/143/201407061833256242-365628.pdf" H 3650 3800 50  0001 L CNN
-F 4 "Transistor Output Optocouplers Photo-Coupler" H 3650 3700 50  0001 L CNN "Description"
-F 5 "Everlight" H 3650 3600 50  0001 L CNN "Manufacturer_Name"
-F 6 "EL817S" H 3650 3500 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "RS" H 3650 3400 50  0001 L CNN "Supplier_Name"
-F 8 "" H 3650 3300 50  0001 L CNN "RS Part Number"
-F 9 "" H 3650 3200 50  0001 L CNN "Height"
-	1    2300 3800
+L TLP291-4 U?
+U 1 1 5A90E6D4
+P 3050 3900
+F 0 "U?" H 2850 4100 50  0000 L CNN
+F 1 "TLP291-4" H 3050 4100 50  0000 L CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_SMD" H 2850 3700 50  0001 L CIN
+F 3 "" H 3050 3900 50  0001 L CNN
+	1    3050 3900
 	1    0    0    -1  
 $EndComp
+$Comp
+L TLP291-4 U?
+U 2 1 5A90E755
+P 3050 5050
+F 0 "U?" H 2850 5250 50  0000 L CNN
+F 1 "TLP291-4" H 3050 5250 50  0000 L CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_SMD" H 2850 4850 50  0001 L CIN
+F 3 "" H 3050 5050 50  0001 L CNN
+	2    3050 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP291-4 U?
+U 3 1 5A90E7DE
+P 7600 3900
+F 0 "U?" H 7400 4100 50  0000 L CNN
+F 1 "TLP291-4" H 7600 4100 50  0000 L CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_SMD" H 7400 3700 50  0001 L CIN
+F 3 "" H 7600 3900 50  0001 L CNN
+	3    7600 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L TLP291-4 U?
+U 4 1 5A90E8A6
+P 7500 5050
+F 0 "U?" H 7300 5250 50  0000 L CNN
+F 1 "TLP291-4" H 7500 5250 50  0000 L CNN
+F 2 "Housings_DIP:DIP-16_W7.62mm_SMD" H 7300 4850 50  0001 L CIN
+F 3 "" H 7500 5050 50  0001 L CNN
+	4    7500 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4100 2550 4000
+Wire Wire Line
+	2550 4000 2750 4000
+Wire Wire Line
+	3350 4000 4000 4000
+Wire Wire Line
+	4000 4000 4000 4150
+Wire Wire Line
+	2550 5250 2550 5150
+Wire Wire Line
+	2550 5150 2750 5150
+Wire Wire Line
+	3350 5150 4000 5150
+Wire Wire Line
+	4000 5150 4000 5450
+Wire Wire Line
+	7100 4000 7100 4000
+Wire Wire Line
+	7100 4000 7300 4000
+Wire Wire Line
+	7900 4000 8050 4000
+Wire Wire Line
+	8050 4000 8050 4000
+Wire Wire Line
+	9400 5150 7800 5150
 $EndSCHEMATC
