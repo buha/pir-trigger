@@ -63,6 +63,7 @@ BUILD_DIR = build
 ######################################
 # C sources
 C_SOURCES =  \
+Src/stm32l4xx_hal_timebase_TIM.c \
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_adc.c \
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_adc.c \
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_ll_tim.c \
@@ -121,7 +122,7 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c \
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_spi_ex.c \
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c \
 Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c \
-Middlewares/Third_Party/FreeRTOS/Source/croutine.c  
+Middlewares/Third_Party/FreeRTOS/Source/croutine.c 
 
 # ASM sources
 ASM_SOURCES =  \
