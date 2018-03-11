@@ -232,7 +232,7 @@ OPENOCD_RUN_CMDS += -c shutdown
 export OPENOCD_RUN_CMDS
 
 OPENOCD_DEBUG_CMDS = ''
-OPENOCD_DEBUG_CMDS += -c 'halt'
+OPENOCD_DEBUG_CMDS += -c 'reset halt'
 OPENOCD_DEBUG_CMDS += -c 'sleep 10'
 
 OPENOCD_VERIFY_CMDS = ''

@@ -59,7 +59,8 @@
 #include "gpio.h"
 
 /* USER CODE BEGIN Includes */
-
+#include <stdlib.h>
+#include <stdint.h>
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -117,7 +118,7 @@ int main(void)
   MX_SPI1_Init();
   MX_USART1_UART_Init();
   MX_ADC1_Init();
-  MX_WWDG_Init();
+  //MX_WWDG_Init();
   MX_RTC_Init();
   /* USER CODE BEGIN 2 */
 
