@@ -238,13 +238,13 @@ OPENOCD_DEBUG_CMDS += -c 'sleep 10'
 OPENOCD_VERIFY_CMDS = ''
 OPENOCD_VERIFY_CMDS += -c 'reset halt'
 OPENOCD_VERIFY_CMDS += -c 'sleep 10'
-OPENOCD_VERIFY_CMDS += -c 'verify_image $(PRJ_FULL) 0 elf'
+OPENOCD_VERIFY_CMDS += -c 'verify_image $(BUILD_DIR)/$(TARGET).elf 0 elf'
 OPENOCD_VERIFY_CMDS += -c shutdown
 
 OPENOCD_DUMP_CMDS = ''
 OPENOCD_DUMP_CMDS += -c 'reset halt'
 OPENOCD_DUMP_CMDS += -c 'sleep 10'
-OPENOCD_DUMP_CMDS += -c 'dump_image dump.bin 0x800000 0x10000'
+OPENOCD_DUMP_CMDS += -c 'dump_image dump.bin 0x8000000 0x80000'
 OPENOCD_DUMP_CMDS += -c shutdown
 
 flash:
