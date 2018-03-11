@@ -2298,7 +2298,7 @@
 			<code_completion />
 			<debugger>
 				<remote_debugging>
-					<options conn_type="0" serial_baud="115200" ip_address="localhost" ip_port="3333" additional_cmds="tb main" />
+					<options conn_type="0" serial_baud="115200" ip_address="localhost" ip_port="3333" additional_cmds='# Reset to known state&#x0A;monitor reset&#x0A;&#x0A;# Load the program executable&#x0A;load&#x09;&#x09;&#x0A;&#x0A;# Reset the chip to get to a known state. Remove &quot;monitor reset&quot; command &#x0A;#  if the code is not located at default address and does not run by reset. &#x0A;monitor reset halt&#x0A;&#x0A;# Enable Debug connection in low power modes (DBGMCU-&gt;CR)&#x0A;set *0xE0042004 = (*0xE0042004) | 0x7&#x0A;&#x0A;# Set a breakpoint at main().&#x0A;tb main&#x0A;&#x0A;# Run to the breakpoint.&#x0A;continue' />
 				</remote_debugging>
 			</debugger>
 		</Extensions>
