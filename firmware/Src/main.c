@@ -61,6 +61,9 @@
 /* USER CODE BEGIN Includes */
 #include <stdlib.h>
 #include <stdint.h>
+#include "global.h"
+#include "camera.h"
+#include "settings.h"
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/

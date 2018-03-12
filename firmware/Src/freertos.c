@@ -52,14 +52,17 @@
 #include "cmsis_os.h"
 
 /* USER CODE BEGIN Includes */     
-
+#include <stdio.h>
+#include <stm32l4xx.h>
+#include "camera.h"
+#include "settings.h"
 /* USER CODE END Includes */
 
 /* Variables -----------------------------------------------------------------*/
 osThreadId defaultTaskHandle;
 
 /* USER CODE BEGIN Variables */
-
+osThreadId cameraTaskHandle;
 /* USER CODE END Variables */
 
 /* Function prototypes -------------------------------------------------------*/
@@ -68,7 +71,7 @@ void StartDefaultTask(void const * argument);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /* USER CODE BEGIN FunctionPrototypes */
-
+void fCameraTask(void const * argument);
 /* USER CODE END FunctionPrototypes */
 
 /* Hook prototypes */
@@ -98,7 +101,8 @@ void MX_FREERTOS_Init(void) {
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
-  /* add threads, ... */
+  osThreadDef(cameraTask, fCameraTask, osPriorityNormal, 0, 128);
+  cameraTaskHandle = osThreadCreate(osThread(cameraTask), NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_QUEUES */
@@ -114,13 +118,50 @@ void StartDefaultTask(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+	printf("Hello World!\n");
+    osDelay(1000);
   }
   /* USER CODE END StartDefaultTask */
 }
 
 /* USER CODE BEGIN Application */
-     
+
+/* Task that handles optically isolated interface with cameras */
+void fCameraTask(void const * argument)
+{
+	unsigned int i = 0;
+	set_camera_type(NIKON);
+
+	/* Infinite loop */
+	for(;;)
+	{
+		if (i == 1)
+		{
+			cam_fire(FOCUS, 0, 0);
+		}
+		else if (i == 2)
+		{
+			cam_fire(SHUTTER, 0, 0);
+		}
+		else if (i == 3)
+		{
+			cam_fire(FOCUS + SHUTTER, 0, 0);
+			i= 0;
+		}
+
+		osDelay(2000);
+		i++;
+	}
+}
+
+int _write(int file, char *ptr, int len)
+{
+  /* Implement your write code here, this is used by puts and printf for example */
+  int i=0;
+  for(i=0 ; i<len ; i++)
+    ITM_SendChar((*ptr++));
+  return len;
+}
 /* USER CODE END Application */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

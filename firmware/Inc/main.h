@@ -122,7 +122,7 @@
  #define USE_FULL_ASSERT    1U 
 
 /* USER CODE BEGIN Private defines */
-
+int _write(int file, char *ptr, int len);
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
