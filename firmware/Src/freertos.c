@@ -130,22 +130,35 @@ void StartDefaultTask(void const * argument)
 void fCameraTask(void const * argument)
 {
 	unsigned int i = 0;
-	set_camera_type(NIKON);
+	set_camera_vendor(CANON);
+	set_camera_mode(SINGLESHOT);
+	trigger_t trigger;
+	get_camera_trigger(&trigger);
+	//trigger.tSSn = 1.0;
 
 	/* Infinite loop */
 	for(;;)
 	{
 		if (i == 1)
 		{
-			cam_fire(FOCUS, 0, 0);
+			trigger.focus = true;
+			trigger.shutter = false;
+			set_camera_trigger(trigger);
+			shoot();
 		}
 		else if (i == 2)
 		{
-			cam_fire(SHUTTER, 0, 0);
+			trigger.focus = false;
+			trigger.shutter = true;
+			set_camera_trigger(trigger);
+			shoot();
 		}
 		else if (i == 3)
 		{
-			cam_fire(FOCUS + SHUTTER, 0, 0);
+			trigger.focus = true;
+			trigger.shutter = true;
+			set_camera_trigger(trigger);
+			shoot();
 			i= 0;
 		}
 
