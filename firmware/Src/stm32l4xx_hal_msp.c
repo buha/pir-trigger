@@ -84,7 +84,9 @@ void HAL_MspInit(void)
   HAL_NVIC_SetPriority(SysTick_IRQn, 15, 0);
 
   /* USER CODE BEGIN MspInit 1 */
+  HAL_NVIC_SetPriority(EXTI9_5_IRQn, 1, 0);
 
+  HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
   /* USER CODE END MspInit 1 */
 }
 
