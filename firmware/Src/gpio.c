@@ -139,7 +139,7 @@ void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PCPin PCPin PCPin */
-  GPIO_InitStruct.Pin = KEY_DOWN_Pin|KEY_RIGHT_Pin|KEY_LEFT_Pin;
+  GPIO_InitStruct.Pin = KEY_DOWN_Pin|KEY_RIGHT_Pin|KEY_LEFT_Pin|KEY_OK_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
