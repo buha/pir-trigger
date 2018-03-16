@@ -21,7 +21,7 @@
 							<option id="com.atollic.truestudio.toolchain_options.mcu.283346654" name="Microcontroller" superClass="com.atollic.truestudio.toolchain_options.mcu" value="STM32L476RE" valueType="string"/>
 							<option id="com.atollic.truestudio.toolchain_options.vendor.1365992216" name="Vendor name" superClass="com.atollic.truestudio.toolchain_options.vendor" value="STMicroelectronics" valueType="string"/>
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.atollic.truestudio.exe.debug.toolchain.platform.2093645455" isAbstract="false" name="Debug platform" osList="all" superClass="com.atollic.truestudio.exe.debug.toolchain.platform"/>
-							<builder command="make" enableAutoBuild="false" enabledIncrementalBuild="true" id="com.atollic.truestudio.exe.debug.toolchain.366953328.199486649" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="false" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
+							<builder command="make" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="com.atollic.truestudio.exe.debug.toolchain.366953328.199486649" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="false" superClass="org.eclipse.cdt.build.core.settings.default.builder"/>
 							<tool id="com.atollic.truestudio.exe.debug.toolchain.as.953427054" name="Assembler" superClass="com.atollic.truestudio.exe.debug.toolchain.as">
 								<option id="com.atollic.truestudio.common_options.target.fpucore.1778953120" name="FPU" superClass="com.atollic.truestudio.common_options.target.fpucore" value="com.atollic.truestudio.common_options.target.fpucore.fpv4-sp-d16" valueType="enumerated"/>
 								<inputType id="com.atollic.truestudio.as.input.1040515218" name="Input" superClass="com.atollic.truestudio.as.input"/>
@@ -64,7 +64,7 @@
 					<fileInfo id="com.atollic.truestudio.exe.debug.toolchain.366953328.1290311964" name="stm32l4r5xx.h" rcbsApplicability="disable" resourcePath="Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4r5xx.h" toolsToInvoke=""/>
 					<fileInfo id="com.atollic.truestudio.exe.debug.toolchain.366953328.1641624474" name="stm32l442xx.h" rcbsApplicability="disable" resourcePath="Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l442xx.h" toolsToInvoke=""/>
 					<sourceEntries>
-						<entry excluding="Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4s9xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4s7xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4s5xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4r9xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4r7xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4r5xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4a6xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l496xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l486xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l485xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l475xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l471xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l462xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l452xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l451xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l443xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l442xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l433xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l432xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l431xx.h" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="Drivers/CMSIS/RTOS/Template|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4s9xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4s7xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4s5xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4r9xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4r7xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4r5xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l4a6xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l496xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l486xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l485xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l475xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l471xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l462xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l452xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l451xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l443xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l442xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l433xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l432xx.h|Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l431xx.h" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -74,9 +74,6 @@
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 		<project id="firmware.null.593678357" name="firmware"/>
 	</storageModule>
-	<storageModule moduleId="scannerConfiguration">
-		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
-	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
 	<storageModule moduleId="refreshScope" versionNumber="2">
 		<configuration configurationName="Debug">
@@ -84,4 +81,10 @@
 		</configuration>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.atollic.truestudio.exe.debug.toolchain.366953328;com.atollic.truestudio.exe.debug.toolchain.366953328.47209871;com.atollic.truestudio.exe.debug.toolchain.gcc.425925073;com.atollic.truestudio.gcc.input.75741982">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.atollic.truestudio.mbs.ARMToolsPerProjectProfileC"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
 </cproject>

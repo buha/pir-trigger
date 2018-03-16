@@ -6,9 +6,10 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stm32l4xx.h>
-#include <FreeRTOS.h>
+#include <cmsis_os.h>
 
-typedef enum {
+typedef enum
+{
 	success = 0,
 	error_argument = -1,
 	error_timeout = -2,

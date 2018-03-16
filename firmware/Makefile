@@ -1,6 +1,6 @@
 TARGET = firmware
 DEBUG=1
-OPT = -Og
+OPT = -O0
 SOURCES_DIR =  \
 Application/User/Src/wwdg.c \
 Drivers/CMSIS \

@@ -56,13 +56,21 @@
 #include <stm32l4xx.h>
 #include "camera.h"
 #include "settings.h"
+#include "ipc.h"
 /* USER CODE END Includes */
 
 /* Variables -----------------------------------------------------------------*/
 osThreadId defaultTaskHandle;
 
 /* USER CODE BEGIN Variables */
-osThreadId cameraTaskHandle;
+osThreadId tCamera;
+osThreadId tCore;
+
+osPoolDef(qInputPool, 10, ipc_t);
+osPoolId  qInputPool;
+
+osMessageQDef(qInput, 10, ipc_t);
+osMessageQId qInput;
 /* USER CODE END Variables */
 
 /* Function prototypes -------------------------------------------------------*/
@@ -71,7 +79,8 @@ void StartDefaultTask(void const * argument);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /* USER CODE BEGIN FunctionPrototypes */
-void fCameraTask(void const * argument);
+void fCamera(void const * argument);
+void fCore(void const * argument);
 /* USER CODE END FunctionPrototypes */
 
 /* Hook prototypes */
@@ -80,7 +89,7 @@ void fCameraTask(void const * argument);
 
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
-       
+
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -101,12 +110,24 @@ void MX_FREERTOS_Init(void) {
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
-  osThreadDef(cameraTask, fCameraTask, osPriorityNormal, 0, 128);
-  cameraTaskHandle = osThreadCreate(osThread(cameraTask), NULL);
+  osThreadDef(cameraTask, fCamera, osPriorityNormal, 0, 128);
+  tCamera = osThreadCreate(osThread(cameraTask), NULL);
+
+  osThreadDef(coreTask, fCore, osPriorityNormal, 0, 128);
+  tCore = osThreadCreate(osThread(coreTask), NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_QUEUES */
-  /* add queues, ... */
+  qInputPool = osPoolCreate(osPool(qInputPool));
+  if(qInputPool == NULL)
+  {
+	  printf("qInputPool: creation failure.\n");
+  }
+  qInput = osMessageCreate(osMessageQ(qInput), NULL);
+  if(qInput == NULL)
+  {
+	  printf("qInput: creation failure.\n");
+  }
   /* USER CODE END RTOS_QUEUES */
 }
 
@@ -118,7 +139,7 @@ void StartDefaultTask(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-	printf("Hello World!\n");
+	//printf("Hello World!\n");
     osDelay(1000);
   }
   /* USER CODE END StartDefaultTask */
@@ -127,7 +148,7 @@ void StartDefaultTask(void const * argument)
 /* USER CODE BEGIN Application */
 
 /* Task that handles optically isolated interface with cameras */
-void fCameraTask(void const * argument)
+void fCamera(void const * argument)
 {
 	unsigned int i = 0;
 	set_camera_vendor(CANON);
@@ -164,6 +185,26 @@ void fCameraTask(void const * argument)
 
 		osDelay(2000);
 		i++;
+	}
+}
+void fCore(void const * argument)
+{
+	osEvent evt;
+
+	/* Infinite loop */
+	for(;;)
+	{
+		evt = osMessageGet(qInput, osWaitForever);
+	    if (evt.status == osEventMessage)
+		{
+	    	ipc_t *pipc = (ipc_t*)evt.value.p;
+			if(pipc->type == (uint32_t)IPC_INPUT_KEY)
+			{
+				asm("nop;");
+			}
+
+			osPoolFree(qInputPool, pipc);
+	    }
 	}
 }
 
