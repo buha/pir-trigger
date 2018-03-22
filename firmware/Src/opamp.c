@@ -117,7 +117,7 @@ void HAL_OPAMP_MspInit(OPAMP_HandleTypeDef* opampHandle)
     PA1     ------> OPAMP1_VINM
     PA3     ------> OPAMP1_VOUT 
     */
-    GPIO_InitStruct.Pin = OPAMP1__Pin|OPAMP1_A1_Pin|GPIO_PIN_3;
+    GPIO_InitStruct.Pin = OPAMP1P_Pin|OPAMP1N_Pin|OPAMP1OUT_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -142,7 +142,7 @@ void HAL_OPAMP_MspInit(OPAMP_HandleTypeDef* opampHandle)
     PA7     ------> OPAMP2_VINM
     PB0     ------> OPAMP2_VOUT 
     */
-    GPIO_InitStruct.Pin = OPAMP2_A6_Pin|OPAMP2_A7_Pin;
+    GPIO_InitStruct.Pin = OPAMP2P_Pin|OPAMP2N_Pin;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
@@ -178,7 +178,7 @@ void HAL_OPAMP_MspDeInit(OPAMP_HandleTypeDef* opampHandle)
     PA1     ------> OPAMP1_VINM
     PA3     ------> OPAMP1_VOUT 
     */
-    HAL_GPIO_DeInit(GPIOA, OPAMP1__Pin|OPAMP1_A1_Pin|GPIO_PIN_3);
+    HAL_GPIO_DeInit(GPIOA, OPAMP1P_Pin|OPAMP1N_Pin|GPIO_PIN_3);
 
   /* USER CODE BEGIN OPAMP1_MspDeInit 1 */
 
@@ -201,7 +201,7 @@ void HAL_OPAMP_MspDeInit(OPAMP_HandleTypeDef* opampHandle)
     PA7     ------> OPAMP2_VINM
     PB0     ------> OPAMP2_VOUT 
     */
-    HAL_GPIO_DeInit(GPIOA, OPAMP2_A6_Pin|OPAMP2_A7_Pin);
+    HAL_GPIO_DeInit(GPIOA, OPAMP2P_Pin|OPAMP2N_Pin);
 
     HAL_GPIO_DeInit(OPAMP2OUTB0_GPIO_Port, OPAMP2OUTB0_Pin);
 

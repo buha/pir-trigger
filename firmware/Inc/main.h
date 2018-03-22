@@ -59,36 +59,61 @@
 
 /* Private define ------------------------------------------------------------*/
 
-#define EINK_PWR_Pin GPIO_PIN_13
-#define EINK_PWR_GPIO_Port GPIOC
-#define OPAMP2OUT_Pin GPIO_PIN_0
-#define OPAMP2OUT_GPIO_Port GPIOC
-#define OPAMP2__Pin GPIO_PIN_1
-#define OPAMP2__GPIO_Port GPIOC
-#define OPAMP1__Pin GPIO_PIN_0
-#define OPAMP1__GPIO_Port GPIOA
-#define OPAMP1_A1_Pin GPIO_PIN_1
-#define OPAMP1_A1_GPIO_Port GPIOA
-#define SCK_Pin GPIO_PIN_5
-#define SCK_GPIO_Port GPIOA
-#define OPAMP2_A6_Pin GPIO_PIN_6
-#define OPAMP2_A6_GPIO_Port GPIOA
-#define OPAMP2_A7_Pin GPIO_PIN_7
-#define OPAMP2_A7_GPIO_Port GPIOA
-#define KEY_OK_Pin GPIO_PIN_5
-#define KEY_OK_GPIO_Port GPIOC
+#define OPAMP2OUT_ADC_Pin GPIO_PIN_0
+#define OPAMP2OUT_ADC_GPIO_Port GPIOC
+#define OPAMP2P_ADC_Pin GPIO_PIN_1
+#define OPAMP2P_ADC_GPIO_Port GPIOC
+
+#define OPAMP1P_Pin GPIO_PIN_0
+#define OPAMP1P_GPIO_Port GPIOA
+#define OPAMP1N_Pin GPIO_PIN_1
+#define OPAMP1N_GPIO_Port GPIOA
+#define OPAMP1OUT_Pin GPIO_PIN_3
+#define OPAMP1OUT_GPIO_Port GPIOA
+
+#define OPAMP2P_Pin GPIO_PIN_6
+#define OPAMP2P_GPIO_Port GPIOA
+#define OPAMP2N_Pin GPIO_PIN_7
+#define OPAMP2N_GPIO_Port GPIOA
 #define OPAMP2OUTB0_Pin GPIO_PIN_0
 #define OPAMP2OUTB0_GPIO_Port GPIOB
-#define FOCUS_Pin GPIO_PIN_1
-#define FOCUS_GPIO_Port GPIOB
-#define SHUTTER_Pin GPIO_PIN_2
-#define SHUTTER_GPIO_Port GPIOB
+
+#define EINK_PWR_Pin GPIO_PIN_13
+#define EINK_PWR_GPIO_Port GPIOC
 #define EINK_BS_Pin GPIO_PIN_13
 #define EINK_BS_GPIO_Port GPIOB
 #define EINK_BUSY_Pin GPIO_PIN_14
 #define EINK_BUSY_GPIO_Port GPIOB
 #define EINK_RST_Pin GPIO_PIN_15
 #define EINK_RST_GPIO_Port GPIOB
+
+#define EINK_DC_Pin GPIO_PIN_12
+#define EINK_DC_GPIO_Port GPIOC
+#define CS_Pin GPIO_PIN_15
+#define CS_GPIO_Port GPIOA
+#define SCK_Pin GPIO_PIN_5
+#define SCK_GPIO_Port GPIOA
+#define MOSI_Pin GPIO_PIN_5
+#define MOSI_GPIO_Port GPIOB
+
+
+#define FOCUS_Pin GPIO_PIN_1
+#define FOCUS_GPIO_Port GPIOB
+#define SHUTTER_Pin GPIO_PIN_2
+#define SHUTTER_GPIO_Port GPIOB
+#define PANASHUTTER_Pin GPIO_PIN_11
+#define PANASHUTTER_GPIO_Port GPIOA
+#define PANAFOCUS_Pin GPIO_PIN_12
+#define PANAFOCUS_GPIO_Port GPIOA
+
+
+#define SCL_Pin GPIO_PIN_6
+#define SCL_GPIO_Port GPIOB
+#define SDA_Pin GPIO_PIN_7
+#define SDA_GPIO_Port GPIOB
+#define AMBIENT_Pin GPIO_PIN_4
+#define AMBIENT_GPIO_Port GPIOB
+
 #define KEY_DOWN_Pin GPIO_PIN_6
 #define KEY_DOWN_GPIO_Port GPIOC
 #define KEY_RIGHT_Pin GPIO_PIN_7
@@ -97,22 +122,8 @@
 #define KEY_LEFT_GPIO_Port GPIOC
 #define KEY_UP_Pin GPIO_PIN_8
 #define KEY_UP_GPIO_Port GPIOA
-#define PANASHUTTER_Pin GPIO_PIN_11
-#define PANASHUTTER_GPIO_Port GPIOA
-#define PANAFOCUS_Pin GPIO_PIN_12
-#define PANAFOCUS_GPIO_Port GPIOA
-#define CS_Pin GPIO_PIN_15
-#define CS_GPIO_Port GPIOA
-#define EINK_DC_Pin GPIO_PIN_12
-#define EINK_DC_GPIO_Port GPIOC
-#define AMBIENT_Pin GPIO_PIN_4
-#define AMBIENT_GPIO_Port GPIOB
-#define MOSI_Pin GPIO_PIN_5
-#define MOSI_GPIO_Port GPIOB
-#define SCL_Pin GPIO_PIN_6
-#define SCL_GPIO_Port GPIOB
-#define SDA_Pin GPIO_PIN_7
-#define SDA_GPIO_Port GPIOB
+#define KEY_OK_Pin GPIO_PIN_5
+#define KEY_OK_GPIO_Port GPIOC
 
 /* ########################## Assert Selection ############################## */
 /**
