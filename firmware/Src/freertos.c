@@ -57,6 +57,7 @@
 #include "camera.h"
 #include "settings.h"
 #include "ipc.h"
+#include "sensor.h"
 /* USER CODE END Includes */
 
 /* Variables -----------------------------------------------------------------*/
@@ -115,6 +116,9 @@ void MX_FREERTOS_Init(void) {
 
   osThreadDef(coreTask, fCore, osPriorityNormal, 0, 128);
   tCore = osThreadCreate(osThread(coreTask), NULL);
+
+  osThreadDef(sensorTask, fSensor, osPriorityNormal, 0, 512);
+  tSensor = osThreadCreate(osThread(sensorTask), NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_QUEUES */
@@ -187,6 +191,7 @@ void fCamera(void const * argument)
 		i++;
 	}
 }
+
 void fCore(void const * argument)
 {
 	osEvent evt;

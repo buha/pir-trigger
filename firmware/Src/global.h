@@ -16,4 +16,9 @@ typedef enum
 	error_not_initialized = -3
 } rc;
 
+/* Peripheral handles */
+extern ADC_HandleTypeDef hadc1;
+extern OPAMP_HandleTypeDef hopamp1;
+extern OPAMP_HandleTypeDef hopamp2;
+
 #endif // _global_h_

@@ -93,7 +93,8 @@ Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c \
 Middlewares/Third_Party/FreeRTOS/Source/croutine.c \
 Src/camera.c \
 Src/settings.c \
-Src/input.c
+Src/input.c \
+Src/sensor.c
 
 # ASM sources
 ASM_SOURCES =  \
