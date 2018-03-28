@@ -94,7 +94,8 @@ Middlewares/Third_Party/FreeRTOS/Source/croutine.c \
 Src/camera.c \
 Src/settings.c \
 Src/input.c \
-Src/sensor.c
+Src/sensor.c \
+Src/dma.c
 
 # ASM sources
 ASM_SOURCES =  \
