@@ -116,7 +116,7 @@ void MX_ADC1_Init(void)
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     /* Channel Configuration Error */
-    Error_Handler();
+	_Error_Handler(__FILE__, __LINE__);
   }
 
   /* Configuration of channel on ADCx regular group on sequencer rank 3 */
@@ -127,7 +127,7 @@ void MX_ADC1_Init(void)
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     /* Channel Configuration Error */
-    Error_Handler();
+	_Error_Handler(__FILE__, __LINE__);
   }
 
   /* Configuration of channel on ADCx regular group on sequencer rank 4 */
@@ -138,7 +138,7 @@ void MX_ADC1_Init(void)
   if (HAL_ADC_ConfigChannel(&hadc1, &sConfig) != HAL_OK)
   {
     /* Channel Configuration Error */
-    Error_Handler();
+	_Error_Handler(__FILE__, __LINE__);
   }
 }
 

@@ -12,12 +12,27 @@
 volatile uint16_t adcConvertedValues[ADCCONVERTEDVALUES_BUFFER_SIZE];
 bool conversionComplete = false;
 
-void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *AdcHandle)
+void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef * hadc)
 {
 	/* Report to main program that ADC sequencer has reached its end */
 	conversionComplete = true;
 }
 
+void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef * hadc)
+{
+
+}
+
+void HAL_ADC_ErrorCallback(ADC_HandleTypeDef *hadc)
+{
+  /* In case of ADC error, call main error handler */
+  Error_Handler();
+}
+
+void ADCx_DMA_IRQHandler(void)
+{
+  HAL_DMA_IRQHandler(hadc1.DMA_Handle);
+}
 
 void fSensor(void const * argument)
 {
@@ -41,7 +56,6 @@ void fSensor(void const * argument)
 	s = HAL_ADC_Start_DMA(&hadc1, (uint32_t *)adcConvertedValues, ADCCONVERTEDVALUES_BUFFER_SIZE);
 	if (s != HAL_OK)
 	{
-		/* Start Error */
 		Error_Handler();
 	}
 
@@ -66,9 +80,6 @@ void fSensor(void const * argument)
 			volatile uint16_t vbat   = __HAL_ADC_CALC_DATA_TO_VOLTAGE(vref, adcConvertedValues[3], ADC_RESOLUTION_12B);
 			volatile uint16_t pir    = __HAL_ADC_CALC_DATA_TO_VOLTAGE(vref, adcConvertedValues[0], ADC_RESOLUTION_12B);
 			volatile int32_t temp    = __HAL_ADC_CALC_TEMPERATURE(vref, adcConvertedValues[1], ADC_RESOLUTION_12B);
-			vbat = vbat;
-			pir = pir;
-			temp = temp;
 			conversionComplete = false;
 		}
 	}

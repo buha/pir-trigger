@@ -107,18 +107,18 @@ void MX_FREERTOS_Init(void) {
 
   /* Create the thread(s) */
   /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
+  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 1, 128);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
-  osThreadDef(cameraTask, fCamera, osPriorityNormal, 0, 128);
+  osThreadDef(cameraTask, fCamera, osPriorityNormal, 1, 128);
   tCamera = osThreadCreate(osThread(cameraTask), NULL);
 
-  osThreadDef(coreTask, fCore, osPriorityNormal, 0, 128);
+  osThreadDef(coreTask, fCore, osPriorityNormal, 1, 128);
   tCore = osThreadCreate(osThread(coreTask), NULL);
 
-  osThreadDef(sensorTask, fSensor, osPriorityNormal, 0, 512);
-  tSensor = osThreadCreate(osThread(sensorTask), NULL);
+  osThreadDef(sensor1Task, fSensor, osPriorityNormal, 1, 128);
+  tSensor = osThreadCreate(osThread(sensor1Task), NULL);
   /* USER CODE END RTOS_THREADS */
 
   /* USER CODE BEGIN RTOS_QUEUES */
